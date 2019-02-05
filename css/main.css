@@ -1,0 +1,375 @@
+@import "./fonts.css";
+/* Fonts */
+
+html,
+body,
+section {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+/* General */
+
+/* Section Headers */
+
+.section-header {
+    width: 100%;
+}
+
+.section-header img {
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: rgb(233, 233, 233);
+    height: 7vh;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-logo {
+    height: 5vh;
+    padding: 1vh 1vw;
+    float: left;
+}
+
+.navbar-divider {
+    width: 1px;
+    background-color: #59595B;
+    height: 4vh;
+    float: left;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+}
+
+.social-container {
+    color: #333333;
+    border: 1px solid #FFD200;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+/* LANDING PAGE */
+
+/* Landing section */
+
+.landing-section {
+    /* position: absolute;
+    top: 0; */
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/backgrounds/home-page/landing-section.jpg");
+    background-size: cover;
+    background-position: top left;
+}
+
+.landing-div {
+    background-color: rgba(48, 43, 43, 0.6);
+    height: 100%;
+    width: 45%;
+    text-align: center;
+    font-family: "Montserrat";
+    color: white;
+    position: relative;
+}
+
+.landing-div>div:nth-child(1) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.landing-div img {
+    width: 65%;
+    margin: 15px 0;
+}
+
+.landing-div h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.landing-div h3 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.landing-div h2 {
+    font-weight: 500;
+    font-size: 34px;
+    color: #FFD200;
+    border-top: #FFD200 1px solid;
+    border-bottom: #FFD200 1px solid;
+    width: 50%;
+    margin: auto;
+    margin: 20px auto;
+    padding: 2px 0;
+}
+
+.products-arrow {
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+.products-arrow a {
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFD200;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.products-arrow p,
+.products-arrow i {
+    transition: 0.5s;
+    position: relative;
+}
+
+.products-arrow:hover p {
+    font-weight: 400;
+}
+
+.products-arrow:hover i {
+    font-size: 23px;
+    animation: arrows-move 1.5s infinite;
+}
+
+@keyframes arrows-move {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 50px;
+    }
+}
+
+
+
+
+
+/* Products Section */
+
+.landing-products-section {
+    background-image: url("../images/backgrounds/home-page/products-section.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-product-grid {
+    display: flex;
+    height: 50vh;
+    width: 80%;
+    padding: 3% 10%;
+    justify-content: space-between;
+}
+
+.landing-product-category {
+    width: 27.5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.landing-product-category>div {
+    border: 2px solid #333333;
+    border-radius: 20px;
+}
+
+.landing-product-category-image {
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+}
+
+.landing-product-category:nth-child(1) .landing-product-category-image {
+    background-image: url("../images/products/product-categories/ladders.jpg");
+}
+
+.landing-product-category:nth-child(2) .landing-product-category-image {
+    background-image: url("../images/products/product-categories/Castors.jpg");
+}
+
+.landing-product-category:nth-child(3) .landing-product-category-image {
+    background-image: url("../images/products/product-categories/Trolleys.jpg");
+}
+
+.landing-product-category-name {
+    padding: 5px 0;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+.landing-product-category-name h1 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.landing-product-category-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #1A1A1A;
+    border-radius: 18px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.landing-product-category:hover .landing-product-category-inner {
+    opacity: 0.7;
+}
+
+.landing-product-category:hover .landing-product-category-name {
+    background-color: #1A1A1A;
+    opacity: 0.9;
+    color: #FFD200;
+}
+
+
+/* More Section */
+.landing-more-section {
+    background-color: #1A1A1A;
+    display: flex;
+    font-family: "Montserrat";
+    padding: 3% 5%;
+    align-items: center;
+}
+
+.landing-more-section>div:nth-child(1) {
+    width: 65%;
+    padding-right: 10%;
+}
+
+.landing-more-section>div:nth-child(2) {
+    width: 35%;
+    text-align: center;
+}
+
+.landing-more-section h1 {
+    font-weight: 600;
+    color: #FFD200;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.landing-more-section p {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.landing-more-button {
+    background-color: #FFD200;
+    border-radius: 20px;
+    width: 200px;;
+    padding: 5px 0;
+    color: #1A1A1A;
+    font-weight: 600;
+    margin:auto;
+    font-size: 22px;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.landing-more-section>div:nth-child(2) p {
+    margin: 10px 0;
+}
+
+/* About Section */
+
+.landing-about-section {
+    background-image: url("../images/backgrounds/home-page/about-section.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.about-more-button {
+    background-color: #FFD200;
+    border-radius: 20px;
+    width: 200px;;
+    padding: 5px 0;
+    color: #1A1A1A;
+    font-weight: 600;
+    margin:auto;
+    font-size: 22px;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.landing-about-section p {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 3% 12% 3% 12%;
+}
+
+.stat-grid {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding: 3% 5%;
+    text-align: center;
+}
+
+.stat {
+    width: 25%;
+}
+
+.stat-name {
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.stat-number {
+    border: 2px solid #FFD200;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: calc(50% - 50px);
+}
+
+.stat-number p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 26px;
+}
