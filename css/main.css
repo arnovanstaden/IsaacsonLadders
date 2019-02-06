@@ -1215,13 +1215,14 @@ footer a:hover,
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .product {
     width: 25%;
     cursor: pointer;
     transition: 0.5s;
+    padding: 0 4.165%;
 }
 
 .product-img {
@@ -1266,10 +1267,34 @@ footer a:hover,
     transform: scale(1.1);
 }
 
+.clear-filter-button {
+    text-align: center;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #FFD200;
+    border: #FFD200 2px solid;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+.clear-filter-button p{
+    cursor: pointer;
+    color: #1A1A1A;
+    font-family: "Montserrat";
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 3px 10px;
+}
+
+.clear-filter-button:hover {
+    border: #1A1A1A 2px solid;
+    background-color: transparent;
+}
 
 
 
-/* Ladders Page */
+/* Ladders Tab */
 
 .ladder-page-header {
     background-image: url("../images/section-headers/ladder-page-header.jpg")
@@ -1287,4 +1312,21 @@ footer a:hover,
     background-image: url("../images/products/ladders/ildl/1.jpg");
 }
 
-.product:hover .product-img {}
+/* Trolleys Tab */
+
+.trolley-products-section {
+    display: none;
+}
+
+#fn1 .product-img {
+    background-image: url("../images/products/trolleys/FN1.jpg");
+}
+
+#fn2 .product-img {
+    background-image: url("../images/products/trolleys/FN2.jpg");
+}
+
+#fn3 .product-img {
+    background-image: url("../images/products/trolleys/FN3.jpg");
+}
+
