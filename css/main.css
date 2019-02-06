@@ -81,7 +81,7 @@ a:visited {
     font-weight: 600;
     font-size: 22px;
     font-family: "Montserrat";
-    
+
     text-decoration: none !important;
 }
 
@@ -92,9 +92,28 @@ a:visited {
     font-weight: 500;
 }
 
-.yellow-button:hover a{
+.yellow-button:hover a {
     color: #FFD200;
     font-weight: 500;
+}
+
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFD200;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1A1A1A;
 }
 
 
@@ -115,6 +134,7 @@ a:visited {
     align-items: center;
     font-family: "Montserrat";
     transition: top 0.3s;
+    box-shadow: 0px 1px 10px rgba(26, 26, 26, 0.356);
 }
 
 .navbar-logo {
@@ -133,7 +153,7 @@ a:visited {
     justify-content: space-evenly;
     text-align: center;
     position: relative;
-    
+
 }
 
 .nav-contact a {
@@ -162,10 +182,11 @@ a:visited {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    
+
 }
 
-.nav-social a, .nav-contact > a > div{
+.nav-social a,
+.nav-contact>a>div {
     border: 1px solid #FFD200;
     border-radius: 50%;
     width: 35px;
@@ -174,14 +195,14 @@ a:visited {
     transition: 0.5s;
 }
 
-.nav-social a:hover{
+.nav-social a:hover {
     border: 1px solid rgba(212, 212, 212, 0);
     color: #1A1A1A;
     background-color: #FFD200;
     transform: scale(1.1);
 }
 
-.nav-contact a:hover p{
+.nav-contact a:hover p {
     color: #FFD200;
 }
 
@@ -191,7 +212,8 @@ a:visited {
     background-color: #FFD200;
 }
 
-.nav-social i, .nav-contact i {
+.nav-social i,
+.nav-contact i {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -551,7 +573,7 @@ footer {
     font-family: "Montserrat";
 }
 
-footer > div {
+footer>div {
     width: 100%;
     display: flex;
     align-items: center;
@@ -591,6 +613,7 @@ footer > div {
     text-align: center;
     padding: 5px 0;
 }
+
 .footer-row-2 a {
     width: 33%;
     color: #535353;
@@ -635,7 +658,8 @@ footer a {
     transition: 0.4s;
 }
 
-footer a:hover, .footer-social a :hover {
+footer a:hover,
+.footer-social a :hover {
     color: #FFD200;
     transform: scale(1.1)
 }
@@ -779,7 +803,7 @@ footer a:hover, .footer-social a :hover {
     display: grid;
     grid-template-columns: 25% 75%;
     padding: 2% 5%;
-    
+
 }
 
 .contact-form-text {
@@ -821,7 +845,8 @@ footer a:hover, .footer-social a :hover {
     grid-row-gap: 25px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     grid-column: 1 / span 1;
     background-color: transparent;
     border: 2px solid #535353;
@@ -872,7 +897,7 @@ footer a:hover, .footer-social a :hover {
 }
 
 
- /* ---------------------------------------------------------------------  */
+/* ---------------------------------------------------------------------  */
 
 /* ABOUT PAGE */
 
@@ -920,15 +945,15 @@ footer a:hover, .footer-social a :hover {
     background-size: cover;
 }
 
-.about-team-grid  .team-member:nth-child(1) {
+.about-team-grid .team-member:nth-child(1) {
     background-image: url("../images/team/andre.jpg");
 }
 
-.about-team-grid  .team-member:nth-child(2) {
+.about-team-grid .team-member:nth-child(2) {
     background-image: url("../images/team/sarah.jpg");
 }
 
-.about-team-grid  .team-member:nth-child(3) {
+.about-team-grid .team-member:nth-child(3) {
     background-image: url("../images/team/john.jpg");
 }
 
@@ -947,12 +972,13 @@ footer a:hover, .footer-social a :hover {
     opacity: 0.8;
 }
 
-.team-member:hover h2, .team-member:hover h5 {
+.team-member:hover h2,
+.team-member:hover h5 {
     opacity: 1;
     width: 100%;
 }
 
-.team-member-inner > div {
+.team-member-inner>div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -1025,3 +1051,240 @@ footer a:hover, .footer-social a :hover {
     font-size: 18px;
     line-height: 1.2;
 }
+
+
+
+/* ------------------------------------------------------------------------- */
+
+/* Products Page */
+
+.products-page-header {
+    background-image: url("../images/section-headers/product-page-header.jpg")
+}
+
+
+.products-header {
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    position: relative;
+    margin-top: 6%;
+    left: 5%;
+    border-radius: 25px;
+    width: 90%;
+}
+
+.products-header img {
+    margin: auto;
+    display: block;
+    width: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.products-nav {
+    display: flex;
+    width: 90%;
+    margin: 30px 5% 30px 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.products-nav a {
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #1A1A1A;
+    font-family: "Montserrat";
+    cursor: pointer;
+    border: #1A1A1A 3px solid;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+.active-product {
+    background-color: #FFD200;
+    border: #FFD200 3px solid !important;
+}
+
+.products-nav a:hover {
+    background-color: #FFD200;
+    border: #FFD200 3px solid !important;
+}
+
+.products-outer-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 0 5% 3% 5%;
+}
+
+.products-outer-grid .white-back-heading {
+    margin-left: 0;
+    font-size: 32px;
+}
+
+.products-filter {
+    padding-left: 10%;
+}
+
+.filter-heading {
+    margin-top: 50px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    border-bottom: 2px solid #FFD200;
+    padding-bottom: 3px;
+    color: #1A1A1A;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.filter-options {
+    padding: 20px 0 20px 10px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: #1A1A1A;
+    font-family: "Montserrat";
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #5353533f;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #1A1A1A;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #FFD200;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 8px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1A1A1A;
+}
+
+
+
+
+/* Products Grid */
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product {
+    width: 25%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product-img {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    border: #333333 2px solid;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.product-description h4 {
+    color: #1A1A1A;
+    font-family: "Montserrat";
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: 2px solid #1A1A1A;
+    padding: 5px 0 1px 0;
+    transition: 0.5s;
+}
+
+.product-description p {
+    color: #333333;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+
+.product:hover .product-img {
+    border: #FFD200 2px solid;
+}
+
+
+.product:hover .product-description h4 {
+    border-bottom: 2px solid #FFD200;
+    transform: scale(1.1);
+}
+
+
+
+
+/* Ladders Page */
+
+.ladder-page-header {
+    background-image: url("../images/section-headers/ladder-page-header.jpg")
+}
+
+#ils .product-img {
+    background-image: url("../images/products/ladders/ils/1.jpg");
+}
+
+#ilsh .product-img {
+    background-image: url("../images/products/ladders/ilsh/1.jpg");
+}
+
+#ildl .product-img {
+    background-image: url("../images/products/ladders/ildl/1.jpg");
+}
+
+.product:hover .product-img {}
