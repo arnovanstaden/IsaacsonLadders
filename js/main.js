@@ -21,6 +21,16 @@ $(".products-arrow").click(function () {
 });
 
 
+// Form Modal 
+
+$(".submit-button").click(function() {
+  $(".form-modal").fadeIn(1000);
+});
+
+$(".form-modal-close").click(function() {
+  window.location.replace("./contact.html");
+});
+
 
 
 // ------------------------------------------

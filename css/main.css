@@ -802,7 +802,7 @@ footer a:hover,
     font-family: "Montserrat"
 }
 
-.contact-form-section div:nth-child(2) {
+.contact-form-section> div:nth-child(2) {
     display: grid;
     grid-template-columns: 25% 75%;
     padding: 2% 5%;
@@ -899,6 +899,51 @@ footer a:hover,
     height: 100%;
 }
 
+
+/* Contact Modal */
+
+.form-modal {
+    height: 50vh;
+    width: 50vw;
+    background-color: rgba(255, 208, 0, 0.95);
+    position: fixed;
+    z-index: 20;
+    top: 25vh;
+    left: 25vw;
+    display: none;
+}
+
+.form-modal i {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #1A1A1A;
+    transition: 0.4s;
+}
+
+.form-modal i:hover {
+    cursor: pointer;
+    color: #FFFFFF
+}
+
+.form-modal div {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1A1A1A;
+    padding: 20px;
+}
+
+.form-modal div h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.form-modal div p {
+    font-size: 22px;
+}
 
 /* ---------------------------------------------------------------------  */
 
