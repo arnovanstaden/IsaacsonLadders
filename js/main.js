@@ -35,11 +35,16 @@ $(".products-nav a").click(function () {
 $("#ladder-tab").click(function () {
   $(".products-section").fadeOut();
   $(".ladder-products-section").fadeIn();
+  $(".products-page-header").css("background-image","url(../images/section-headers/ladder-page-header.jpg)");
+  $(".products-page-header > img").attr("src","../images/section-headers/ladders.png");
+
 });
 
 $("#trolley-tab").click(function () {
   $(".products-section").fadeOut();
   $(".trolley-products-section").fadeIn();
+  $(".products-page-header").css("background-image","url(../images/section-headers/castor-page-header.jpg)");
+  $(".products-page-header > img").attr("src","../images/section-headers/trolleys.png");
 });
 
 
