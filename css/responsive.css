@@ -353,6 +353,10 @@
         width: 35%;
     }
 
+    .landing-more-section {
+        flex-wrap: wrap;
+    }
+
     .landing-more-section>div:nth-child(1) {
         width: 90%;
         padding: 0 5%;

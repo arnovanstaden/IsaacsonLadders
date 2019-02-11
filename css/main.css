@@ -520,7 +520,6 @@ a:visited {
     font-family: "Montserrat";
     padding: 4% 4% !important;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .landing-more-section>div:nth-child(1) {
