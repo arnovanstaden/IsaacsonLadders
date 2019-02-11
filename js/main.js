@@ -82,6 +82,16 @@ $("#multi-purpose-label").click(function() {
     $(".multi-purpose").fadeIn(500);
 });
 
+$("#extension").click(function() {
+  $(".product").fadeOut(1);
+    $(".extension").fadeIn(500);
+});
+
+$("#lean-to").click(function() {
+  $(".product").fadeOut(1);
+    $(".lean-to").fadeIn(500);
+});
+
 $(".clear-filter-button").click(function() {
   location.reload();
 });
