@@ -383,7 +383,7 @@
     /* Footer */
 
     footer {
-        padding: 3% 5%;
+        padding: 20px 5%;
     }
 
     .footer-news {
@@ -452,7 +452,6 @@
     }
 
     .overview-item div:nth-child(1) {
-        margin-right: 20px;
     }
 
     .white-back-heading {
@@ -481,12 +480,12 @@
     .filter-options {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         padding-left: 0;
     }
 
     .filter-options label {
-        width: 40%;
+        width: 100%;
     }
 
     .products-page-header {
@@ -606,7 +605,11 @@
 
     .overview-item {
         width: 100%;
-        padding: 2% 2%;
+        padding: 4% 0;
+    }
+
+    .overview-text h1 {
+        margin-bottom: 5px;
     }
 
     .about-team-grid {
@@ -666,7 +669,11 @@
     }
 
     .products-page-header {
-        margin-top: 15%;
+        margin-top: 12vh;
+    }
+
+    .products-page-header img {
+        width: 65%;
     }
 
     /* Product Specific Page */
@@ -710,6 +717,10 @@
         font-weight: 500;
     }
 
+    .ladder-product-uses div:nth-child(1) img {
+        width: 80%;
+    }
+
 
 
 
@@ -722,6 +733,15 @@
 
     .landing-section-header img {
         width: 60%;
+    }
+
+    .landing-div h2 {
+        width: 75%;
+        font-size: 28px;
+    }
+
+    .landing-more-section {
+        padding: 30px 4% !important;
     }
 
 
@@ -762,6 +782,13 @@
 
     .product-img {
         height: 50vh;
-        ;
+    }
+
+    .ladder-product-uses div:nth-child(1){
+        width: 30%;
+    }
+
+    .ladder-product-uses div:nth-child(1) img {
+        width: 90%;
     }
 }

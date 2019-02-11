@@ -374,7 +374,7 @@ a:visited {
     color: #FFD200;
     border-top: #FFD200 1px solid;
     border-bottom: #FFD200 1px solid;
-    width: 50%;
+    width: 60%;
     margin: auto;
     margin: 20px auto;
     padding: 2px 0;
@@ -565,6 +565,7 @@ a:visited {
 
 .about-more-button {
     margin: auto;
+    margin-top: 20px;
 }
 
 .landing-about-section p {
@@ -1542,6 +1543,8 @@ footer a:hover,
     font-size: 32px;
     color: #1A1A1A;
     padding: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #1A1A1A;
 }
 
 .ladder-product-name h4 {
