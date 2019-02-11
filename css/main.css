@@ -245,69 +245,70 @@ a:visited {
 .overlay {
     height: 0;
     width: 100%;
-    position: fixed; 
-    z-index: 20; 
+    position: fixed;
+    z-index: 20;
     left: 0;
     top: 0;
     background-color: rgba(26, 26, 26, 0.9);
-    overflow-x: hidden; 
-    transition: 0.5s; 
-  }
-  
-  .overlay-content {
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%; 
+    width: 100%;
     text-align: center;
-    margin-top: 30px; 
-  }
-  
-  .overlay a {
+    margin-top: 30px;
+}
+
+.overlay a {
     padding: 20px 8px;
     text-decoration: none;
     font-size: 36px;
     color: #FFD200;
-    display: block; 
-    transition: 0.3s; 
-  }
-  
-  .overlay a:hover, .overlay a:focus {
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
     color: #ffffff;
     transform: scale(1.1);
 
-  }
-  
-  .overlay .closebtn {
+}
+
+.overlay .closebtn {
     position: absolute;
     top: 10px;
     right: 20px;
     font-size: 60px;
     padding: 0 !important
-  }
-  
- .mobile-nav-button {
-     display: none;
- }
+}
 
- .mobile-nav-button > a{
-     float: right;
-     margin-right: 35px;
-     transition: 0.4s;
- }
+.mobile-nav-button {
+    display: none;
+}
 
- .mobile-nav-button  i{
-     font-size: 22px;
-     color: #1A1A1A;
-     padding: 5px 8px;
- }
+.mobile-nav-button>a {
+    float: right;
+    margin-right: 35px;
+    transition: 0.4s;
+}
 
- .mobile-nav-button a:hover {
-     background-color: #FFD200;
-     border-radius: 5px;
-     cursor: pointer;
-     transform: scale(1.1);
- }
+.mobile-nav-button i {
+    font-size: 22px;
+    color: #1A1A1A;
+    padding: 5px 8px;
+}
+
+.mobile-nav-button a:hover {
+    background-color: #FFD200;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 
 
@@ -322,14 +323,16 @@ a:visited {
 /* Landing section */
 
 .landing-section {
-    /* position: absolute;
-    top: 0; */
+    position: relative;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     background-image: url("../images/backgrounds/home-page/landing-section.jpg");
     background-size: cover;
     background-position: top left;
-    
+    transition: 0.7s;
+
 }
 
 .landing-div {
@@ -339,7 +342,9 @@ a:visited {
     text-align: center;
     font-family: "Montserrat";
     color: white;
-    position: relative;
+    position: absolute;
+    transition: left 0.7s;
+    transition: right 0.7s;
 }
 
 .landing-div>div:nth-child(1) {
@@ -734,6 +739,22 @@ footer a:hover,
     transform: scale(1.1)
 }
 
+.footer-row-4 {
+    display: block;
+    margin-top: 5px;
+}
+
+.footer-row-4 p{
+    display: block;
+    text-align: center;
+    color: #666666;
+}
+
+.footer-row-4 a{
+    text-decoration: none;
+    color: white;
+}
+
 
 
 
@@ -754,6 +775,7 @@ footer a:hover,
 .white-back-heading {
     display: inline-block;
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 .white-back-heading h1 {
@@ -794,7 +816,8 @@ footer a:hover,
     flex-direction: column;
 }
 
-.contact-details a, .contact-social a {
+.contact-details a,
+.contact-social a {
     width: 100%;
     display: block;
     display: flex;
@@ -803,7 +826,8 @@ footer a:hover,
     text-decoration: none !important;
 }
 
-.contact-details a div, .contact-social a div {
+.contact-details a div,
+.contact-social a div {
     border: #FFD200 1px solid;
     border-radius: 50%;
     width: 40px;
@@ -813,7 +837,8 @@ footer a:hover,
     transition: 0.4s;
 }
 
-.contact-details a div i, .contact-social a div i  {
+.contact-details a div i,
+.contact-social a div i {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -821,7 +846,8 @@ footer a:hover,
     color: #1A1A1A;
 }
 
-.contact-details a p, .contact-social a p {
+.contact-details a p,
+.contact-social a p {
     color: #1A1A1A;
     font-weight: 500;
     font-size: 20px;
@@ -829,11 +855,12 @@ footer a:hover,
     font-family: "Montserrat"
 }
 
-.contact-details a:hover p, .contact-social a:hover p {
+.contact-details a:hover p,
+.contact-social a:hover p {
     color: #FFD200;
 }
 
-.contact-details a:hover div, 
+.contact-details a:hover div,
 .contact-social a:hover div {
     background-color: #FFD200;
 }
@@ -845,7 +872,7 @@ footer a:hover,
 }
 
 
-.contact-emails > div {
+.contact-emails>div {
     padding: 5%;
     background-color: #33333313;
 }
@@ -873,7 +900,7 @@ footer a:hover,
     font-family: "Montserrat"
 }
 
-.contact-form-section> div:nth-child(2) {
+.contact-form-section>div:nth-child(2) {
     display: grid;
     grid-template-columns: 25% 75%;
     padding: 2% 5%;
@@ -1022,14 +1049,14 @@ footer a:hover,
 
 .about-page-header {
     background-image: url("../images/section-headers/about-page-header.jpg");
-    
+
 }
 
 .about-page-body section {
     padding-top: 2%;
     background-size: cover;
     background-position: center;
-    
+
 }
 
 .about-stat-section {
@@ -1221,7 +1248,7 @@ footer a:hover,
     text-align: center;
 }
 
-.products-nav > div {
+.products-nav>div {
     width: 25%;
     display: inline-block;
 }
@@ -1414,7 +1441,7 @@ footer a:hover,
     transition: 0.5s;
 }
 
-.clear-filter-button p{
+.clear-filter-button p {
     cursor: pointer;
     color: #1A1A1A;
     font-family: "Montserrat";
@@ -1434,7 +1461,7 @@ footer a:hover,
     margin: 40px 0;
 }
 
-.products-back-button a{
+.products-back-button a {
     margin-left: 5%;
     font-family: "Montserrat";
     text-decoration: none;
@@ -1450,7 +1477,7 @@ footer a:hover,
     width: 200px;
 }
 
-.products-back-button i{
+.products-back-button i {
     margin-right: 5px;
     font-size: 16px;
 }
@@ -1512,13 +1539,13 @@ footer a:hover,
     font-family: "Montserrat";
 }
 
-.ladder-product-name h1{
+.ladder-product-name h1 {
     font-size: 32px;
     color: #1A1A1A;
     padding: 5px;
 }
 
-.ladder-product-name h4{
+.ladder-product-name h4 {
     font-size: 26px;
     color: #333333;
     padding: 5px;
@@ -1527,7 +1554,8 @@ footer a:hover,
 
 .ladder-product-grid {
     display: flex;
-    padding: 30px 2% 3% 5%;;
+    padding: 30px 2% 3% 5%;
+    ;
     align-items: flex-start;
 }
 
@@ -1549,7 +1577,7 @@ footer a:hover,
     width: 65%;
 }
 
-.ladder-product-details h3{
+.ladder-product-details h3 {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 30px;
@@ -1575,7 +1603,7 @@ footer a:hover,
     align-items: center;
 }
 
-.ladder-product-details li i{
+.ladder-product-details li i {
     color: #333333;
     font-size: 14px;
     margin-right: 10px;
@@ -1628,13 +1656,13 @@ footer a:hover,
     width: 18%;
 }
 
-.ladder-product-specs .white-divider{
+.ladder-product-specs .white-divider {
     width: 2px;
     height: 100%;
     background-color: #FFFFFF;
 }
 
-.ladder-product-specs .white-divider{
+.ladder-product-specs .white-divider {
     width: 2px;
     height: 100%;
     background-color: #333333;
@@ -1644,7 +1672,8 @@ footer a:hover,
     padding: 15px 0 15px 5px;
     font-size: 20px;
     font-family: "Montserrat";
-    color: #333333;;
+    color: #333333;
+    ;
     font-weight: 500;
     width: 18%;
 }
@@ -1655,10 +1684,25 @@ footer a:hover,
     width: 20%;
 }
 
-.trolley-product-body .ladder-product-specs p{
+.trolley-product-body .ladder-product-specs p {
     width: 20%;
 }
 
 #fn1-img {
     background-image: url("../images/products/trolleys/FN1.jpg");
+}
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+
+/* Quote Page */
+
+
+.quote-page-header {
+    background-image: url("../images/section-headers/quote-page-header.jpg");
+
 }

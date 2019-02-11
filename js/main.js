@@ -29,6 +29,26 @@ function closeNav() {
 }
 
 
+// ANIMATIONS
+
+// Home Screen Slider
+
+// var counter = 0;
+
+// function homeSlider() {
+//   switch (counter) {
+//     case 0:
+//       $(".landing-section").css("background-image", "url(../images/backgrounds/home-page/landing-section.jpg)");
+//       counter++;
+//       break;
+//     case 1:
+//       $(".landing-section").css("background-image", "url(../images/backgrounds/home-page/landing-section-2.jpg)");
+//       counter = 0;
+//       break;
+//   }
+// }
+
+// setInterval(homeSlider, 2000);
 // Smooth Scrolling
 
 $(".products-arrow").click(function () {
@@ -55,16 +75,16 @@ $(".products-nav a").click(function () {
 $("#ladder-tab").click(function () {
   $(".products-section").fadeOut();
   $(".ladder-products-section").fadeIn();
-  $(".products-page-header").css("background-image","url(../images/section-headers/ladder-page-header.jpg)");
-  $(".products-page-header > img").attr("src","../images/section-headers/ladders.png");
+  $(".products-page-header").css("background-image", "url(../images/section-headers/ladder-page-header.jpg)");
+  $(".products-page-header > img").attr("src", "../images/section-headers/ladders.png");
 
 });
 
 $("#trolley-tab").click(function () {
   $(".products-section").fadeOut();
   $(".trolley-products-section").fadeIn();
-  $(".products-page-header").css("background-image","url(../images/section-headers/castor-page-header.jpg)");
-  $(".products-page-header > img").attr("src","../images/section-headers/trolleys.png");
+  $(".products-page-header").css("background-image", "url(../images/section-headers/castor-page-header.jpg)");
+  $(".products-page-header > img").attr("src", "../images/section-headers/trolleys.png");
 });
 
 
@@ -72,27 +92,27 @@ $("#trolley-tab").click(function () {
 
 
 // filter
-$("#single-sided-label").click(function() {
+$("#single-sided-label").click(function () {
   $(".product").fadeOut(1);
-    $(".single-sided").fadeIn(500);
+  $(".single-sided").fadeIn(500);
 });
 
-$("#multi-purpose-label").click(function() {
+$("#multi-purpose-label").click(function () {
   $(".product").fadeOut(1);
-    $(".multi-purpose").fadeIn(500);
+  $(".multi-purpose").fadeIn(500);
 });
 
-$("#extension").click(function() {
+$("#extension").click(function () {
   $(".product").fadeOut(1);
-    $(".extension").fadeIn(500);
+  $(".extension").fadeIn(500);
 });
 
-$("#lean-to").click(function() {
+$("#lean-to").click(function () {
   $(".product").fadeOut(1);
-    $(".lean-to").fadeIn(500);
+  $(".lean-to").fadeIn(500);
 });
 
-$(".clear-filter-button").click(function() {
+$(".clear-filter-button").click(function () {
   location.reload();
 });
 
@@ -104,10 +124,10 @@ $(".clear-filter-button").click(function() {
 
 // Form Modal 
 
-$(".submit-button").click(function() {
+$(".submit-button").click(function () {
   $(".form-modal").fadeIn(1000);
 });
 
-$(".form-modal-close").click(function() {
+$(".form-modal-close").click(function () {
   window.location.replace("./contact.html");
 });
