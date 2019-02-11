@@ -53,7 +53,26 @@
             <a href="./quote.html">GET A QUOTE</a>
             <a href="./contact.html">CONTACT</a>
         </div>
-    </div>
+        <div onclick="openNav()" class="mobile-nav-button">
+            <a>
+                <i class="fas fa-bars"></i>
+            </a> 
+        </div>
+
+
+        <!-- Mobile Nav -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="./index.html">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./products.html">PRODUCTS</a>
+                <a href="./quote.html">GET A QUOTE</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+        </div>
+
+    </div> <!-- End Nav-->
 
     <div class="page-header contact-page-header">
         <img src="./images/section-headers/contactus.png" alt="Contact Page Header">
@@ -99,24 +118,6 @@
                         Gauteng <br>
                         South Africa</p>
                 </a>
-
-                <div class="contact-social">
-                    <a href="https://web.facebook.com/Isaacson-Ladders-2221204114869435/" target="blank">
-                        <div class="nav-contact-icons"><i class="fab fa-facebook-f"></i></div>
-                        <p> Facebook</p>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
-                        <div class="nav-contact-icons"><i class="fab fa-linkedin-in"></i></div>
-                        <p> LinkedIn</p>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
-                        <div class="nav-contact-icons"><i class="fab fa-twitter"></i></div>
-                        <p> Twitter</p>
-                    </a>
-                </div>
-
             </div>
 
             <div class="contact-emails">
@@ -166,6 +167,23 @@
                 </div>
             </div>
         </div>
+
+        <div class="contact-social">
+            <a href="https://web.facebook.com/Isaacson-Ladders-2221204114869435/" target="blank">
+                <div class="nav-contact-icons"><i class="fab fa-facebook-f"></i></div>
+                <p> Facebook</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
+                <div class="nav-contact-icons"><i class="fab fa-linkedin-in"></i></div>
+                <p> LinkedIn</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
+                <div class="nav-contact-icons"><i class="fab fa-twitter"></i></div>
+                <p> Twitter</p>
+            </a>
+        </div>
     </section>
 
 
@@ -183,7 +201,7 @@
             </div>
 
             <form class="contact-form gform" action="https://script.google.com/macros/s/AKfycbxg72hC_g4_1MC3MhJqg5sT5mW_7OyH8k8OOGDy/exec"
-            method="POST" >
+                method="POST">
                 <input type="text" placeholder="Name*" name="Name" required>
                 <input type="text" placeholder="Email*" name="Email:" required>
                 <input type="text" placeholder="Phone*" name="Phone:" required>
@@ -194,12 +212,12 @@
 
         <!-- Form Thank You -->
         <div class="form-modal">
-                <i class="fas fa-times form-modal-close"></i>
+            <i class="fas fa-times form-modal-close"></i>
             <div>
                 <h1>Thank you!</h1>
                 <p>We'll try and get back to you as soon as possible.</p>
             </div>
-            
+
         </div>
     </section>
 

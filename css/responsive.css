@@ -1,0 +1,451 @@
+@import "./main.css";
+
+@media screen and (max-width:1200px) {
+
+    /* Landing Page */
+    .landing-section {
+        background-position: top center;
+    }
+
+
+    /* About Page */
+
+    .page-header img {
+        width: 35%;
+    }
+
+    .page-header {
+        height: 25vh;
+        ;
+    }
+
+    .white-back-heading h1,
+    .black-back-heading h1 {
+        font-size: 30px;
+    }
+
+    /* Products Page */
+
+    .container {
+        font-size: 20px;
+    }
+
+    .products-filter {
+        padding-left: 0;
+    }
+
+    .product {
+        width: 30%;
+        padding: 0 1.5%;
+    }
+
+    .products-nav a {
+        width: 130px;
+        font-size: 20px;
+    }
+
+
+    /* products specific */
+
+    .ladder-product-name h1 {
+        font-size: 28px;
+    }
+
+    .ladder-product-name h4 {
+        font-size: 24px;
+    }
+
+    .ladder-product-details h3 {
+        font-size: 26px;
+    }
+
+    .ladder-product-details li {
+        font-size: 18px;
+    }
+
+    .ladder-product-specs h4,
+    .ladder-product-specs p {
+        font-size: 18px;
+    }
+
+    /* Contact Page */
+
+    .contact-social {
+        padding: 0 5%;
+    }
+
+
+}
+
+@media screen and (max-width:991px) {
+
+
+    /* General */
+    .yellow-button a {
+        font-size: 20px;
+    }
+
+    .yellow-button {
+        padding: 5px 0;
+    }
+
+    .landing-section-header img {
+        width: 25%;
+    }
+
+    .nav-menu {
+        width: 60%;
+    }
+
+    .nav-menu a {
+        font-weight: 500;
+    }
+
+
+
+    /* HOME PAGE */
+
+    .nav-social {
+        display: none;
+    }
+
+    .landing-more-section h1 {
+        font-size: 26px;
+    }
+
+    .landing-more-section p {
+        font-size: 20px;
+    }
+
+    .landing-about-section p {
+        font-size: 22px;
+    }
+
+    .stat-name {
+        font-size: 22px;
+    }
+
+    .landing-product-grid {
+        padding: 3% 5%;
+        width: 90%;
+    }
+
+    .landing-div {
+        width: 55%;
+    }
+
+
+
+
+    /* About Page */
+
+    .overview-text p {
+        font-size: 16px;
+    }
+
+    .team-member {
+        width: 250px;
+        height: 250px;
+        ;
+    }
+
+    .about-team-grid {
+        padding: 5% 5% 5% 10%
+    }
+
+    .team-member-inner h2 {
+        font-size: 28px;
+    }
+
+    .team-member-inner hh {
+        font-size: 20px;
+    }
+
+    .about-overview-grid {
+        padding: 2% 5% 2% 5%;
+    }
+    .overview-item div:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .stat-grid {
+        padding: 5%;
+    }
+
+    /* Contact Page */
+
+    .contact-details a div i {
+        font-size: 18px;
+    }
+
+    .contact-details a div {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+
+    .contact-details a p {
+        font-size: 18px;
+    }
+
+    .contact-details-grid {
+        padding: 2% 5%;
+    }
+
+    .contact-emails h1 {
+        font-size: 18px;
+    }
+
+    .white-back-heading h1,
+    .black-back-heading h1 {
+        font-size: 30px;
+    }
+
+    .contact-form-text p {
+        font-size: 22px;
+    }
+
+    .contact-form-text div i {
+        font-size: 22px;
+    }
+
+    .contact-form-text div {
+        width: 45px;
+        height: 45px;
+    }
+
+
+
+    .contact-map-section div:nth-child(2) {
+        height: 40vh;
+    }
+
+    .contact-emails a {
+        margin-left: 10px;
+    }
+
+
+    /* Product Page */
+
+    .product {
+        width: 45%;
+        padding:
+    }
+
+
+
+    /* Mobile Nav */
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-nav-button {
+        display: block;
+        width: 30%;
+    }
+
+    .navbar-logo {
+        width: 30%;
+    }
+
+    .navbar-logo img{
+        width: 60%;
+        margin: 0 0 0 20px;
+    }
+
+    .nav-contact {
+        width: 40%;
+    }
+
+    /* Footer  */
+    .footer-social i {
+        font-size: 22px;
+    }
+
+    
+    .footer-menu {
+        width: 70%;
+    }
+
+    .footer-logo {
+        width: 25%;
+        margin-right: 0;
+    }
+
+    .footer-row-2 a {
+        font-size: 18px;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    /* Contact Page */
+
+    .contact-map-section div:nth-child(2) {
+        height: 30vh;
+    }
+
+    /* Home Page */
+
+    .landing-div {
+        width: 65%;
+    }
+
+    .landing-product-grid {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .landing-product-category {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+
+    .navbar-logo img {
+        width: 80%;
+    }
+
+    .landing-section-header img {
+        width: 35%;
+    }
+
+    .landing-more-section>div:nth-child(1) {
+        width: 90%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .landing-more-section>div:nth-child(2) {
+        width: 90%;
+        padding: 0 5%;
+        padding-top: 25px;
+        display: flex;
+    }
+    .landing-about-section p {
+        font-size: 20px;
+        padding: 3% 5%;
+    }
+
+    .yellow-button {
+        font-size: 20px;
+        width: 180px;
+    }
+
+    /* Footer */
+
+    .footer-news {
+        display: none;
+    }
+
+    .footer-social{
+       margin: auto !important;
+       width: 40% !important;
+       text-align: center;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+    .footer-row-3 img {
+        width: 35%;
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+
+    /* Landing Page */
+
+    .navbar-logo img {
+        width: 95%;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+
+    .landing-div {
+        width: 100%;
+    }
+
+    .landing-section-header img {
+        width: 45%;
+    }
+
+    .landing-product-category {
+        width: 75%;
+    }
+
+    .landing-more-section>div:nth-child(2) {
+        display: block;
+        padding-bottom: 25px;
+    }
+
+    .landing-more-section>div:nth-child(2) > * {
+        display: block;
+    }
+
+    .stat-grid {
+        flex-wrap: wrap
+    }
+
+    .stat {
+        width: 45%;
+        margin: 15px 0;
+    }
+
+    .landing-div h1 {
+        font-size: 45px;
+    }
+    .landing-div img {
+        width: 55%;
+        margin: 20px 0;
+    }
+
+    .landing-div h3 {
+        font-size: 28px;
+    }
+
+    .landing-div h2 {
+        font-size: 32px;
+    }
+
+    /* Footer */
+
+    .footer-row-2 {
+        flex-wrap: wrap;
+    }
+
+    .footer-row-2 a {
+        width: 100%;
+        text-align: center;
+        margin : 5px 0;
+    }
+
+    .footer-row-3 img {
+        width: 45%;
+    }
+
+
+
+}
+
+@media screen and (max-width:450px) {
+
+    /* Landing Page */
+
+    .landing-section-header img {
+        width: 60%;
+    }
+
+}

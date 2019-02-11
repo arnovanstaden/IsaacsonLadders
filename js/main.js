@@ -1,3 +1,11 @@
+// -------------------------------------------------------------------------
+
+// GENERAL
+
+
+// NAVBAR
+
+
 // Hide Navbar on scroll
 
 var prevScrollpos = window.pageYOffset;
@@ -9,6 +17,15 @@ window.onscroll = function () {
     document.getElementById("navbar").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
+};
+
+// Mobile Nav
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
 }
 
 
@@ -21,15 +38,8 @@ $(".products-arrow").click(function () {
 });
 
 
-// Form Modal 
 
-$(".submit-button").click(function() {
-  $(".form-modal").fadeIn(1000);
-});
 
-$(".form-modal-close").click(function() {
-  window.location.replace("./contact.html");
-});
 
 
 
@@ -78,3 +88,16 @@ $(".clear-filter-button").click(function() {
 
 
 
+// ---------------------------------------------------------------------------------
+
+// CONTACT PAGE
+
+// Form Modal 
+
+$(".submit-button").click(function() {
+  $(".form-modal").fadeIn(1000);
+});
+
+$(".form-modal-close").click(function() {
+  window.location.replace("./contact.html");
+});
