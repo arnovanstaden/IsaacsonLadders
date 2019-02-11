@@ -359,6 +359,56 @@
         width: 35%;
     }
 
+    /* About Page */
+
+    .team-member {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-team-grid {
+        padding: 5% 3%;;
+    }
+
+    .team-member-inner h2 {
+        font-size: 22px;
+
+    }
+
+    .team-member-inner h5 {
+        font-size: 20px;
+    }
+
+    .page-header {
+        height: 20vh;
+    }
+
+    .page-header img {
+        width: 45%;
+    }
+
+    .about-history-section p {
+        font-size: 16px;
+        padding: 5% 8%;
+    }
+
+    .about-overview-grid {
+        padding: 5%;
+    }
+
+    .overview-item {
+        width: 80%;
+        padding: 2% 10%;
+    }
+
+    .overview-item div:nth-child(1) {
+        margin-right: 20px;
+    }
+
+    .white-back-heading {
+        margin-left: 5%;
+    }
+
 
 }
 
@@ -372,6 +422,10 @@
 
     .nav-contact {
         display: none;
+    }
+
+    .mobile-nav-button > a {
+        margin-right: 15px;
     }
 
     .landing-div {
@@ -437,6 +491,32 @@
     }
 
 
+    /* About Page */
+
+
+    .white-back-heading h1, .black-back-heading h1 {
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .overview-item {
+        width: 100%;
+        padding: 2% 2%;
+    }
+
+    .about-team-grid {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .team-member {
+        width: 200px;
+        height: 200px;
+        margin: 2% 5%;
+    }
+
+
 
 }
 
@@ -447,5 +527,14 @@
     .landing-section-header img {
         width: 60%;
     }
+
+
+    /* About Page */ 
+
+    .page-header img {
+        width: 60%;
+    }
+
+
 
 }

@@ -1098,13 +1098,14 @@ footer a:hover,
 .team-member:hover h2,
 .team-member:hover h5 {
     opacity: 1;
-    width: 100%;
+    width: 90%;
 }
 
 .team-member-inner>div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    word-wrap: break-word;
 }
 
 .team-member-inner h2 {
@@ -1115,6 +1116,7 @@ footer a:hover,
     opacity: 0;
     transition-delay: 0.3s;
     width: 0;
+    padding: 0 5%;
 }
 
 .team-member-inner h5 {
@@ -1124,6 +1126,7 @@ footer a:hover,
     opacity: 0;
     transition-delay: 0.3s;
     width: 0;
+    padding: 0 5%;
 }
 
 
