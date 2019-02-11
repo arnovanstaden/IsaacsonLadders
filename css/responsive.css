@@ -164,6 +164,7 @@
     .about-overview-grid {
         padding: 2% 5% 2% 5%;
     }
+
     .overview-item div:nth-child(1) {
         margin-right: 10px;
     }
@@ -258,7 +259,7 @@
         width: 30%;
     }
 
-    .navbar-logo img{
+    .navbar-logo img {
         width: 60%;
         margin: 0 0 0 20px;
     }
@@ -272,7 +273,7 @@
         font-size: 22px;
     }
 
-    
+
     .footer-menu {
         width: 70%;
     }
@@ -306,12 +307,13 @@
     }
 
     .contact-details {
-        padding-left: 30px;; 
+        padding-left: 30px;
+        ;
     }
 
-    .contact-form-section> div:nth-child(2) {
-       display: flex;
-       flex-wrap: wrap;
+    .contact-form-section>div:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .contact-form-text {
@@ -363,6 +365,7 @@
         padding-top: 25px;
         display: flex;
     }
+
     .landing-about-section p {
         font-size: 20px;
         padding: 3% 5%;
@@ -383,10 +386,10 @@
         display: none;
     }
 
-    .footer-social{
-       margin: auto !important;
-       width: 40% !important;
-       text-align: center;
+    .footer-social {
+        margin: auto !important;
+        width: 40% !important;
+        text-align: center;
     }
 
     .footer-menu {
@@ -396,6 +399,7 @@
     .footer-logo {
         width: 100%;
     }
+
     .footer-row-3 img {
         width: 35%;
     }
@@ -408,7 +412,8 @@
     }
 
     .about-team-grid {
-        padding: 5% 3%;;
+        padding: 5% 3%;
+        ;
     }
 
     .team-member-inner h2 {
@@ -459,6 +464,7 @@
     .products-grid {
         padding: 2% 1%;
     }
+
     .products-nav {
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 20px;
@@ -484,6 +490,23 @@
     }
 
 
+    /* Product Specific Page */
+
+    .ladder-product-grid {
+        flex-wrap: wrap;
+    }
+
+    .ladder-product-img {
+        width: 50%;
+        margin-bottom: 30px;
+        margin: 0 auto 30px auto;
+    }
+
+    .ladder-product-details {
+        width: 100%;
+    }
+
+
 
 }
 
@@ -499,7 +522,7 @@
         display: none;
     }
 
-    .mobile-nav-button > a {
+    .mobile-nav-button>a {
         margin-right: 15px;
     }
 
@@ -520,7 +543,7 @@
         padding-bottom: 25px;
     }
 
-    .landing-more-section>div:nth-child(2) > * {
+    .landing-more-section>div:nth-child(2)>* {
         display: block;
     }
 
@@ -536,6 +559,7 @@
     .landing-div h1 {
         font-size: 45px;
     }
+
     .landing-div img {
         width: 55%;
         margin: 20px 0;
@@ -558,7 +582,7 @@
     .footer-row-2 a {
         width: 100%;
         text-align: center;
-        margin : 5px 0;
+        margin: 5px 0;
     }
 
     .footer-row-3 img {
@@ -569,7 +593,8 @@
     /* About Page */
 
 
-    .white-back-heading h1, .black-back-heading h1 {
+    .white-back-heading h1,
+    .black-back-heading h1 {
         font-size: 28px;
         font-weight: 500;
         margin-top: 10px;
@@ -618,7 +643,8 @@
     }
 
     .contact-map-section div:nth-child(2) {
-        height: 40vh;;
+        height: 40vh;
+        ;
     }
 
     /* Products Page */
@@ -626,6 +652,7 @@
     .products-nav a {
         width: 150px !important;
     }
+
     .products-grid {
         justify-content: space-around;
     }
@@ -633,6 +660,53 @@
     .product {
         width: 80%;
     }
+
+    .products-page-header {
+        margin-top: 15%;
+    }
+
+    /* Product Specific Page */
+
+
+    .ladder-product-img {
+        width: 80%;
+    }
+
+    .ladder-product-specs {
+        display: none;
+    }
+
+    .ladder-product-specs-mobile {
+        margin: 20px 0;
+    }
+
+
+    .ladder-product-specs-mobile>div {
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+        margin-bottom: 20px;
+    }
+
+    .ladder-product-specs-mobile>div h4 {
+        grid-column: 1/ span 1;
+        background-color: #333333;
+        padding: 8px 0 8px 10px;
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    .ladder-product-specs-mobile p {
+        grid-column: 2/ span 2;
+        padding: 15px 0 15px 15px;
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: #333333;
+        font-weight: 500;
+    }
+
+
 
 
 
@@ -647,7 +721,7 @@
     }
 
 
-    /* About Page */ 
+    /* About Page */
 
     .page-header img {
         width: 60%;
@@ -683,6 +757,7 @@
 @media screen and (max-height:800px) {
 
     .product-img {
-        height: 50vh;;
+        height: 50vh;
+        ;
     }
 }

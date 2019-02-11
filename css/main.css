@@ -1640,6 +1640,10 @@ footer a:hover,
     display: block;
 }
 
+.ladder-product-specs-mobile > div {
+    display: none;
+}
+
 .ladder-product-specs {
     display: flex;
     margin-top: 20px;
