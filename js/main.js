@@ -40,39 +40,22 @@ $(".overlay-dropdown-btn").click(function () {
 // PRODUCT PAGE
 
 // Change Active Tab
-$(".products-nav a").click(function () {
-  $(".products-nav a").removeClass("active-product");
-  $(this).addClass("active-product");
-});
-
-$("#ladder-tab").click(function () {
-  $(".products-section").fadeOut();
-  $(".ladder-products-section").fadeIn();
-  $(".products-page-header").css("background-image", "url(../images/section-headers/ladder-page-header.jpg)");
-  $(".products-page-header > img").attr("src", "../images/section-headers/ladders.png");
-
-});
-
-$("#trolley-tab").click(function () {
-  $(".products-section").fadeOut();
-  $(".trolley-products-section").fadeIn();
-  $(".products-page-header").css("background-image", "url(../images/section-headers/castor-page-header.jpg)");
-  $(".products-page-header > img").attr("src", "../images/section-headers/trolleys.png");
-});
 
 
-
-
-
-// filter
-$("#single-sided-label").click(function () {
+// Ladder Filters
+$("#single").click(function () {
   $(".product").fadeOut(1);
-  $(".single-sided").fadeIn(500);
+  $(".single").fadeIn(500);
 });
 
-$("#multi-purpose-label").click(function () {
+$("#double").click(function () {
   $(".product").fadeOut(1);
-  $(".multi-purpose").fadeIn(500);
+  $(".double").fadeIn(500);
+});
+
+$("#multi").click(function () {
+  $(".product").fadeOut(1);
+  $(".multi").fadeIn(500);
 });
 
 $("#extension").click(function () {
@@ -80,9 +63,9 @@ $("#extension").click(function () {
   $(".extension").fadeIn(500);
 });
 
-$("#lean-to").click(function () {
+$("#lean").click(function () {
   $(".product").fadeOut(1);
-  $(".lean-to").fadeIn(500);
+  $(".lean").fadeIn(500);
 });
 
 $(".clear-filter-button").click(function () {

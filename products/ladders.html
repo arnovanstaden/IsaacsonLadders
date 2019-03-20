@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Products</title>
+    <title>Ladders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -15,16 +15,17 @@
     <meta name="copyright" content="2019 by Isaacson Ladders" />
     <meta name="robots" content="index, follow">
     <meta name="description" content="Isaacson Ladders" />
-    <meta name="keywords" content="issacson ladders, ladder manufacturers south africa, ladder suppliers south africa, industrial duty ladders, a-frame ladders, step ladders, extension ladders, little magic ladder, dual purpose ladders, trolleys, castors" />
+    <meta name="keywords"
+        content="issacson ladders, ladder manufacturers south africa, ladder suppliers south africa, industrial duty ladders, a-frame ladders, step ladders, extension ladders, little magic ladder, dual purpose ladders, trolleys, castors" />
 
     <!-- Styling -->
-    <link href="vendors/font-awesome/css/all.css" rel="stylesheet">
+    <link href="../vendors/font-awesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/responsive.css" />
 
 </head>
 
-<body class="about-page-body">
+<body class="products-page-body">
 
     <!-- Navbar -->
 
@@ -95,32 +96,22 @@
                 <a href="../contact.html">CONTACT</a>
             </div>
         </div>
-    </div>   <!-- END NAV -->
+    </div> <!-- END NAV -->
 
 
     <div class="products-page-header">
         <img src="../images/section-headers/ladders.png" alt="Ladder Page Header">
     </div>
 
-    <div class="products-nav">
-        <a class="active-product" id="ladder-tab">
-            Ladders
-        </a>
-        <a id="castor-tab">
-            Castors
-        </a>
-
-        <a id="trolley-tab">
-            Trolleys
-        </a>
-        <a>
-            Product
+    <div class="products-back-button">
+        <a href="../../products.html">
+            <i class="fas fa-chevron-left"></i>All Products
         </a>
     </div>
 
 
     <!-- LADDERS Product Section -->
-    <section class="products-section ladder-products-section">
+    <section class="products-section">
         <div class="products-outer-grid">
 
             <div class="products-filter">
@@ -131,21 +122,25 @@
                     <h1>Product Type</h1>
                 </div>
                 <div class="filter-options">
-                    <label class="container" id="single-sided-label">Single Sided
+                    <label class="container" id="single">Single Sided
                         <input type="radio" name="radio">
                         <div class="checkmark">
                         </div>
-
+                    </label>
+                    <label class="container" id="double">Double Sided
+                        <input type="radio" name="radio">
+                        <div class="checkmark">
+                        </div>
                     </label>
                     <label class="container" id="extension">Extension
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container" id="lean-to">Lean-To
+                    <label class="container" id="lean">Lean-To
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container" id="multi-purpose-label">Multi-Purpose
+                    <label class="container" id="multi">Multi-Use
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
                     </label>
@@ -158,30 +153,59 @@
 
             <div class="products-grid">
 
-                <a class="product single-sided" id="ils" href="../products/ladders/ils-range.html">
+                <a class="product single" id="ils" href="./ladders/single-light.html">
                     <div class="product-img">
                     </div>
                     <div class="product-description">
-                        <h4>ILS Range</h4>
-                        <p>Single Sided A-Frame Light Duty Ladder</p>
+                        <h4>Single Sided / Light Duty</h4>
                     </div>
                 </a>
 
-                <a class="product single-sided" id="ilsh">
+                <a class="product single" id="ilsh" href="./ladders/single-medium.html">
                     <div class="product-img">
                     </div>
                     <div class="product-description">
-                        <h4>ILSH Range</h4>
-                        <p>Single Side A-Frame Heavy Duty Ladder</p>
+                        <h4>Single Sided / Medium Duty</h4>
                     </div>
                 </a>
 
-                <a class="product multi-purpose" id="ildl">
+                <a class="product single" id="ildl" href="./ladders/single-heavy.html">
                     <div class="product-img">
                     </div>
                     <div class="product-description">
-                        <h4>ILDL Range</h4>
-                        <p>Multi-purpose Ladder</p>
+                        <h4>Single Sided / Heavy Duty</h4>
+                    </div>
+                </a>
+
+                <a class="product double" id="ildl" href="./ladders/double-sided.html">
+                    <div class="product-img">
+                    </div>
+                    <div class="product-description">
+                        <h4>Double Sided</h4>
+                    </div>
+                </a>
+
+                <a class="product lean" id="ildl" href="./ladders/lean-to.html">
+                    <div class="product-img">
+                    </div>
+                    <div class="product-description">
+                        <h4>Lean-To</h4>
+                    </div>
+                </a>
+
+                <a class="product extension" id="ildl" href="./ladders/extension.html">
+                    <div class="product-img">
+                    </div>
+                    <div class="product-description">
+                        <h4>Extension</h4>
+                    </div>
+                </a>
+
+                <a class="product multi" id="ildl" href="./ladders/multi-use.html">
+                    <div class="product-img">
+                    </div>
+                    <div class="product-description">
+                        <h4>Multi-Use</h4>
                     </div>
                 </a>
 
@@ -263,7 +287,7 @@
 
     <footer>
         <div class="footer-row-3">
-            <img src="./images/icons/footer-logo.png" alt="">
+            <img src="../images/icons/footer-logo.png" alt="">
         </div>
 
         <div class="footer-line"></div>
@@ -289,8 +313,8 @@
     <!-- Scripts -->
 
 
-    <script src="./js/jquery.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

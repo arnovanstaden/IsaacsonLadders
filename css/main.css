@@ -645,67 +645,6 @@ a:visited {
     margin: 10px 0;
 }
 
-/* About Section */
-
-.landing-about-section {
-    background-image: url("../images/backgrounds/home-page/about-section.jpg");
-    background-position: center;
-    background-size: cover;
-    padding: 3% 0;
-    background-attachment: fixed;
-}
-
-.about-more-button {
-    margin: auto;
-    margin-top: 20px;
-}
-
-.landing-about-section p {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: "Montserrat";
-    text-align: center;
-    padding: 3% 12% 3% 12%;
-}
-
-.stat-grid {
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
-    padding: 3% 5%;
-    text-align: center;
-}
-
-.stat {
-    width: 25%;
-}
-
-.stat-name {
-    font-family: "Montserrat";
-    font-weight: 500;
-    color: #FFFFFF;
-    font-size: 24px;
-    padding-top: 10px;
-}
-
-.stat-number {
-    border: 2px solid #FFD200;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    margin-left: calc(50% - 50px);
-}
-
-.stat-number p {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "Montserrat";
-    font-weight: 600;
-    color: #FFFFFF;
-    font-size: 26px;
-}
 
 
 /* Extra Section */
@@ -1141,7 +1080,6 @@ footer a:hover,
 
 .about-page-header {
     background-image: url("../images/section-headers/about-page-header.jpg");
-
 }
 
 .about-page-body section {
@@ -1149,10 +1087,6 @@ footer a:hover,
     background-size: cover;
     background-position: center;
 
-}
-
-.about-stat-section {
-    background-image: url("../images/backgrounds/about-page/stat-section.jpg");
 }
 
 .about-history-section {
@@ -1282,6 +1216,29 @@ footer a:hover,
 
 
 
+
+
+/* ---------------------------------------------- */
+
+/* Sustainability Page */
+
+.sustain-page-header {
+    background-image: url("../images/section-headers/sustain-page-header.jpg");
+}
+
+
+
+/* ---------------------------------------------- */
+
+/* SAFETY Page */
+
+.safety-page-header {
+    background-image: url("../images/section-headers/safety-page-header.jpg");
+}
+
+
+
+
 /* ------------------------------------------------------------------------- */
 
 /* Products Page */
@@ -1313,46 +1270,11 @@ footer a:hover,
     background-image: url("../images/section-headers/ladder-page-header.jpg");
 }
 
-
-
-.products-nav {
-    display: grid;
-    width: 90%;
-    margin: 30px 5% 30px 5%;
-    grid-template-columns: repeat(4, 1fr);
-    text-align: center;
+.products-page-body .products-back-button a{
+    width: 150px
 }
 
-.products-nav>div {
-    width: 25%;
-    display: inline-block;
-}
 
-.products-nav a {
-    width: 200px !important;
-    text-align: center;
-    text-decoration: none;
-    color: #1A1A1A;
-    font-family: "Montserrat";
-    cursor: pointer;
-    border: #1A1A1A 3px solid;
-    font-weight: 600;
-    font-size: 22px;
-    border-radius: 15px;
-    padding: 5px 10px;
-    transition: 0.5s;
-    margin: auto;
-}
-
-.active-product {
-    background-color: #FFD200;
-    border: #FFD200 3px solid !important;
-}
-
-.products-nav a:hover {
-    background-color: #FFD200;
-    border: #FFD200 3px solid !important;
-}
 
 .products-outer-grid {
     display: grid;
@@ -1366,7 +1288,7 @@ footer a:hover,
 }
 
 .products-filter {
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .filter-heading h1 {
@@ -1451,13 +1373,13 @@ footer a:hover,
 .products-grid {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
     padding-left: 50px;
+    padding-top: 40px;
 }
 
 .product {
-    width: 25%;
+    width: 26%;
     cursor: pointer;
     transition: 0.5s;
     text-decoration: none;
@@ -1481,7 +1403,6 @@ footer a:hover,
     margin-left: 10px;
     font-weight: 600;
     display: inline-block;
-    border-bottom: 2px solid #1A1A1A;
     padding: 5px 0 1px 0;
     transition: 0.5s;
 }
@@ -1500,11 +1421,10 @@ footer a:hover,
     border: #FFD200 2px solid;
 }
 
-
-.product:hover .product-description h4 {
-    border-bottom: 2px solid #FFD200;
-    transform: scale(1.1);
+.product:hover {
+    transform: scale(1.05);
 }
+
 
 .clear-filter-button {
     text-align: center;
@@ -1610,24 +1530,18 @@ footer a:hover,
 }
 
 .ladder-product-name {
-    padding: 0 5%;
     font-family: "Montserrat";
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .ladder-product-name h1 {
-    font-size: 32px;
+    font-size: 34px;
     color: #1A1A1A;
-    padding: 5px;
     display: inline-block;
-    border-bottom: 2px solid #1A1A1A;
+    padding-bottom: 5px;
 }
 
-.ladder-product-name h4 {
-    font-size: 26px;
-    color: #333333;
-    padding: 5px;
-    font-weight: 400;
-}
 
 .ladder-product-grid {
     display: flex;
@@ -1637,7 +1551,7 @@ footer a:hover,
 }
 
 .ladder-product-img {
-    width: 30%;
+    width: 25%;
     height: 60vh;
     border: 2px solid #333333;
     border-radius: 20px;
@@ -1656,8 +1570,8 @@ footer a:hover,
 
 .ladder-product-details h3 {
     font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 26px;
     border-bottom: 2px solid #FFD200;
     padding-bottom: 3px;
     color: #333333;

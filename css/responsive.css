@@ -777,18 +777,3 @@
 
 }
 
-
-@media screen and (max-height:800px) {
-
-    .product-img {
-        height: 50vh;
-    }
-
-    .ladder-product-uses div:nth-child(1){
-        width: 30%;
-    }
-
-    .ladder-product-uses div:nth-child(1) img {
-        width: 90%;
-    }
-}

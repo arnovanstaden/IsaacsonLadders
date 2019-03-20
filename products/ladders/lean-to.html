@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ILS Range</title>
+    <title>Lean-To</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Meta -->
@@ -14,7 +14,8 @@
     <meta name="copyright" content="2019 by Isaacson Ladders" />
     <meta name="robots" content="index, follow">
     <meta name="description" content="Isaacson Ladders" />
-    <meta name="keywords" content="issacson ladders, ladder manufacturers south africa, ladder suppliers south africa, industrial duty ladders, a-frame ladders, step ladders, extension ladders, little magic ladder, dual purpose ladders, trolleys, castors" />
+    <meta name="keywords"
+        content="issacson ladders, ladder manufacturers south africa, ladder suppliers south africa, industrial duty ladders, a-frame ladders, step ladders, extension ladders, little magic ladder, dual purpose ladders, trolleys, castors" />
 
 
     <!-- Styling -->
@@ -32,21 +33,10 @@
         <div class="navbar-logo">
             <img src="../../images/icons/navbar-logo.png" alt="Logo for Navbar">
         </div>
-        <div class="nav-social">
-            <a href="https://web.facebook.com/Isaacson-Ladders-2221204114869435/" target="blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" target="blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
         <div class="nav-contact">
             <a href="tel:(0) 11 794 4456">
                 <div class="nav-contact-icons"><i class="fas fa-phone"></i></div>
-                <p> CALL US</p>
+                <p>CALL US</p>
             </a>
             <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank">
                 <div class="nav-contact-icons"><i class="fas fa-map-marker-alt"></i></div>
@@ -55,9 +45,26 @@
         </div>
         <div class="nav-menu">
             <a href="../../index.html">HOME</a>
-            <a href="../../about.html">ABOUT</a>
-            <a href="../../products.html">PRODUCTS</a>
-            <a href="../../quote.html">GET A QUOTE</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="../../about.html">ABOUT
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="../../about.html">About Us</a>
+                    <a href="../../about/sustainability.html">Sustainability</a>
+                    <a href="../../about/safety.html">Safety Use</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="../../products.html">PRODUCTS
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="../ladders.html">Ladders</a>
+                    <a href="../castors.html">Castors & Wheels</a>
+                    <a href="../trolleys.html">Trolleys</a>
+                </div>
+            </div>
             <a href="../../contact.html">CONTACT</a>
         </div>
 
@@ -72,35 +79,45 @@
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="./index.html">HOME</a>
-                <a href="./about.html">ABOUT</a>
-                <a href="./products.html">PRODUCTS</a>
-                <a href="./quote.html">GET A QUOTE</a>
-                <a href="./contact.html">CONTACT</a>
+                <a href="../../index.html">HOME</a>
+                <a class="overlay-dropdown-btn">ABOUT <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="../../about.html">About Us</a>
+                    <a href="../../about/sustainability.html">Sustainability</a>
+                    <a href="../../about/safety.html">Safety Use</a>
+                </div>
+                <a class="overlay-dropdown-btn">Products <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="../ladders.html">Ladders</a>
+                    <a href="../castors.html">Castors & Wheels</a>
+                    <a href="../trolleys.html">Trolleys</a>
+                </div>
+                <a href="../../products.html">PRODUCTS</a>
+                <a href="../../contact.html">CONTACT</a>
             </div>
         </div>
-    </div>
+    </div> <!-- END NAV -->
 
     <div class="products-page-header">
         <img src="../../images/section-headers/ladders.png" alt="Ladder Page Header">
     </div>
 
     <div class="products-back-button">
-        <a href="../../products.html">
-            <i class="fas fa-chevron-left"></i>Back to Products
+        <a href="../ladders.html">
+            <i class="fas fa-chevron-left"></i>Back to Ladders
         </a>
     </div>
 
     <section class="ladder-products">
-        <div class="ladder-product-name">
-            <h1>ILS RANGE</h1>
-            <h4>Single Sided A-Frame Light Duty Ladder</h4>
-        </div>
 
         <div class="ladder-product-grid">
             <div class="ladder-product-img" id="ils-img"></div>
             <div class="ladder-product-details">
-                <h3>Overview</h3>
+                <div class="ladder-product-name">
+                    <h1>Lean-To Ladder</h1>
+                </div>
+
+                <h3>Product Specifications</h3>
                 <ul>
                     <li><i class="fas fa-square"></i>Powder coated frame</li>
                     <li><i class="fas fa-square"></i>Non-slip ladder shoes</li>
@@ -110,12 +127,8 @@
                     <div>
                         <img src="../../images/products/ladders/ils/rated.png" alt="">
                     </div>
-                    <span class="ladder-uses-divider"></span>
-                    <div>
-                        <img src="../../images/products/ladders/ils/uses.png" alt="">
-                    </div>
                 </div>
-                <h3>Specifications</h3>
+                <h3>Product Range</h3>
                 <div class="ladder-product-specs">
                     <!-- Heading -->
                     <h4>Item No.</h4>
@@ -243,21 +256,8 @@
     <!-- Footer -->
 
     <footer>
-        <div class="footer-row-1">
-            <div class="footer-social">
-                <a href="https://web.facebook.com/Isaacson-Ladders-2221204114869435/" target="blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" target="blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-            <div class="footer-news">
-                <p>JOIN OUR NEWSLETTER</p>
-            </div>
+        <div class="footer-row-3">
+            <img src="../../images/icons/footer-logo.png" alt="">
         </div>
 
         <div class="footer-line"></div>
@@ -268,26 +268,15 @@
             <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank"><i class="fas fa-map-marker-alt"></i>FIND US</a>
         </div>
 
-        <div class="footer-line"></div>
-        <div class="footer-row-3">
-            <div class="footer-logo">
-                <img src="../../images/icons/footer-logo.png" alt="">
-            </div>
 
-            <div class="footer-menu">
-                <a href="../../index.html">HOME</a>
-                <a href="../../about.html">ABOUT</a>
-                <a href="../../products.html">PRODUCTS</a>
-                <a href="../../quote.html">GET A QUOTE</a>
-                <a href="../../contact.html">CONTACT</a>
-            </div>
-        </div>
+
         <div class="footer-line"></div>
         <div class="footer-row-4">
-                <p>Copyright &#x24B8 Isaacson Ladders - 2019</p>
-                <p>Powered by <a target="blank" href="http://www.webdacity.co.za">Webdacity</a></p>
+            <p>Copyright &#x24B8 Isaacson Ladders - 2019</p>
+            <p>Powered by <a target="blank" href="http://www.webdacity.co.za">Webdacity</a></p>
         </div>
     </footer>
+
 
 
 
