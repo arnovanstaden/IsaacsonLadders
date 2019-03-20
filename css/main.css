@@ -1125,7 +1125,7 @@ footer a:hover,
     border: #FFD200 2px solid;
 }
 
-.team-member >div {
+.team-member>div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -1270,7 +1270,7 @@ footer a:hover,
     background-image: url("../images/section-headers/ladder-page-header.jpg");
 }
 
-.products-page-body .products-back-button a{
+.products-page-body .products-back-button a {
     width: 150px
 }
 
@@ -1383,18 +1383,22 @@ footer a:hover,
     cursor: pointer;
     transition: 0.5s;
     text-decoration: none;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .product-img {
     height: 40vh;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     border: #333333 2px solid;
     border-radius: 20px;
     position: relative;
+    background-repeat: no-repeat;
 }
 
+.product-description {
+    text-align: center;
+}
 
 .product-description h4 {
     color: #1A1A1A;
@@ -1405,15 +1409,6 @@ footer a:hover,
     display: inline-block;
     padding: 5px 0 1px 0;
     transition: 0.5s;
-}
-
-.product-description p {
-    color: #333333;
-    font-family: "Montserrat";
-    font-size: 20px;
-    margin-left: 10px;
-    font-weight: 400;
-    padding: 5px 0;
 }
 
 
@@ -1485,41 +1480,6 @@ footer a:hover,
 
 
 /* Ladders Tab */
-
-
-
-#ils .product-img {
-    background-image: url("../images/products/ladders/ils/1.jpg");
-}
-
-#ilsh .product-img {
-    background-image: url("../images/products/ladders/ilsh/1.jpg");
-}
-
-#ildl .product-img {
-    background-image: url("../images/products/ladders/ildl/1.jpg");
-}
-
-/* Trolleys Tab */
-
-.trolley-products-section {
-    display: none;
-}
-
-#fn1 .product-img {
-    background-image: url("../images/products/trolleys/FN1.jpg");
-}
-
-#fn2 .product-img {
-    background-image: url("../images/products/trolleys/FN2.jpg");
-}
-
-#fn3 .product-img {
-    background-image: url("../images/products/trolleys/FN3.jpg");
-}
-
-
-
 
 /* Ladders Product Page */
 
@@ -1675,29 +1635,82 @@ footer a:hover,
 
 
 /* Trolley Product Page */
-.trolley-product-body .ladder-product-specs h4 {
-    width: 20%;
+
+.trolley-page-body .products-back-button a {
+    width: 150px;
 }
 
-.trolley-product-body .ladder-product-specs p {
-    width: 20%;
+.trolley-header {
+    background-image: url("../images/section-headers/trolley-page-header.jpg") !important;
 }
 
-#fn1-img {
-    background-image: url("../images/products/trolleys/FN1.jpg");
+.trolley-page-body .product {
+    width: 22%;
+}
+
+.trolley-page-body .products-grid {
+    padding: 2% 10%;
+}
+
+.trolley-product-specs {
+    padding: 30px 0 0 0;
+}
+
+.trolley-product-specs h2{
+ font-family: "Montserrat";
+ text-transform: uppercase;
+ margin: 10px 0;
+ 
+}
+
+.trolley-product-specs h2 span{
+    font-weight: 400;
+    margin-left: 10px;
+    color: #333333;
+    text-transform: lowercase;
+}
+
+.yellow-divider {
+    width: 10%;
+    height: 1px;
+    background-color: #FFD200
+}
+
+.model-number {
+    text-transform: uppercase !important;
+}
+
+#junior-folding  {
+    background-image: url("../images/products/trolleys/FNJ-Junior-folding-nose-trolley-2.jpg");
+}
+
+#medium-folding {
+    background-image: url("../images/products/trolleys/FN1-Medium-Folding-Nose.jpg");
+}
+
+#small-folding {
+    background-image: url("../images/products/trolleys/FN3-Small-Folding-Nose1.jpg");
+}
+
+#large-folding {
+    background-image: url("../images/products/trolleys/FN2-Large-Folding-Nose.jpg");
+}
+
+#brewery {
+    background-image: url("../images/products/trolleys/SAB10-Brewery-trolley-sab1.jpg");
+}
+
+#coke {
+    background-image: url("../images/products/trolleys/CC15-coke-trolley.jpg");
+}
+
+#platform {
+    background-image: url("../images/products/trolleys/LPL-large-platform-trolley.jpg");
+}
+
+#pallet {
+    background-image: url("../images/products/trolleys/1051.jpg");
 }
 
 
 
-
-
-
-/* ----------------------------------------------------- */
-
-/* Quote Page */
-
-
-.quote-page-header {
-    background-image: url("../images/section-headers/quote-page-header.jpg");
-
-}
