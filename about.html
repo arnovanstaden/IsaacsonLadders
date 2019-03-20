@@ -14,7 +14,8 @@
     <meta name="copyright" content="2019 by Isaacson Ladders" />
     <meta name="robots" content="index, follow">
     <meta name="description" content="Isaacson Ladders" />
-    <meta name="keywords" content="issacson ladders, ladder manufacturers south africa, ladder suppliers south africa, industrial duty ladders, a-frame ladders, step ladders, extension ladders, little magic ladder, dual purpose ladders, trolleys, castors" />
+    <meta name="keywords"
+        content="issacson ladders, ladder manufacturers south africa, ladder suppliers south africa, industrial duty ladders, a-frame ladders, step ladders, extension ladders, little magic ladder, dual purpose ladders, trolleys, castors" />
 
     <!-- Styling -->
     <link href="vendors/font-awesome/css/all.css" rel="stylesheet">
@@ -31,21 +32,10 @@
         <div class="navbar-logo">
             <img src="./images/icons/navbar-logo.png" alt="Logo for Navbar">
         </div>
-        <div class="nav-social">
-            <a href="https://web.facebook.com/Isaacson-Ladders-2221204114869435/" target="blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" target="blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
         <div class="nav-contact">
             <a href="tel:(0) 11 794 4456">
                 <div class="nav-contact-icons"><i class="fas fa-phone"></i></div>
-                <p> CALL US</p>
+                <p>CALL US</p>
             </a>
             <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank">
                 <div class="nav-contact-icons"><i class="fas fa-map-marker-alt"></i></div>
@@ -54,16 +44,33 @@
         </div>
         <div class="nav-menu">
             <a href="./index.html">HOME</a>
-            <a href="./about.html">ABOUT</a>
-            <a href="./products.html">PRODUCTS</a>
-            <a href="./quote.html">GET A QUOTE</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="./about.html">ABOUT
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="./about.html">About Us</a>
+                    <a href="./sustainability.html">Sustainability</a>
+                    <a href="./safety.html">Safety Use</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="./products.html">PRODUCTS
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="./products/ladders.html">Ladders</a>
+                    <a href="./products/castors.html">Castors & Wheels</a>
+                    <a href="./products/trolleys.html">Trolleys</a>
+                </div>
+            </div>
             <a href="./contact.html">CONTACT</a>
         </div>
 
         <div onclick="openNav()" class="mobile-nav-button">
             <a>
                 <i class="fas fa-bars"></i>
-            </a> 
+            </a>
         </div>
 
 
@@ -72,13 +79,23 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
                 <a href="./index.html">HOME</a>
-                <a href="./about.html">ABOUT</a>
+                <a class="overlay-dropdown-btn">ABOUT <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="./about.html">About Us</a>
+                    <a href="./sustainability.html">Sustainability</a>
+                    <a href="./safety.html">Safety Use</a>
+                </div>
+                <a class="overlay-dropdown-btn">Products <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="./products/ladders.html">Ladders</a>
+                    <a href="./products/castors.html">Castors & Wheels</a>
+                    <a href="./products/trolleys.html">Trolleys</a>
+                </div>
                 <a href="./products.html">PRODUCTS</a>
-                <a href="./quote.html">GET A QUOTE</a>
                 <a href="./contact.html">CONTACT</a>
             </div>
         </div>
-    </div>
+    </div>   <!-- END NAV -->
 
     <div class="page-header about-page-header">
         <img src="./images/section-headers/aboutus.png" alt="Contact Page Header">
@@ -147,44 +164,6 @@
         </div>
     </section>
 
-    <!-- Stat Section -->
-
-    <section class="about-stat-section">
-        <div class="stat-grid">
-            <div class="stat">
-                <div class="stat-number">
-                    <p>1234+</p>
-                </div>
-                <div class="stat-name">
-                    Ladders Sold
-                </div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">
-                    <p>1234+</p>
-                </div>
-                <div class="stat-name">
-                    Satisfied Customers
-                </div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">
-                    <p>1234+</p>
-                </div>
-                <div class="stat-name">
-                    Ladders Sold
-                </div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">
-                    <p>1234+</p>
-                </div>
-                <div class="stat-name">
-                    Ladders Sold
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- History Section -->
     <section class="about-history-section">
@@ -220,9 +199,8 @@
                 to you shortly.</p>
         </div>
         <div>
-            <div class="landing-more-button yellow-button"><a href="contact.html">Contact Us <i class="fas fa-caret-right"></i></a></div>
-            <p>or</p>
-            <div class="landing-more-button yellow-button"><a>Get a Quote <i class="fas fa-caret-right"></i></a></div>
+            <div class="landing-more-button yellow-button"><a href="contact.html">Contact Us <i
+                        class="fas fa-caret-right"></i></a></div>
         </div>
     </section>
 
@@ -235,30 +213,26 @@
         <div class="about-team-grid">
 
             <div class="team-member">
-                <div class="team-member-inner">
-                    <div>
-                        <h2>Andre Venter</h2>
-                        <h5>Managing <br> Director</h5>
-                    </div>
-
+                <div>
+                    <h2>Andre Venter</h2>
+                    <h5>Managing <br> Director</h5>
+                    <a href="mailto:andre@isaacsonladders.co.za">Andre<br>@isaacsonladders.co.za</a>
                 </div>
             </div>
 
             <div class="team-member">
-                <div class="team-member-inner">
-                    <div>
-                        <h2>Sarah Johnson</h2>
-                        <h5>Sales <br> Director</h5>
-                    </div>
+                <div>
+                    <h2>Jane van Aswegen</h2>
+                    <h5>Accounts <br> Manager</h5>
+                    <a href="mailto:accounts@isaacsonladders.co.za">Accounts<br>@isaacsonladders.co.za</a>
                 </div>
             </div>
 
             <div class="team-member">
-                <div class="team-member-inner">
-                    <div>
-                        <h2>John Johnson</h2>
-                        <h5>Marketing <br> Director</h5>
-                    </div>
+                <div>
+                    <h2>Bradley Antill</h2>
+                    <h5>Sales <br> Consultant</h5>
+                    <a href="mailto:bradley@isaacsonladders.co.za">Bradley<br>@isaacsonladders.co.za</a>
                 </div>
             </div>
 
@@ -269,21 +243,8 @@
     <!-- Footer -->
 
     <footer>
-        <div class="footer-row-1">
-            <div class="footer-social">
-                <a href="https://web.facebook.com/Isaacson-Ladders-2221204114869435/" target="blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" target="blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/isaacson-ladders-78927014b/" target="blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-            <div class="footer-news">
-                <p>JOIN OUR NEWSLETTER</p>
-            </div>
+        <div class="footer-row-3">
+            <img src="./images/icons/footer-logo.png" alt="">
         </div>
 
         <div class="footer-line"></div>
@@ -294,26 +255,15 @@
             <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank"><i class="fas fa-map-marker-alt"></i>FIND US</a>
         </div>
 
-        <div class="footer-line"></div>
-        <div class="footer-row-3">
-            <div class="footer-logo">
-                <img src="./images/icons/footer-logo.png" alt="">
-            </div>
 
-            <div class="footer-menu">
-                <a href="./index.html">HOME</a>
-                <a href="./about.html">ABOUT</a>
-                <a href="./products.html">PRODUCTS</a>
-                <a href="./quote.html">GET A QUOTE</a>
-                <a href="./contact.html">CONTACT</a>
-            </div>
-        </div>
+
         <div class="footer-line"></div>
         <div class="footer-row-4">
-                <p>Copyright &#x24B8 Isaacson Ladders - 2019</p>
-                <p>Powered by <a target="blank" href="http://www.webdacity.co.za">Webdacity</a></p>
+            <p>Copyright &#x24B8 Isaacson Ladders - 2019</p>
+            <p>Powered by <a target="blank" href="http://www.webdacity.co.za">Webdacity</a></p>
         </div>
     </footer>
+
 
 
 

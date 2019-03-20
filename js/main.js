@@ -29,38 +29,11 @@ function closeNav() {
 }
 
 
-// ANIMATIONS
+// Navbar Overlay Dropdown
 
-// Home Screen Slider
-
-// var counter = 0;
-
-// function homeSlider() {
-//   switch (counter) {
-//     case 0:
-//       $(".landing-section").css("background-image", "url(../images/backgrounds/home-page/landing-section.jpg)");
-//       counter++;
-//       break;
-//     case 1:
-//       $(".landing-section").css("background-image", "url(../images/backgrounds/home-page/landing-section-2.jpg)");
-//       counter = 0;
-//       break;
-//   }
-// }
-
-// setInterval(homeSlider, 2000);
-// Smooth Scrolling
-
-$(".products-arrow").click(function () {
-  document.querySelector('.landing-products-section').scrollIntoView({
-    behavior: 'smooth'
-  });
+$(".overlay-dropdown-btn").click(function () {
+    $(this).next().toggle("500");
 });
-
-
-
-
-
 
 
 // ------------------------------------------
