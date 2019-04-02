@@ -228,7 +228,22 @@
         </div>
     </section>
 
-
+    <div class="quote-modal">
+        <i class="fal fa-times" onclick="closeQuoteModal()"></i>
+        <h1>Get a Quote</h1>
+        <h3></h3>
+        <form class="gform"
+            action="https://script.google.com/macros/s/AKfycbywZPwg2jjrimLymlriNiv-EwHJomdVzp00lpa79O4oVyUXWG3j/exec"
+            method="POST">
+            <input type="text" name="Product" class="quote-product-name" value="">
+            <input type="text" placeholder="Name*" name="Name" required>
+            <input type="text" placeholder="Email*" name="Email" required>
+            <input type="text" placeholder="Phone" name="Phone">
+            <textarea name="Message" id="" placeholder="Message" rows="3"></textarea>
+            <input type="submit" class="submit-button">
+        </form>
+        <h2>Thank You for your interest. We'll get back to you as soon as possible</h2>
+    </div>
 
 
 
@@ -264,6 +279,8 @@
 
 
     <script src="../../js/jquery.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="../../vendors/form-submission-handler.js"></script>
+
     <script src="../../js/main.js"></script>
 </body>
 

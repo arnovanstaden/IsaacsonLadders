@@ -29,6 +29,10 @@ a:visited {
     text-decoration: none !important;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 /* General */
 
 /* Section Headers */
@@ -1754,7 +1758,8 @@ footer a:hover,
 
 .castors-grid .product-img {
     height: 30vh;
-    background-position: bottom;
+    background-position: center;
+    background-size: cover;
 }
 
 .castors-grid .product:hover {
@@ -1864,4 +1869,97 @@ footer a:hover,
 
 .castor-info > div {
     margin-top: 20px;
+}
+
+
+
+/* QUOTE MODAL */
+
+.quote-modal {
+    background-color: #1A1A1A;
+    position: fixed;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    padding: 2%;
+    align-self: center;
+    display: none;
+}
+
+.quote-modal i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+}
+
+.quote-modal i:hover {
+    transform: scale(1.2);
+}
+
+.quote-modal input, .quote-modal textarea {
+    background-color: transparent;
+    border: 2px solid #FFD200;
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 80%;
+    margin: 10px 10%;
+    text-align: center;
+}
+
+.quote-modal form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.quote-modal .submit-button {
+    width: 40%;
+    border:  2px solid #FFD200 !important;
+    color: #FFD200 !important;
+    margin: 10px auto;
+}
+
+.quote-modal .submit-button:hover {
+    color: #1A1A1A !important;
+}
+
+.quote-modal h1 {
+    font-family: "Montserrat";
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.quote-modal h3 {
+    font-family: "Montserrat";
+    color: #FFD200;
+    text-align: center;
+    font-weight: 400;
+    margin: 15px;
+    font-size: 22px;
+}
+
+.quote-modal h2 {
+    font-family: "Montserrat";
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin: 15px;
+    font-size: 22px;
+    display: none;
+}
+
+.quote-product-name{
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important
 }

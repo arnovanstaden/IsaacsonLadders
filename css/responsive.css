@@ -519,6 +519,13 @@
     }
 
 
+    /* Quote Form */
+
+    .quote-modal {
+        width: 80vw;
+    }
+
+
 
 }
 

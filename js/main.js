@@ -87,3 +87,22 @@ $(".submit-button").click(function () {
 $(".form-modal-close").click(function () {
   window.location.replace("./contact.html");
 });
+
+
+// Quote Modal
+
+function openQuoteModal() {
+  $(".quote-modal").fadeIn();
+  var productName = $(".ladder-product-name").text();
+  $(".quote-modal h3").html(productName);
+  $(".quote-product-name").val(productName);
+}
+
+$(".quote-modal .submit-button").click(function() {
+  $(".quote-modal form").fadeOut();
+  $(".quote-modal h2").fadeIn();
+});
+
+function closeQuoteModal() {
+  $(".quote-modal").fadeOut();
+}
