@@ -801,7 +801,10 @@
         width: 85%;
     }
 
-
+    .quote-modal {
+        width: 90vw;
+        padding: 5% 3%;
+    }
 
 
 
