@@ -1483,6 +1483,34 @@ footer a:hover,
 
 /* Ladders Product Page */
 
+.ladder-products {
+    padding-bottom: 3%;
+}
+
+.quote-button {
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-size: 20px;
+    border: #FFD200 2px solid;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: #1A1A1A;
+    font-weight: 500;
+    transition: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    width: 160px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.quote-button:hover {
+    transform: scale(1.05);
+    color: #1A1A1A;
+    background-color: #FFD200;
+    font-weight: 600;
+}
+
 
 
 .ladder-product-body .products-page-header {
@@ -1505,7 +1533,7 @@ footer a:hover,
 
 .ladder-product-grid {
     display: flex;
-    padding: 30px 2% 3% 5%;
+    padding: 30px 2% 1% 5%;
     ;
     align-items: flex-start;
 }
@@ -1517,7 +1545,8 @@ footer a:hover,
     border-radius: 20px;
     margin-right: 5%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #ils-img {
@@ -1713,4 +1742,126 @@ footer a:hover,
 }
 
 
+/* Trolley Product Page */
 
+.trolley-page-body .products-back-button a {
+    width: 150px;
+}
+
+.castors-header {
+    background-image: url("../images/section-headers/castor-page-header.jpg") !important;
+}
+
+.castors-grid .product-img {
+    height: 30vh;
+    background-position: bottom;
+}
+
+.castors-grid .product:hover {
+    transform: none;
+    border: none;
+   cursor: default;
+}
+
+.castors-grid .product:hover .product-img {
+    border: 2px solid #1A1A1A;;
+}
+
+#black-nylon {
+    background-image: url("../images/products/castors/black-nylon.jpg");
+}
+
+#grey-nylon {
+    background-image: url("../images/products/castors/grey-nylon.jpg");
+}
+
+#white-nylon {
+    background-image: url("../images/products/castors/white-nylon.jpg");
+}
+
+#nylon-twin {
+    background-image: url("../images/products/castors/Nylon-twin-wheel-brake-plate-fitting-fitted-200x200.jpg");
+}
+
+#nylon-scaffold {
+    background-image: url("../images/products/castors/nylon-scaffold.jpg");
+}
+
+#nylon-poly {
+    background-image: url("../images/products/castors/poly-nylon.jpg");
+}
+
+#black-rubber {
+    background-image: url("../images/products/castors/black-rubber.jpg");
+}
+
+#blue-rubber {
+    background-image: url("../images/products/castors/blue-rubber.jpg");
+}
+
+#grey-rubber {
+    background-image: url("../images/products/castors/grey-rubber.jpg");
+}
+
+#solid-rubber {
+    background-image: url("../images/products/castors/solid-rubber.jpg");
+}
+
+#poly{
+    background-image: url("../images/products/castors/Polyurethane.jpg");
+}
+
+#super-elastic {
+    background-image: url("../images/products/castors/super-elastic.jpg");
+}
+
+#cast-iron{
+    background-image: url("../images/products/castors/cast-iron-swivel.jpg");
+}
+
+#thermo-plastic{
+    background-image: url("../images/products/castors/thermo-plastic.jpg");
+}
+
+#v-grooved{
+    background-image: url("../images/products/castors/v-grooved.jpg");
+}
+
+#lawnmower {
+    background-image: url("../images/products/castors/lawnmower.jpg");
+}
+
+
+
+.castor-info {
+    background-color: #1A1A1A;
+    width: 80%;
+    margin: 30px 10%;
+    text-align: center;
+    padding: 20px 2%;
+    border-radius: 20px;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 22px;
+}
+
+.castor-info a {
+    border: #FFD200 1px solid;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.castor-info a:hover {
+    background-color: #FFD200;
+    color: #1A1A1A;
+    cursor: pointer;
+    font-size: 500;
+}
+
+.castor-info > div {
+    margin-top: 20px;
+}

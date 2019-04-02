@@ -290,11 +290,20 @@
 
     /*  */
 
+    .trolley-page-body .product {
+        width: 30%;
+    }
+
 }
 
 
 
 @media screen and (max-width:768px) {
+
+    .trolley-page-body .product {
+        width: 40%;
+    }
+
 
     /* Contact Page */
 
@@ -721,6 +730,9 @@
         width: 80%;
     }
 
+    .trolley-page-body .product {
+        width: 70%;
+    }
 
 
 
@@ -773,6 +785,13 @@
     .footer-row-3 img {
         width: 65%;
     }
+
+    .trolley-page-body .product {
+        width: 85%;
+    }
+
+
+
 
 
 }
