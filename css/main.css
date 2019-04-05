@@ -153,7 +153,7 @@ input:focus {
 }
 
 .nav-contact {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -226,10 +226,12 @@ input:focus {
 }
 
 .nav-menu {
-    width: 50%;
+    width: 60%;
     float: right;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
 
 .nav-menu a {
@@ -1243,6 +1245,41 @@ footer a:hover,
 .safety-page-header {
     background-image: url("../images/section-headers/safety-page-header.jpg");
 }
+
+
+.safety-info {
+    padding: 2% 10%;
+}
+
+.safety-info h2{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 26px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+.safety-info:nth-child(2) p{
+margin-bottom: 30px;
+}
+
+.safety-info h3{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 22px;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.safety-info ul li, .safety-info p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    color: #1A1A1A;
+    margin-bottom: 5px;
+}
+
 
 
 
