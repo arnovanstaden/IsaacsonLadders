@@ -29,7 +29,8 @@ a:visited {
     text-decoration: none !important;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
 }
 
@@ -1090,7 +1091,6 @@ footer a:hover,
     padding-top: 2%;
     background-size: cover;
     background-position: center;
-
 }
 
 .about-history-section {
@@ -1228,6 +1228,10 @@ footer a:hover,
 
 .sustain-page-header {
     background-image: url("../images/section-headers/sustain-page-header.jpg");
+}
+
+.sustain-page-body .about-history-section {
+    padding: 5% 0;
 }
 
 
@@ -1377,7 +1381,7 @@ footer a:hover,
 .products-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 50px;
     padding-top: 40px;
 }
@@ -1495,7 +1499,7 @@ footer a:hover,
     font-family: "Montserrat";
     text-decoration: none;
     font-size: 20px;
-    border: #FFD200 2px solid;
+    background-color: #FFD200;
     padding: 5px 30px;
     border-radius: 20px;
     color: #1A1A1A;
@@ -1506,12 +1510,13 @@ footer a:hover,
     width: 160px;
     position: relative;
     margin-top: 20px;
+    border: 2px solid #FFD200;
 }
 
 .quote-button:hover {
     transform: scale(1.05);
-    color: #1A1A1A;
-    background-color: #FFD200;
+    color: #FFD200;
+    background-color: #1A1A1A;
     font-weight: 600;
 }
 
@@ -1689,14 +1694,14 @@ footer a:hover,
     padding: 30px 0 0 0;
 }
 
-.trolley-product-specs h2{
- font-family: "Montserrat";
- text-transform: uppercase;
- margin: 10px 0;
- 
+.trolley-product-specs h2 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    margin: 10px 0;
+
 }
 
-.trolley-product-specs h2 span{
+.trolley-product-specs h2 span {
     font-weight: 400;
     margin-left: 10px;
     color: #333333;
@@ -1713,7 +1718,7 @@ footer a:hover,
     text-transform: uppercase !important;
 }
 
-#junior-folding  {
+#junior-folding {
     background-image: url("../images/products/trolleys/FNJ-Junior-folding-nose-trolley-2.jpg");
 }
 
@@ -1765,11 +1770,12 @@ footer a:hover,
 .castors-grid .product:hover {
     transform: none;
     border: none;
-   cursor: default;
+    cursor: default;
 }
 
 .castors-grid .product:hover .product-img {
-    border: 2px solid #1A1A1A;;
+    border: 2px solid #1A1A1A;
+    ;
 }
 
 #black-nylon {
@@ -1812,7 +1818,7 @@ footer a:hover,
     background-image: url("../images/products/castors/solid-rubber.jpg");
 }
 
-#poly{
+#poly {
     background-image: url("../images/products/castors/Polyurethane.jpg");
 }
 
@@ -1820,15 +1826,15 @@ footer a:hover,
     background-image: url("../images/products/castors/super-elastic.jpg");
 }
 
-#cast-iron{
+#cast-iron {
     background-image: url("../images/products/castors/cast-iron-swivel.jpg");
 }
 
-#thermo-plastic{
+#thermo-plastic {
     background-image: url("../images/products/castors/thermo-plastic.jpg");
 }
 
-#v-grooved{
+#v-grooved {
     background-image: url("../images/products/castors/v-grooved.jpg");
 }
 
@@ -1867,7 +1873,7 @@ footer a:hover,
     font-size: 500;
 }
 
-.castor-info > div {
+.castor-info>div {
     margin-top: 20px;
 }
 
@@ -1900,7 +1906,8 @@ footer a:hover,
     transform: scale(1.2);
 }
 
-.quote-modal input, .quote-modal textarea {
+.quote-modal input,
+.quote-modal textarea {
     background-color: transparent;
     border: 2px solid #FFD200;
     border-radius: 20px;
@@ -1922,7 +1929,7 @@ footer a:hover,
 
 .quote-modal .submit-button {
     width: 40%;
-    border:  2px solid #FFD200 !important;
+    border: 2px solid #FFD200 !important;
     color: #FFD200 !important;
     margin: 10px auto;
 }
@@ -1957,7 +1964,7 @@ footer a:hover,
     display: none;
 }
 
-.quote-product-name{
+.quote-product-name {
     visibility: hidden !important;
     height: 0 !important;
     padding: 0 !important;

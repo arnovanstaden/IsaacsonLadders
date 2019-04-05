@@ -58,9 +58,9 @@ $("#multi").click(function () {
   $(".multi").fadeIn(500);
 });
 
-$("#extension").click(function () {
+$("#push-up").click(function () {
   $(".product").fadeOut(1);
-  $(".extension").fadeIn(500);
+  $(".push-up").fadeIn(500);
 });
 
 $("#lean").click(function () {
