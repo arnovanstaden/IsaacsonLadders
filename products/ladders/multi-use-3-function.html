@@ -30,73 +30,73 @@
     <!-- Navbar -->
 
     <div class="navbar" id="navbar">
-            <div class="navbar-logo">
-                <img src="../../images/icons/navbar-logo.png" alt="Logo for Navbar">
-            </div>
-            <div class="nav-contact">
-                <a href="tel:(0) 11 794 4456">
-                    <div class="nav-contact-icons"><i class="fas fa-phone"></i></div>
-                    <p>CALL US</p>
+        <div class="navbar-logo">
+            <img src="../../images/icons/navbar-logo.png" alt="Logo for Navbar">
+        </div>
+        <div class="nav-contact">
+            <a href="tel:(0) 11 794 4456">
+                <div class="nav-contact-icons"><i class="fas fa-phone"></i></div>
+                <p>CALL US</p>
+            </a>
+            <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank">
+                <div class="nav-contact-icons"><i class="fas fa-map-marker-alt"></i></div>
+                <p>FIND US</p>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <a href="../../index.html">HOME</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="../../about.html">ABOUT
+                    <i class="fa fa-caret-down"></i>
                 </a>
-                <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank">
-                    <div class="nav-contact-icons"><i class="fas fa-map-marker-alt"></i></div>
-                    <p>FIND US</p>
-                </a>
+                <div class="dropdown-content">
+                    <a href="../../about.html">About Us</a>
+                    <a href="../../about/sustainability.html">Sustainability</a>
+                </div>
             </div>
-            <div class="nav-menu">
+            <div class="dropdown">
+                <a class="dropbtn" href="../../products.html">PRODUCTS
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="../ladders.html">Ladders</a>
+                    <a href="../castors.html">Castors & Wheels</a>
+                    <a href="../trolleys.html">Trolleys</a>
+                </div>
+            </div>
+            <a href="../../safety.html">Safety & <br> Information</a>
+            <a href="../../contact.html">CONTACT</a>
+        </div>
+
+        <div onclick="openNav()" class="mobile-nav-button">
+            <a>
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+
+
+        <!-- Mobile Nav -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
                 <a href="../../index.html">HOME</a>
-                <div class="dropdown">
-                    <a class="dropbtn" href="../../about.html">ABOUT
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../../about.html">About Us</a>
-                        <a href="../../about/sustainability.html">Sustainability</a>
-                    </div>
+                <a class="overlay-dropdown-btn">ABOUT <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="../../about.html">About Us</a>
+                    <a href="../../about/sustainability.html">Sustainability</a>
+
                 </div>
-                <div class="dropdown">
-                    <a class="dropbtn" href="../../products.html">PRODUCTS
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../ladders.html">Ladders</a>
-                        <a href="../castors.html">Castors & Wheels</a>
-                        <a href="../trolleys.html">Trolleys</a>
-                    </div>
+                <a class="overlay-dropdown-btn">Products <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="../ladders.html">Ladders</a>
+                    <a href="../castors.html">Castors & Wheels</a>
+                    <a href="../trolleys.html">Trolleys</a>
                 </div>
-                <a href="../../safety.html">Safety & <br> Information</a>
                 <a href="../../contact.html">CONTACT</a>
+                <a href="../../safety.html">Safety & Information</a>
             </div>
-    
-            <div onclick="openNav()" class="mobile-nav-button">
-                <a>
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-    
-    
-            <!-- Mobile Nav -->
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="../../index.html">HOME</a>
-                    <a class="overlay-dropdown-btn">ABOUT <i class="fa fa-caret-down"></i></a>
-                    <div class="overlay-dropdown">
-                        <a href="../../about.html">About Us</a>
-                        <a href="../../about/sustainability.html">Sustainability</a>
-    
-                    </div>
-                    <a class="overlay-dropdown-btn">Products <i class="fa fa-caret-down"></i></a>
-                    <div class="overlay-dropdown">
-                        <a href="../ladders.html">Ladders</a>
-                        <a href="../castors.html">Castors & Wheels</a>
-                        <a href="../trolleys.html">Trolleys</a>
-                    </div>
-                    <a href="../../contact.html">CONTACT</a>
-                    <a href="../../safety.html">Safety & Information</a>
-                </div>
-            </div>
-        </div> <!-- END NAV -->
+        </div>
+    </div> <!-- END NAV -->
 
     <div class="products-page-header">
         <img src="../../images/section-headers/ladders.png" alt="Ladder Page Header">
@@ -117,9 +117,18 @@
                 </div>
                 <h3>Product Specifications</h3>
                 <ul>
-                    <li><i class="fas fa-square"></i>Powder coated frame</li>
-                    <li><i class="fas fa-square"></i>Non-slip ladder shoes</li>
-                    <li><i class="fas fa-square"></i>Extra-wide steps - Comfortable foot resting</li>
+                    <li><i class="fas fa-square"></i>Electroplated mild steel locking system</li>
+                    <li><i class="fas fa-square"></i>Anti-slip feet</li>
+                    <li><i class="fas fa-square"></i>Light-weight design</li>
+                    <li><i class="fas fa-square"></i>Stabilising bottom bar (added safety)</li>
+                    <li><i class="fas fa-square"></i>Safe working load 115 kg</li>
+                    <li><i class="fas fa-square"></i>Maximum static load rating (MSVL) - 135 kg</li>
+                    <li><i class="fas fa-square"></i>Step Raise: 25 cm</li>
+                    <li><i class="fas fa-square"></i>Non-slip profiled rungs (3.0 cm X 3.0 cm)</li>
+                    <li><i class="fas fa-square"></i>Rust proof</li>
+                    <li><i class="fas fa-square"></i>Strong designed to ensure prolonged safety</li>
+                    <li><i class="fas fa-square"></i>6-months manufacturer’s guarantee</li>
+
                 </ul>
                 <div class="ladder-product-uses">
                     <div>
@@ -127,50 +136,63 @@
                     </div>
                 </div>
                 <h3>Product Range</h3>
-                <div class="ladder-product-specs">
+                <div class="ladder-product-specs ladder-5-specs">
+
                     <!-- Heading -->
                     <h4>Item No.</h4>
                     <span class="white-divider"></span>
+                    <h4>Description</h4>
+                    <span class="white-divider"></span>
                     <h4>No. of Steps</h4>
                     <span class="white-divider"></span>
-                    <h4>Step Size</h4>
-                    <span class="white-divider"></span>
-                    <h4>Height</h4>
+                    <h4>Height (Closed / Open)</h4>
                     <span class="white-divider"></span>
                     <h4>Weight</h4>
 
-                    <!-- Prod. 1 -->
-                    <p>ILS004</p>
-                    <span class="grey-divider"></span>
-                    <p>4 Single Sided</p>
-                    <span class="grey-divider"></span>
-                    <p>300mm</p>
-                    <span class="grey-divider"></span>
-                    <p>1.2m</p>
-                    <span class="grey-divider"></span>
-                    <p>2kg</p>
+                    <!-- Products -->
 
-                    <!-- Prod. 2 -->
-                    <p>ILS006</p>
+                    <p>ILEX206</p>
                     <span class="grey-divider"></span>
-                    <p>6 Single Sided</p>
+                    <p>Extension Ladder (3-in-1-function)</p>
                     <span class="grey-divider"></span>
-                    <p>300mm</p>
+                    <p>2 x 6 </p>
                     <span class="grey-divider"></span>
-                    <p>1.8m</p>
+                    <p>1.65 m / 2.60 m</p>
                     <span class="grey-divider"></span>
-                    <p>3kg</p>
+                    <p> -</p>
 
-                    <!-- Prod. 3 -->
-                    <p>ILS008</p>
+                    <p>ILEX207</p>
                     <span class="grey-divider"></span>
-                    <p>8 Single Sided</p>
+                    <p>Extension Ladder (3-in-1-function)</p>
                     <span class="grey-divider"></span>
-                    <p>300mm</p>
+                    <p>2 x 7 </p>
                     <span class="grey-divider"></span>
-                    <p>2.4m</p>
+                    <p>1.96 m / 3.32 m</p>
                     <span class="grey-divider"></span>
-                    <p>3.6kg</p>
+                    <p> -</p>
+
+                    <p>ILEX208</p>
+                    <span class="grey-divider"></span>
+                    <p>Extension Ladder (3-in-1-function)</p>
+                    <span class="grey-divider"></span>
+                    <p>2 X 8 </p>
+                    <span class="grey-divider"></span>
+                    <p>2.26 m / 3.92 m</p>
+                    <span class="grey-divider"></span>
+                    <p> -</p>
+
+                    <p>ILEX210</p>
+                    <span class="grey-divider"></span>
+                    <p>Extension Ladder (3-in-1-function)</p>
+                    <span class="grey-divider"></span>
+                    <p>2 x 10</p>
+                    <span class="grey-divider"></span>
+                    <p> 2.80 m / 5.00 m</p>
+                    <span class="grey-divider"></span>
+                    <p> 9.3 kg</p>
+
+
+
                 </div>
 
                 <div class="ladder-product-specs-mobile">
@@ -179,46 +201,57 @@
 
                     <div>
                         <h4>Item No.</h4>
-                        <p>ILS004</p>
-                        <h4>No. of Steps</h4>
-                        <p>4 Single Sided</p>
-                        <h4>Step Size</h4>
-                        <p>300mm</p>
-                        <h4>Height</h4>
-                        <p>1.2m</p>
+                        <p>ILEX206</p>
+                        <h4>Description</h4>
+                        <p>Extension Ladder (3-in-1-function)</p>
+                        <h4>no. of Steps</h4>
+                        <p>2 x 6 </p>
+                        <h4>Height (Closed / Open)</h4>
+                        <p>1.65 m / 2.60 m</p>
                         <h4>Weight</h4>
-                        <p>2kg</p>
+                        <p> -</p>
                     </div>
-
-                    <!-- ILS006 -->
 
                     <div>
                         <h4>Item No.</h4>
-                        <p>ILS006</p>
-                        <h4>No. of Steps</h4>
-                        <p>6 Single Sided</p>
-                        <h4>Step Size</h4>
-                        <p>300mm</p>
-                        <h4>Height</h4>
-                        <p>1.8m</p>
+                        <p>ILEX207</p>
+                        <h4>Description</h4>
+                        <p>Extension Ladder (3-in-1-function)</p>
+                        <h4>no. of Steps</h4>
+                        <p>2 x 7 </p>
+                        <h4>Height (Closed / Open)</h4>
+                        <p>1.96 m / 3.32 m</p>
                         <h4>Weight</h4>
-                        <p>3kg</p>
+                        <p> -</p>
                     </div>
-
-                    <!-- ILS008 -->
 
                     <div>
                         <h4>Item No.</h4>
-                        <p>ILS004</p>
-                        <h4>No. of Steps</h4>
-                        <p>8 Single Sided</p>
-                        <h4>Step Size</h4>
-                        <p>300mm</p>
-                        <h4>Height</h4>
-                        <p>2.4m</p>
+                        <p>ILEX208</p>
+                        <h4>Description</h4>
+                        <p>Extension Ladder (3-in-1-function)</p>
+                        <h4>no. of Steps</h4>
+                        <p>2 X 8 </p>
+                        <h4>Height (Closed / Open)</h4>
+                        <p>2.26 m / 3.92 m</p>
                         <h4>Weight</h4>
-                        <p>3.6kg</p>
+                        <p> -</p>
                     </div>
+
+                    <div>
+                        <h4>Item No.</h4>
+                        <p>ILEX210</p>
+                        <h4>Description</h4>
+                        <p>Extension Ladder (3-in-1-function)</p>
+                        <h4>no. of Steps</h4>
+                        <p>2 x 10</p>
+                        <h4>Height (Closed / Open)</h4>
+                        <p> 2.80 m / 5.00 m</p>
+                        <h4>Weight</h4>
+                        <p> 9.3 kg</p>
+                    </div>
+
+
                 </div>
                 <div class="quote-button" onclick="openQuoteModal()">
                     <a>Make an Enquiry</a>

@@ -1683,7 +1683,11 @@ margin-bottom: 30px;
     font-family: "Montserrat";
     color: #ffffff;
     font-weight: 500;
-    width: 24%;
+    width: 22%;
+}
+
+.ladder-5-specs h4{
+    width: 18%;
 }
 
 .ladder-product-specs .white-divider {
@@ -1705,7 +1709,11 @@ margin-bottom: 30px;
     color: #333333;
     ;
     font-weight: 500;
-    width: 24%;
+    width: 22%;
+}
+
+.ladder-5-specs p {
+    width: 18%;
 }
 
 
