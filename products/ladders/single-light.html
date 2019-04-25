@@ -30,73 +30,73 @@
     <!-- Navbar -->
 
     <div class="navbar" id="navbar">
-            <div class="navbar-logo">
-                <img src="../../images/icons/navbar-logo.png" alt="Logo for Navbar">
-            </div>
-            <div class="nav-contact">
-                <a href="tel:(0) 11 794 4456">
-                    <div class="nav-contact-icons"><i class="fas fa-phone"></i></div>
-                    <p>CALL US</p>
+        <div class="navbar-logo">
+            <img src="../../images/icons/navbar-logo.png" alt="Logo for Navbar">
+        </div>
+        <div class="nav-contact">
+            <a href="tel:(0) 11 794 4456">
+                <div class="nav-contact-icons"><i class="fas fa-phone"></i></div>
+                <p>CALL US</p>
+            </a>
+            <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank">
+                <div class="nav-contact-icons"><i class="fas fa-map-marker-alt"></i></div>
+                <p>FIND US</p>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <a href="../../index.html">HOME</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="../../about.html">ABOUT
+                    <i class="fa fa-caret-down"></i>
                 </a>
-                <a href="https://goo.gl/maps/dVc3dhLdewL2" target="blank">
-                    <div class="nav-contact-icons"><i class="fas fa-map-marker-alt"></i></div>
-                    <p>FIND US</p>
-                </a>
+                <div class="dropdown-content">
+                    <a href="../../about.html">About Us</a>
+                    <a href="../../about/sustainability.html">Sustainability</a>
+                </div>
             </div>
-            <div class="nav-menu">
+            <div class="dropdown">
+                <a class="dropbtn" href="../../products.html">PRODUCTS
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="../ladders.html">Ladders</a>
+                    <a href="../castors.html">Castors & Wheels</a>
+                    <a href="../trolleys.html">Trolleys</a>
+                </div>
+            </div>
+            <a href="../../safety.html">Safety & <br> Information</a>
+            <a href="../../contact.html">CONTACT</a>
+        </div>
+
+        <div onclick="openNav()" class="mobile-nav-button">
+            <a>
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+
+
+        <!-- Mobile Nav -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
                 <a href="../../index.html">HOME</a>
-                <div class="dropdown">
-                    <a class="dropbtn" href="../../about.html">ABOUT
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../../about.html">About Us</a>
-                        <a href="../../about/sustainability.html">Sustainability</a>
-                    </div>
+                <a class="overlay-dropdown-btn">ABOUT <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="../../about.html">About Us</a>
+                    <a href="../../about/sustainability.html">Sustainability</a>
+
                 </div>
-                <div class="dropdown">
-                    <a class="dropbtn" href="../../products.html">PRODUCTS
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../ladders.html">Ladders</a>
-                        <a href="../castors.html">Castors & Wheels</a>
-                        <a href="../trolleys.html">Trolleys</a>
-                    </div>
+                <a class="overlay-dropdown-btn">Products <i class="fa fa-caret-down"></i></a>
+                <div class="overlay-dropdown">
+                    <a href="../ladders.html">Ladders</a>
+                    <a href="../castors.html">Castors & Wheels</a>
+                    <a href="../trolleys.html">Trolleys</a>
                 </div>
-                <a href="../../safety.html">Safety & <br> Information</a>
                 <a href="../../contact.html">CONTACT</a>
+                <a href="../../safety.html">Safety & Information</a>
             </div>
-    
-            <div onclick="openNav()" class="mobile-nav-button">
-                <a>
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-    
-    
-            <!-- Mobile Nav -->
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="../../index.html">HOME</a>
-                    <a class="overlay-dropdown-btn">ABOUT <i class="fa fa-caret-down"></i></a>
-                    <div class="overlay-dropdown">
-                        <a href="../../about.html">About Us</a>
-                        <a href="../../about/sustainability.html">Sustainability</a>
-    
-                    </div>
-                    <a class="overlay-dropdown-btn">Products <i class="fa fa-caret-down"></i></a>
-                    <div class="overlay-dropdown">
-                        <a href="../ladders.html">Ladders</a>
-                        <a href="../castors.html">Castors & Wheels</a>
-                        <a href="../trolleys.html">Trolleys</a>
-                    </div>
-                    <a href="../../contact.html">CONTACT</a>
-                    <a href="../../safety.html">Safety & Information</a>
-                </div>
-            </div>
-        </div> <!-- END NAV -->
+        </div>
+    </div> <!-- END NAV -->
 
     <div class="products-page-header">
         <img src="../../images/section-headers/ladders.png" alt="Ladder Page Header">
@@ -119,8 +119,19 @@
                 <h3>Product Specifications</h3>
                 <ul>
                     <li><i class="fas fa-square"></i>Powder coated frame</li>
-                    <li><i class="fas fa-square"></i>Non-slip ladder shoes</li>
-                    <li><i class="fas fa-square"></i>Extra-wide steps - Comfortable foot resting</li>
+                    <li><i class="fas fa-square"></i>Identifiable by a White Cap and Feet</li>
+                    <li><i class="fas fa-square"></i>Light, strong, safely designed step ladder suitable for household and internal office use (light duty)</li>
+                    <li><i class="fas fa-square"></i>Safe working load 95 kg</li>
+                    <li><i class="fas fa-square"></i>Maximum static load rating (MSVL) 115 kg</li>
+                    <li><i class="fas fa-square"></i>A-Frame Design</li>
+                    <li><i class="fas fa-square"></i>Non-slip, exclusively profiled steps (7.5 cm deep)</li>
+                    <li><i class="fas fa-square"></i>30 cm step raise</li>
+                    <li><i class="fas fa-square"></i>Moulded top with parts tray and tool holder</li>
+                    <li><i class="fas fa-square"></i>Non-slip, non-scuff PVC feet for additional safety and stability</li>
+                    <li><i class="fas fa-square"></i>Strong 6-rivet step connection onto aluminium frame</li>
+                    <li><i class="fas fa-square"></i>Rust proof</li>
+                    <li><i class="fas fa-square"></i>6-months manufacturer's guarantee</li>
+
                 </ul>
                 <div class="ladder-product-uses">
                     <div>
@@ -132,46 +143,47 @@
                     <!-- Heading -->
                     <h4>Item No.</h4>
                     <span class="white-divider"></span>
-                    <h4>No. of Steps</h4>
-                    <span class="white-divider"></span>
-                    <h4>Step Size</h4>
+                    <h4>Description</h4>
                     <span class="white-divider"></span>
                     <h4>Height</h4>
                     <span class="white-divider"></span>
                     <h4>Weight</h4>
 
-                    <!-- Prod. 1 -->
+                    <!-- ILS003 -->
+                    <p>ILS003</p>
+                    <span class="grey-divider"></span>
+                    <p>Single sided 3-step</p>
+                    <span class="grey-divider"></span>
+                    <p>0.9m</p>
+                    <span class="grey-divider"></span>
+                    <p>2.5kg</p>
+
+                    <!-- ILS004 -->
                     <p>ILS004</p>
                     <span class="grey-divider"></span>
-                    <p>4 Single Sided</p>
-                    <span class="grey-divider"></span>
-                    <p>300mm</p>
+                    <p>Single sided 4-step</p>
                     <span class="grey-divider"></span>
                     <p>1.2m</p>
                     <span class="grey-divider"></span>
-                    <p>2kg</p>
+                    <p>2.95kg</p>
 
-                    <!-- Prod. 2 -->
+                    <!-- ILS006 -->
                     <p>ILS006</p>
                     <span class="grey-divider"></span>
-                    <p>6 Single Sided</p>
-                    <span class="grey-divider"></span>
-                    <p>300mm</p>
+                    <p>Single sided 6-step</p>
                     <span class="grey-divider"></span>
                     <p>1.8m</p>
                     <span class="grey-divider"></span>
-                    <p>3kg</p>
+                    <p>4.25kg</p>
 
-                    <!-- Prod. 3 -->
+                    <!-- ILS008 -->
                     <p>ILS008</p>
                     <span class="grey-divider"></span>
-                    <p>8 Single Sided</p>
-                    <span class="grey-divider"></span>
-                    <p>300mm</p>
+                    <p>Single sided 8-step</p>
                     <span class="grey-divider"></span>
                     <p>2.4m</p>
                     <span class="grey-divider"></span>
-                    <p>3.6kg</p>
+                    <p>6.10kg</p>
                 </div>
 
                 <div class="ladder-product-specs-mobile">
