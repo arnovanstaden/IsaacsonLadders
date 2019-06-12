@@ -106,3 +106,16 @@ $(".quote-modal .submit-button").click(function() {
 function closeQuoteModal() {
   $(".quote-modal").fadeOut();
 }
+
+
+// LADDER CAROUSEL
+
+$('.ladder-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:true,
+  items: 1,
+  responsive:{
+
+  }
+})
