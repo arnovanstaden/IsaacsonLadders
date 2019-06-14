@@ -1595,6 +1595,79 @@ margin-bottom: 30px;
     background-repeat: no-repeat;
 }
 
+#Single-Light {
+    background-image: url("../images/products/ladders/Single-Light.jpg");
+}
+
+#Single-Medium {
+    background-image: url("../images/products/ladders/Single-Medium.jpg");
+}
+
+#Single-Heavy {
+    background-image: url("../images/products/ladders/Single-Heavy.jpg");
+}
+
+#Double-Heavy {
+    background-image: url("../images/products/ladders/Double-Sided-Heavy.jpg");
+}
+
+#Double-Light {
+    background-image: url("../images/products/ladders/Double-Sided-Heavy.jpg");
+}
+
+#Push-Up {
+    background-image: url("../images/products/ladders/Push-Up.jpg");
+}
+
+#Lean-To {
+    background-image: url("../images/products/ladders/Lean-To.jpg");
+}
+
+#Function-3 {
+    background-image: url("../images/products/ladders/3-Function.jpg");
+}
+
+#Function-5 {
+    background-image: url("../images/products/ladders/5-Function.jpg");
+}
+
+
+#ladder-single-light {
+    background-image: url("../images/products/ladders/Single-Light.jpg");
+}
+
+#ladder-single-medium {
+    background-image: url("../images/products/ladders/Single-Medium.jpg");
+}
+
+#ladder-single-heavy {
+    background-image: url("../images/products/ladders/Single-Heavy.jpg");
+}
+
+#ladder-double-light {
+    background-image: url("../images/products/ladders/Double-Sided-Heavy.jpg");
+}
+
+#ladder-double-heavy {
+    background-image: url("../images/products/ladders/Double-Sided-Heavy.jpg");
+}
+
+#ladder-lean-to-img {
+    background-image: url("../images/products/ladders/Lean-To.jpg");
+}
+
+#ladder-push-up-img {
+    background-image: url("../images/products/ladders/Push-Up.jpg");
+}
+
+#ladder-3-function-img {
+    background-image: url("../images/products/ladders/3-Function.jpg");
+}
+
+#ladder-5-function-img {
+    background-image: url("../images/products/ladders/5-Function.jpg");
+}
+
 
 .ladder-product-details {
     width: 65%;
