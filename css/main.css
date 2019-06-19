@@ -1699,6 +1699,14 @@ margin-bottom: 30px;
     align-items: center;
 }
 
+
+.ladder-product-details li span {
+    text-decoration: underline;
+    text-decoration-color: #FFD200;
+}
+
+
+
 .ladder-product-details li i {
     color: #333333;
     font-size: 14px;
