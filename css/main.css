@@ -1251,7 +1251,7 @@ footer a:hover,
     padding: 2% 10%;
 }
 
-.safety-info h2{
+.safety-info h2 {
     font-family: "Montserrat";
     font-weight: 600;
     font-size: 26px;
@@ -1259,11 +1259,11 @@ footer a:hover,
     margin-bottom: 20px;
 }
 
-.safety-info:nth-child(2) p{
-margin-bottom: 30px;
+.safety-info:nth-child(2) p {
+    margin-bottom: 30px;
 }
 
-.safety-info h3{
+.safety-info h3 {
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 22px;
@@ -1272,7 +1272,8 @@ margin-bottom: 30px;
     text-decoration: underline;
 }
 
-.safety-info ul li, .safety-info p {
+.safety-info ul li,
+.safety-info p {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 18px;
@@ -1764,7 +1765,7 @@ margin-bottom: 30px;
     width: 22%;
 }
 
-.ladder-5-specs h4{
+.ladder-5-specs h4 {
     width: 18%;
 }
 
@@ -2092,4 +2093,38 @@ margin-bottom: 30px;
     height: 0 !important;
     padding: 0 !important;
     margin: 0 !important
+}
+
+
+
+
+/* 404 PAGE */
+
+.section-404 {
+    height: 100vh;
+    background-image: url("../images/backgrounds/home-page/landing-section.jpg");
+    background-position: center top;
+    background-size: cover;
+}
+
+.section-404 > div {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 0;
+}
+
+.section-404 > div > h1 {
+    color: #FFD200;
+    font-family: "Playfair Display";
+    font-size: 100px;
+}
+
+.section-404 > div > h2 {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: 400;
 }
