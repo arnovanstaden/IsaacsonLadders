@@ -110,12 +110,13 @@ function closeQuoteModal() {
 
 // LADDER CAROUSEL
 
-$('.ladder-carousel').owlCarousel({
-  loop:true,
-  margin:0,
-  nav:true,
-  items: 1,
-  responsive:{
 
-  }
-})
+
+$(".contact-modal > i").click(function() {
+  $(".contact-modal").fadeOut(500);
+});
+
+
+
+
+
