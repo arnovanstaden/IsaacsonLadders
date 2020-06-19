@@ -1,5 +1,22 @@
-@import "./fonts.css";
+/* GENERAL */
+
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+
+    /* Colours */
+    --yellow: #FFD200;
+    --grey: #1A1A1A;
+    --light-grey: #535353;
+
+    /* Fonts */
+    --serif: "Playfair Display";
+    --sans-serif: "Montserrat"
+}
+
+/* General Styles*/
 
 html,
 body,
@@ -8,6 +25,7 @@ section {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: var(--sans-serif);
 }
 
 h1,
@@ -22,6 +40,7 @@ p {
 }
 
 section {
+    padding: 2.5rem 0;
     overflow: hidden;
 }
 
@@ -34,46 +53,97 @@ input:focus {
     outline: none;
 }
 
-/* General */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* General Components*/
 
 /* Section Headers */
 
-.landing-section-header {
-    width: 100%;
+.white-back-heading {
+    padding: 1rem 0;
 }
 
-.landing-section-header img {
-    width: 20%;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+.white-back-heading h1 {
+    font-family: var(--sans-serif);
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--yellow);
+    padding-bottom: 3px;
+    color: var(--grey);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.black-back-heading {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.black-back-heading h1 {
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    font-size: 35px;
+    border-bottom: 2px solid #535353;
+    padding-bottom: 3px;
+    color: var(--yellow);
+    text-transform: uppercase;
 }
 
 /* Page Headers */
 
 .page-header {
     width: 100%;
-    height: 30vh;
     background-position: center;
     background-size: cover;
+    padding: 2rem 0;
 }
 
 .page-header img {
     width: 25%;
     display: block;
-    margin: auto;
-    margin-top: 10px;
+    margin: 4rem auto auto;
     position: relative;
     top: 65%;
-    transform: translateY(-50%);
 }
+
+
 
 /* Yellow Buttons */
 
 .yellow-button {
     transition: 0.5s;
     border: rgba(255, 208, 0, 0) 1px solid;
-    background-color: #FFD200;
+    background-color: var(--yellow);
     border-radius: 20px;
     width: 220px;
     padding: 7px 0;
@@ -82,23 +152,22 @@ input:focus {
 }
 
 .yellow-button a {
-    color: #1A1A1A;
+    color: var(--grey);
     font-weight: 600;
-    font-size: 22px;
-    font-family: "Montserrat";
-
+    font-size: 1.1rem;
+    font-family: var(--sans-serif);
     text-decoration: none !important;
 }
 
 .yellow-button:hover {
-    background-color: #1A1A1A;
-    color: #FFD200;
-    border: #FFD200 1px solid;
+    background-color: var(--grey);
+    color: var(--yellow);
+    border: var(--yellow) 1px solid;
     font-weight: 500;
 }
 
 .yellow-button:hover a {
-    color: #FFD200;
+    color: var(--yellow);
     font-weight: 500;
 }
 
@@ -114,11 +183,11 @@ input:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FFD200;
+    background: var(--yellow);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1A1A1A;
+    background: var(--grey);
 }
 
 
@@ -137,7 +206,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     transition: top 0.3s;
     box-shadow: 0px 1px 10px rgba(26, 26, 26, 0.356);
 }
@@ -158,7 +227,6 @@ input:focus {
     justify-content: space-evenly;
     text-align: center;
     position: relative;
-
 }
 
 .nav-contact a {
@@ -168,7 +236,7 @@ input:focus {
 .nav-contact p {
     font-weight: 500;
     transition: 0.5s;
-    color: #333333;
+    color: var(--grey);
     margin-left: 5px;
     display: inline-block;
     position: relative;
@@ -191,7 +259,7 @@ input:focus {
 
 .nav-social a,
 .nav-contact>a>div {
-    border: 1px solid #FFD200;
+    border: 1px solid var(--yellow);
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -201,19 +269,19 @@ input:focus {
 
 .nav-social a:hover {
     border: 1px solid rgba(212, 212, 212, 0);
-    color: #1A1A1A;
-    background-color: #FFD200;
+    color: var(--grey);
+    background-color: var(--yellow);
     transform: scale(1.1);
 }
 
 .nav-contact a:hover p {
-    color: #FFD200;
+    color: var(--yellow);
 }
 
 .nav-contact a:hover .nav-contact-icons {
     border: 1px solid rgba(212, 212, 212, 0);
-    color: #1A1A1A;
-    background-color: #FFD200;
+    color: var(--grey);
+    background-color: var(--yellow);
 }
 
 .nav-social i,
@@ -222,7 +290,7 @@ input:focus {
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #1A1A1A;
+    color: var(--grey);
 }
 
 .nav-menu {
@@ -237,13 +305,13 @@ input:focus {
 .nav-menu a {
     font-weight: 600;
     text-decoration: none;
-    color: #1A1A1A;
+    color: var(--grey);
     transition: 0.5s;
     text-transform: uppercase;
 }
 
 .nav-menu a:hover {
-    color: #FFD200;
+    color: var(--yellow);
     transform: scale(1.1)
 }
 
@@ -263,15 +331,15 @@ input:focus {
     background-color: #FFFFFF;
     min-width: 160px;
     z-index: 1;
-    padding-top: 15px;
-    left: -15px;
+    padding-top: 1rem;
+    left: -1rem;
     ;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 0.8rem 1rem;
     text-decoration: none;
     display: block;
 }
@@ -318,7 +386,7 @@ input:focus {
     padding: 20px 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #FFD200;
+    color: var(--yellow);
     display: block;
     transition: 0.3s;
     text-transform: uppercase;
@@ -341,7 +409,7 @@ input:focus {
 }
 
 .overlay .overlay-dropdown a:hover {
-    color: #FFD200;
+    color: var(--yellow);
     transform: scale(1.1);
 
 }
@@ -366,12 +434,12 @@ input:focus {
 
 .mobile-nav-button i {
     font-size: 22px;
-    color: #1A1A1A;
+    color: var(--grey);
     padding: 5px 8px;
 }
 
 .mobile-nav-button a:hover {
-    background-color: #FFD200;
+    background-color: var(--yellow);
     border-radius: 5px;
     cursor: pointer;
     transform: scale(1.1);
@@ -397,7 +465,18 @@ input:focus {
     background-size: cover;
     background-position: top left;
     transition: 0.7s;
+}
 
+
+.landing-section-header {
+    width: 100%;
+}
+
+.landing-section-header img {
+    width: 20%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .landing-div {
@@ -405,7 +484,7 @@ input:focus {
     height: 100%;
     width: 45%;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     color: white;
     position: absolute;
     transition: left 0.7s;
@@ -420,7 +499,7 @@ input:focus {
 
 .landing-div img {
     width: 30%;
-    margin: 15px 0;
+    margin: 1rem 0;
 }
 
 .landing-div h1 {
@@ -437,9 +516,9 @@ input:focus {
 .landing-div h2 {
     font-weight: 500;
     font-size: 34px;
-    color: #FFD200;
-    border-top: #FFD200 1px solid;
-    border-bottom: #FFD200 1px solid;
+    color: var(--yellow);
+    border-top: var(--yellow) 1px solid;
+    border-bottom: var(--yellow) 1px solid;
     width: 60%;
     margin: auto;
     margin: 20px auto;
@@ -456,7 +535,7 @@ input:focus {
 .products-arrow a {
     font-weight: 300;
     font-size: 20px;
-    color: #FFD200;
+    color: var(--yellow);
     cursor: pointer;
     text-decoration: none;
 }
@@ -495,7 +574,7 @@ input:focus {
 }
 
 .landing-social a {
-    border: 1px solid #FFD200;
+    border: 1px solid var(--yellow);
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -507,8 +586,8 @@ input:focus {
 
 .landing-social a:hover {
     border: 1px solid rgba(212, 212, 212, 0);
-    color: #1A1A1A;
-    background-color: #FFD200;
+    color: var(--grey);
+    background-color: var(--yellow);
     transform: scale(1.1);
 }
 
@@ -517,8 +596,12 @@ input:focus {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
-    color: #1A1A1A;
+    font-size: 1rem;
+    color: var(--grey);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 
@@ -546,11 +629,11 @@ input:focus {
     text-align: center;
     cursor: pointer;
     text-decoration: none;
-    color: #1A1A1A;
+    color: var(--grey);
 }
 
 .landing-product-category>div {
-    border: 2px solid #333333;
+    border: 2px solid var(--grey);
     border-radius: 20px;
 }
 
@@ -574,12 +657,12 @@ input:focus {
 
 .landing-product-category-name {
     padding: 5px 0;
-    margin-top: 15px;
+    margin-top: 1rem;
     transition: 0.5s;
 }
 
 .landing-product-category-name h1 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 600;
     font-size: 20px;
 }
@@ -587,7 +670,7 @@ input:focus {
 .landing-product-category-inner {
     width: 100%;
     height: 100%;
-    background-color: #1A1A1A;
+    background-color: var(--grey);
     border-radius: 18px;
     opacity: 0;
     transition: 0.5s;
@@ -599,9 +682,9 @@ input:focus {
 }
 
 .landing-product-category:hover .landing-product-category-name {
-    background-color: #1A1A1A;
+    background-color: var(--grey);
     opacity: 0.9;
-    color: #FFD200;
+    color: var(--yellow);
 }
 
 .landing-product-category:hover .landing-product-category-name h1 {
@@ -615,33 +698,36 @@ input:focus {
 
 /* More Section */
 .landing-more-section {
-    background-color: #1A1A1A;
+    background-color: var(--grey);
+    border-top: 3px solid var(--yellow);
+    border-bottom: 3px solid var(--yellow);
+}
+
+.landing-more-section .container {
     display: flex;
-    font-family: "Montserrat";
-    padding: 4% 4% !important;
+    justify-content: space-between;
     align-items: center;
+    padding: 2rem 0;
 }
 
-.landing-more-section>div:nth-child(1) {
+.landing-more-section .container>div:nth-child(1) {
     width: 65%;
-    padding-right: 10%;
 }
 
-.landing-more-section>div:nth-child(2) {
-    width: 35%;
+.landing-more-section .container>div:nth-child(2) {
+    width: 30%;
     text-align: center;
 }
 
 .landing-more-section h1 {
     font-weight: 600;
-    color: #FFD200;
+    color: var(--yellow);
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 1.5rem;
 }
 
 .landing-more-section p {
     color: #FFFFFF;
-    font-size: 22px;
     font-weight: 300;
 }
 
@@ -679,124 +765,6 @@ input:focus {
 
 
 
-/* Footer */
-
-footer {
-    background-color: #1A1A1A;
-    padding: 2% 5% 1% 5%;
-    font-family: "Montserrat";
-}
-
-footer>div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.footer-line {
-    height: 1px;
-    width: 100%;
-    background-color: #535353;
-    margin: 10px 0;
-}
-
-.footer-row-1 .footer-social {
-    width: 20%;
-    margin: 0 15%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.footer-social i {
-    color: #535353;
-    font-size: 26px;
-}
-
-.footer-row-1 .footer-news {
-    width: 50%;
-    text-align: center;
-}
-
-.footer-news p {
-    font-weight: 600;
-    color: #FFFFFF;
-}
-
-.footer-row-2 {
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 5px 0;
-}
-
-.footer-row-2 a {
-    width: 33%;
-    color: #535353;
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.footer-row-2 a i {
-    margin-right: 10px;
-}
-
-.footer-row-3 img {
-    width: 5%;
-    height: auto;
-    margin: auto;
-    display: block;
-}
-
-.footer-logo {
-    width: 30%;
-    margin-right: 10%;
-}
-
-.footer-menu {
-    width: 62%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.footer-menu a {
-    width: 20%;
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-footer a {
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-footer a:hover,
-.footer-social a :hover {
-    color: #FFD200;
-    transform: scale(1.1)
-}
-
-.footer-row-4 {
-    display: block;
-    margin-top: 5px;
-}
-
-.footer-row-4 p {
-    display: block;
-    text-align: center;
-    color: #666666;
-}
-
-.footer-row-4 a {
-    text-decoration: none;
-    color: white;
-}
-
-
-
-
 
 
 /* --------------------------------------------------------------------- */
@@ -811,42 +779,11 @@ footer a:hover,
     padding-top: 2%;
 }
 
-.white-back-heading {
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-.white-back-heading h1 {
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 35px;
-    border-bottom: 2px solid #FFD200;
-    padding-bottom: 3px;
-    color: #333333;
-    text-transform: uppercase;
-}
-
-.black-back-heading {
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.black-back-heading h1 {
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 35px;
-    border-bottom: 2px solid #535353;
-    padding-bottom: 3px;
-    color: #FFD200;
-    text-transform: uppercase;
-}
-
 .contact-details-grid {
     display: grid;
     grid-template-columns: 55% 45%;
-    padding: 2% 10%;
-    font-family: "Montserrat"
+    padding: 1rem 2rem;
+    font-family: var(--sans-serif)
 }
 
 .contact-details {
@@ -858,85 +795,100 @@ footer a:hover,
 .contact-details a,
 .contact-social a {
     width: 100%;
-    display: block;
     display: flex;
+    align-items: center;
     align-items: center;
     margin-bottom: 25px;
     text-decoration: none !important;
 }
 
-.contact-details a div,
-.contact-social a div {
-    border: #FFD200 1px solid;
+.contact-details a i,
+.contact-social a i {
+    font-size: 0.9rem;
+    color: var(--grey);
+    border: 1px solid var(--yellow);
+    padding: 0.5rem;
+    margin-right: 1rem;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    margin-right: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     transition: 0.4s;
-}
-
-.contact-details a div i,
-.contact-social a div i {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 22px;
-    color: #1A1A1A;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
 
 .contact-details a p,
 .contact-social a p {
-    color: #1A1A1A;
+    color: var(--grey);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.1rem;
+    font-family: var(--sans-serif);
     transition: 0.4s;
-    font-family: "Montserrat"
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
 
 .contact-details a:hover p,
 .contact-social a:hover p {
-    color: #FFD200;
+    color: var(--yellow);
 }
 
-.contact-details a:hover div,
-.contact-social a:hover div {
-    background-color: #FFD200;
+.contact-details a:hover i,
+.contact-social a:hover i {
+    background-color: var(--yellow);
 }
 
 .contact-social {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 20%;
+    padding: 1rem 20%;
 }
 
 
-.contact-emails>div {
-    padding: 5%;
-    background-color: #33333313;
+.contact-emails {
+    border-left: 4px solid var(--grey);
+    padding: 0 1.5rem;
 }
 
 .contact-emails h1 {
     font-weight: 700;
-    color: #1A1A1A;
+    color: var(--grey);
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 1.1rem;
+}
+
+.contact-emails h1:nth-child(1) {
+    margin-top: 0;
 }
 
 .contact-emails a {
     font-weight: 400;
     text-decoration: none;
-    color: #1A1A1A;
+    color: var(--grey);
     margin: 5px 0 25px 25px;
     font-style: italic;
-    font-size: 16px;
+    font-size: 1rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.contact-emails a:hover {
+    color: var(--yellow);
 }
 
 
-
 .contact-form-section {
-    background-color: #1A1A1A;
-    font-family: "Montserrat"
+    background-color: var(--grey);
+    font-family: var(--sans-serif)
 }
 
 .contact-form-section>div:nth-child(2) {
@@ -953,7 +905,7 @@ footer a:hover,
 }
 
 .contact-form-text div {
-    border: #FFD200 1px solid;
+    border: var(--yellow) 1px solid;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -992,7 +944,7 @@ footer a:hover,
     border: 2px solid #535353;
     border-radius: 20px;
     padding: 8px 10px;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
@@ -1005,8 +957,8 @@ footer a:hover,
 
 .submit-button {
     grid-area: 4/1/5/3 !important;
-    border: 2px solid #FFD200 !important;
-    color: #FFD200 !important;
+    border: 2px solid var(--yellow) !important;
+    color: var(--yellow) !important;
     display: block;
     margin: auto;
     width: 150px;
@@ -1015,9 +967,9 @@ footer a:hover,
 }
 
 .submit-button:hover {
-    border: 2px solid #FFD200 !important;
-    color: #1A1A1A !important;
-    background-color: #FFD200 !important;
+    border: 2px solid var(--yellow) !important;
+    color: var(--grey) !important;
+    background-color: var(--yellow) !important;
     display: block;
     margin: auto;
     width: 150px;
@@ -1055,7 +1007,7 @@ footer a:hover,
     position: absolute;
     right: 10px;
     top: 10px;
-    color: #1A1A1A;
+    color: var(--grey);
     transition: 0.4s;
 }
 
@@ -1069,7 +1021,7 @@ footer a:hover,
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    color: #1A1A1A;
+    color: var(--grey);
     padding: 20px;
 }
 
@@ -1091,13 +1043,17 @@ footer a:hover,
 }
 
 .about-page-body section {
-    padding-top: 2%;
     background-size: cover;
     background-position: center;
 }
 
-.about-history-section {
+.about-text-section {
     background-image: url("../images/backgrounds/about-page/history-section.jpg");
+    background-attachment: fixed;
+}
+
+.about-text-section#sustainability {
+    background-image: url("../images/backgrounds/about-page/team-section.jpg");
     background-attachment: fixed;
 }
 
@@ -1106,12 +1062,13 @@ footer a:hover,
     background-attachment: fixed;
 }
 
-.about-history-section p {
-    padding: 3% 10%;
-    font-family: "Montserrat";
+.about-text-section p {
+    font-family: var(--sans-serif);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3;
+    text-align: justify;
+    padding: 1rem;
 }
 
 .about-team-grid {
@@ -1124,12 +1081,12 @@ footer a:hover,
 .team-member {
     height: 300px;
     width: 300px;
-    background-color: #1A1A1A;
+    background-color: var(--grey);
     transition: 0.6s;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     text-align: center;
     position: relative;
-    border: #FFD200 2px solid;
+    border: var(--yellow) 2px solid;
 }
 
 .team-member>div {
@@ -1158,7 +1115,7 @@ footer a:hover,
 
 .team-member a {
     font-weight: 200;
-    color: #FFD200;
+    color: var(--yellow);
     font-size: 18px;
     text-align: center;
     text-decoration: none;
@@ -1169,7 +1126,7 @@ footer a:hover,
 
 .team-member a:hover {
     /* text-decoration: underline; */
-    border-bottom: #FFD200 1px solid;
+    border-bottom: var(--yellow) 1px solid;
 }
 
 
@@ -1179,7 +1136,7 @@ footer a:hover,
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    font-family: "Montserrat"
+    font-family: var(--sans-serif)
 }
 
 .overview-item {
@@ -1198,12 +1155,12 @@ footer a:hover,
     width: 60px;
     height: 60px;
     text-align: center;
-    border: #FFD200 solid 1px;
+    border: var(--yellow) solid 1px;
     border-radius: 50%;
 }
 
 .overview-icon i {
-    color: #1A1A1A;
+    color: var(--grey);
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -1253,10 +1210,10 @@ footer a:hover,
 }
 
 .safety-info h2 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 600;
     font-size: 26px;
-    color: #1A1A1A;
+    color: var(--grey);
     margin-bottom: 20px;
 }
 
@@ -1265,20 +1222,20 @@ footer a:hover,
 }
 
 .safety-info h3 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 22px;
-    color: #1A1A1A;
+    color: var(--grey);
     margin-bottom: 10px;
     text-decoration: underline;
 }
 
 .safety-info ul li,
 .safety-info p {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 400;
     font-size: 18px;
-    color: #1A1A1A;
+    color: var(--grey);
     margin-bottom: 5px;
 }
 
@@ -1340,12 +1297,12 @@ footer a:hover,
 
 .filter-heading h1 {
     margin-top: 50px;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 600;
     font-size: 24px;
-    border-bottom: 2px solid #FFD200;
+    border-bottom: 2px solid var(--yellow);
     padding-bottom: 3px;
-    color: #1A1A1A;
+    color: var(--grey);
     text-transform: uppercase;
     display: inline-block;
 }
@@ -1354,18 +1311,6 @@ footer a:hover,
     padding: 20px 0 20px 10px;
 }
 
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    color: #1A1A1A;
-    font-family: "Montserrat";
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 22px;
-}
 
 .container input {
     position: absolute;
@@ -1384,12 +1329,12 @@ footer a:hover,
 }
 
 .container:hover input~.checkmark {
-    background-color: #1A1A1A;
+    background-color: var(--grey);
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked~.checkmark {
-    background-color: #FFD200;
+    background-color: var(--yellow);
 }
 
 .checkmark:after {
@@ -1409,7 +1354,7 @@ footer a:hover,
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #1A1A1A;
+    background: var(--grey);
 }
 
 
@@ -1437,7 +1382,7 @@ footer a:hover,
     height: 40vh;
     background-size: contain;
     background-position: center;
-    border: #333333 2px solid;
+    border: var(--grey) 2px solid;
     border-radius: 20px;
     position: relative;
     background-repeat: no-repeat;
@@ -1448,8 +1393,8 @@ footer a:hover,
 }
 
 .product-description h4 {
-    color: #1A1A1A;
-    font-family: "Montserrat";
+    color: var(--grey);
+    font-family: var(--sans-serif);
     font-size: 24px;
     margin-left: 10px;
     font-weight: 600;
@@ -1460,7 +1405,7 @@ footer a:hover,
 
 
 .product:hover .product-img {
-    border: #FFD200 2px solid;
+    border: var(--yellow) 2px solid;
 }
 
 .product:hover {
@@ -1472,16 +1417,16 @@ footer a:hover,
     text-align: center;
     width: 200px;
     border-radius: 20px;
-    background-color: #FFD200;
-    border: #FFD200 2px solid;
+    background-color: var(--yellow);
+    border: var(--yellow) 2px solid;
     margin-top: 40px;
     transition: 0.5s;
 }
 
 .clear-filter-button p {
     cursor: pointer;
-    color: #1A1A1A;
-    font-family: "Montserrat";
+    color: var(--grey);
+    font-family: var(--sans-serif);
     cursor: pointer;
     font-weight: 600;
     font-size: 22px;
@@ -1489,7 +1434,7 @@ footer a:hover,
 }
 
 .clear-filter-button:hover {
-    border: #1A1A1A 2px solid;
+    border: var(--grey) 2px solid;
     background-color: transparent;
 }
 
@@ -1500,13 +1445,13 @@ footer a:hover,
 
 .products-back-button a {
     margin-left: 5%;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     text-decoration: none;
     font-size: 20px;
-    border: #1A1A1A 2px solid;
+    border: var(--grey) 2px solid;
     padding: 5px 30px;
     border-radius: 20px;
-    color: #1A1A1A;
+    color: var(--grey);
     font-weight: 500;
     transition: 0.4s;
     display: flex;
@@ -1516,12 +1461,12 @@ footer a:hover,
 
 .products-back-button i {
     margin-right: 5px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .products-back-button a:hover {
-    background-color: #FFD200;
-    border: #FFD200 2px solid;
+    background-color: var(--yellow);
+    border: var(--yellow) 2px solid;
 }
 
 
@@ -1535,13 +1480,13 @@ footer a:hover,
 }
 
 .quote-button {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     text-decoration: none;
     font-size: 20px;
-    background-color: #FFD200;
+    background-color: var(--yellow);
     padding: 5px 30px;
     border-radius: 20px;
-    color: #1A1A1A;
+    color: var(--grey);
     font-weight: 500;
     transition: 0.4s;
     cursor: pointer;
@@ -1549,13 +1494,13 @@ footer a:hover,
     width: 160px;
     position: relative;
     margin-top: 20px;
-    border: 2px solid #FFD200;
+    border: 2px solid var(--yellow);
 }
 
 .quote-button:hover {
     transform: scale(1.05);
-    color: #FFD200;
-    background-color: #1A1A1A;
+    color: var(--yellow);
+    background-color: var(--grey);
     font-weight: 600;
 }
 
@@ -1566,14 +1511,14 @@ footer a:hover,
 }
 
 .ladder-product-name {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     text-transform: uppercase;
     padding-bottom: 20px;
 }
 
 .ladder-product-name h1 {
     font-size: 34px;
-    color: #1A1A1A;
+    color: var(--grey);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -1589,7 +1534,7 @@ footer a:hover,
 .ladder-product-img {
     width: 25%;
     height: 60vh;
-    border: 2px solid #333333;
+    border: 2px solid var(--grey);
     border-radius: 20px;
     margin-right: 5%;
     background-position: center;
@@ -1676,12 +1621,12 @@ footer a:hover,
 }
 
 .ladder-product-details h3 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 26px;
-    border-bottom: 2px solid #FFD200;
+    border-bottom: 2px solid var(--yellow);
     padding-bottom: 3px;
-    color: #333333;
+    color: var(--grey);
     text-transform: uppercase;
     display: inline-block;
 }
@@ -1692,8 +1637,8 @@ footer a:hover,
 }
 
 .ladder-product-details li {
-    color: #333333;
-    font-family: "Montserrat";
+    color: var(--grey);
+    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 20px;
     padding: 5px 0;
@@ -1704,14 +1649,14 @@ footer a:hover,
 
 .ladder-product-details li span {
     text-decoration: underline;
-    text-decoration-color: #FFD200;
+    text-decoration-color: var(--yellow);
 }
 
 
 
 .ladder-product-details li i {
-    color: #333333;
-    font-size: 14px;
+    color: var(--grey);
+    font-size: 0.9rem;
     margin-right: 10px;
 }
 
@@ -1741,7 +1686,7 @@ footer a:hover,
 
 .ladder-uses-divider {
     width: 2px;
-    background-color: #FFD200;
+    background-color: var(--yellow);
     height: 8vh;
     display: block;
 }
@@ -1757,10 +1702,10 @@ footer a:hover,
 }
 
 .ladder-product-specs h4 {
-    background-color: #333333;
+    background-color: var(--grey);
     padding: 8px 0 8px 5px;
     font-size: 22px;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     color: #ffffff;
     font-weight: 500;
     width: 22%;
@@ -1779,14 +1724,14 @@ footer a:hover,
 .ladder-product-specs .white-divider {
     width: 2px;
     height: 100%;
-    background-color: #333333;
+    background-color: var(--grey);
 }
 
 .ladder-product-specs p {
-    padding: 15px 0 15px 5px;
+    padding: 1rem 0 1rem 5px;
     font-size: 20px;
-    font-family: "Montserrat";
-    color: #333333;
+    font-family: var(--sans-serif);
+    color: var(--grey);
     ;
     font-weight: 500;
     width: 22%;
@@ -1820,7 +1765,7 @@ footer a:hover,
 }
 
 .trolley-product-specs h2 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     text-transform: uppercase;
     margin: 10px 0;
 
@@ -1829,14 +1774,14 @@ footer a:hover,
 .trolley-product-specs h2 span {
     font-weight: 400;
     margin-left: 10px;
-    color: #333333;
+    color: var(--grey);
     text-transform: lowercase;
 }
 
 .yellow-divider {
     width: 10%;
     height: 1px;
-    background-color: #FFD200
+    background-color: var(--yellow)
 }
 
 .model-number {
@@ -1899,7 +1844,7 @@ footer a:hover,
 }
 
 .castors-grid .product:hover .product-img {
-    border: 2px solid #1A1A1A;
+    border: 2px solid var(--grey);
     ;
 }
 
@@ -1970,19 +1915,19 @@ footer a:hover,
 
 
 .castor-info {
-    background-color: #1A1A1A;
+    background-color: var(--grey);
     width: 80%;
     margin: 30px 10%;
     text-align: center;
     padding: 20px 2%;
     border-radius: 20px;
     color: white;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-size: 22px;
 }
 
 .castor-info a {
-    border: #FFD200 1px solid;
+    border: var(--yellow) 1px solid;
     border-radius: 20px;
     padding: 5px 20px;
     font-size: 20px;
@@ -1992,8 +1937,8 @@ footer a:hover,
 }
 
 .castor-info a:hover {
-    background-color: #FFD200;
-    color: #1A1A1A;
+    background-color: var(--yellow);
+    color: var(--grey);
     cursor: pointer;
     font-size: 500;
 }
@@ -2007,7 +1952,7 @@ footer a:hover,
 /* QUOTE MODAL */
 
 .quote-modal {
-    background-color: #1A1A1A;
+    background-color: var(--grey);
     position: fixed;
     top: 50vh;
     transform: translate(-50%, -50%);
@@ -2019,8 +1964,8 @@ footer a:hover,
 
 .quote-modal i {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 1rem;
+    right: 1rem;
     font-size: 20px;
     cursor: pointer;
     transition: 0.4s;
@@ -2034,10 +1979,10 @@ footer a:hover,
 .quote-modal input,
 .quote-modal textarea {
     background-color: transparent;
-    border: 2px solid #FFD200;
+    border: 2px solid var(--yellow);
     border-radius: 20px;
     padding: 8px 10px;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
@@ -2054,37 +1999,37 @@ footer a:hover,
 
 .quote-modal .submit-button {
     width: 40%;
-    border: 2px solid #FFD200 !important;
-    color: #FFD200 !important;
+    border: 2px solid var(--yellow) !important;
+    color: var(--yellow) !important;
     margin: 10px auto;
 }
 
 .quote-modal .submit-button:hover {
-    color: #1A1A1A !important;
+    color: var(--grey) !important;
 }
 
 .quote-modal h1 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     color: white;
     text-align: center;
     font-weight: 600;
 }
 
 .quote-modal h3 {
-    font-family: "Montserrat";
-    color: #FFD200;
+    font-family: var(--sans-serif);
+    color: var(--yellow);
     text-align: center;
     font-weight: 400;
-    margin: 15px;
+    margin: 1rem;
     font-size: 22px;
 }
 
 .quote-modal h2 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     color: white;
     text-align: center;
     font-weight: 400;
-    margin: 15px;
+    margin: 1rem;
     font-size: 22px;
     display: none;
 }
@@ -2108,24 +2053,24 @@ footer a:hover,
     background-size: cover;
 }
 
-.section-404 > div {
+.section-404>div {
     position: relative;
     top: 50%;
     text-align: center;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.6);
     padding: 50px 0;
 }
 
-.section-404 > div > h1 {
-    color: #FFD200;
-    font-family: "Playfair Display";
+.section-404>div>h1 {
+    color: var(--yellow);
+    font-family: var(--serif);
     font-size: 100px;
 }
 
-.section-404 > div > h2 {
+.section-404>div>h2 {
     color: white;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-size: 50px;
     font-weight: 400;
 }
@@ -2141,21 +2086,21 @@ footer a:hover,
     background-color: transparent;
     transform: translate(-50%, -50%);
     text-align: center;
-    border: 2px solid #FFD200;
+    border: 2px solid var(--yellow);
     background-color: white;
     padding: 50px;
 }
 
 .contact-modal h2 {
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     padding: 30px 0;
 }
 
 .contact-modal a {
     text-decoration: none;
-    color: #1A1A1A;
+    color: var(--grey);
     font-weight: 500;
-    font-family: "Montserrat";
+    font-family: var(--sans-serif);
     font-size: 30px;
     transition: 0.5s;
 }
@@ -2168,7 +2113,7 @@ footer a:hover,
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #1A1A1A;
+    color: var(--grey);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
@@ -2176,7 +2121,7 @@ footer a:hover,
 
 .contact-modal i:hover {
     transform: rotate(-90deg);
-    color: #FFD200;
+    color: var(--yellow);
 }
 
 @media screen and (max-width:800px) {
@@ -2192,4 +2137,70 @@ footer a:hover,
     .contact-modal h2 {
         font-size: 22px;
     }
+}
+
+
+
+/* FOOTER */
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--grey);
+    padding: 2rem 0;
+}
+
+.footer-logo img {
+    width: 5%;
+    margin: auto;
+    display: block;
+}
+
+.footer-contact {
+    margin: 2rem 0;
+    padding: 1rem 0.5rem;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: var(--light-grey);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.footer-contact a i {
+    margin-right: 0.5rem;
+}
+
+.footer-contact a:hover {
+    color: var(--yellow);
+}
+
+.footer-copy {
+    text-align: center;
+    color: var(--light-grey);
+    font-size: 0.8rem;
+}
+
+.footer-copy a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
+
+.footer-copy a:hover {
+    color: var(--yellow);
 }

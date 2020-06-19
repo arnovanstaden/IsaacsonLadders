@@ -10,25 +10,7 @@
 
     /* About Page */
 
-    .page-header img {
-        width: 35%;
-    }
-
-    .page-header {
-        height: 25vh;
-        ;
-    }
-
-    .white-back-heading h1,
-    .black-back-heading h1 {
-        font-size: 30px;
-    }
-
     /* Products Page */
-
-    .container {
-        font-size: 20px;
-    }
 
     .products-filter {
         padding-left: 0;
@@ -41,31 +23,6 @@
 
     .products-nav a {
         width: 130px !important;
-        font-size: 20px;
-    }
-
-
-    /* products specific */
-
-    .ladder-product-name h1 {
-        font-size: 28px;
-    }
-
-    .ladder-product-name h4 {
-        font-size: 24px;
-    }
-
-    .ladder-product-details h3 {
-        font-size: 26px;
-    }
-
-    .ladder-product-details li {
-        font-size: 18px;
-    }
-
-    .ladder-product-specs h4,
-    .ladder-product-specs p {
-        font-size: 18px;
     }
 
     /* Contact Page */
@@ -81,9 +38,6 @@
 
 
     /* General */
-    .yellow-button a {
-        font-size: 20px;
-    }
 
     .yellow-button {
         padding: 5px 0;
@@ -109,22 +63,6 @@
         display: none;
     }
 
-    .landing-more-section h1 {
-        font-size: 26px;
-    }
-
-    .landing-more-section p {
-        font-size: 20px;
-    }
-
-    .landing-about-section p {
-        font-size: 22px;
-    }
-
-    .stat-name {
-        font-size: 22px;
-    }
-
     .landing-product-grid {
         padding: 3% 5%;
         width: 90%;
@@ -139,26 +77,14 @@
 
     /* About Page */
 
-    .overview-text p {
-        font-size: 16px;
-    }
-
     .team-member {
         width: 250px;
         height: 250px;
-        ;
+
     }
 
     .about-team-grid {
         padding: 5% 5% 5% 10%
-    }
-
-    .team-member-inner h2 {
-        font-size: 28px;
-    }
-
-    .team-member-inner hh {
-        font-size: 20px;
     }
 
     .about-overview-grid {
@@ -175,48 +101,21 @@
 
     /* Contact Page */
 
-    .contact-details a div i {
-        font-size: 18px;
-    }
-
     .contact-details a div {
         width: 35px;
         height: 35px;
         margin-right: 10px;
     }
 
-
-    .contact-details a p {
-        font-size: 18px;
-    }
-
     .contact-details-grid {
         padding: 2% 5%;
     }
 
-    .contact-emails h1 {
-        font-size: 18px;
-    }
-
-    .white-back-heading h1,
-    .black-back-heading h1 {
-        font-size: 30px;
-    }
-
-    .contact-form-text p {
-        font-size: 22px;
-    }
-
-    .contact-form-text div i {
-        font-size: 22px;
-    }
 
     .contact-form-text div {
         width: 45px;
         height: 45px;
     }
-
-
 
     .contact-map-section div:nth-child(2) {
         height: 40vh;
@@ -269,10 +168,6 @@
     }
 
     /* Footer  */
-    .footer-social i {
-        font-size: 22px;
-    }
-
 
     .footer-menu {
         width: 70%;
@@ -282,11 +177,6 @@
         width: 25%;
         margin-right: 0;
     }
-
-    .footer-row-2 a {
-        font-size: 18px;
-    }
-
 
     /*  */
 
@@ -380,12 +270,10 @@
     }
 
     .landing-about-section p {
-        font-size: 20px;
         padding: 3% 5%;
     }
 
     .yellow-button {
-        font-size: 20px;
         width: 180px;
     }
 
@@ -429,25 +317,9 @@
         ;
     }
 
-    .team-member-inner h2 {
-        font-size: 22px;
 
-    }
-
-    .team-member-inner h5 {
-        font-size: 20px;
-    }
-
-    .page-header {
-        height: 20vh;
-    }
-
-    .page-header img {
-        width: 45%;
-    }
 
     .about-history-section p {
-        font-size: 16px;
         padding: 5% 8%;
     }
 
@@ -458,9 +330,6 @@
     .overview-item {
         width: 80%;
         padding: 2% 10%;
-    }
-
-    .overview-item div:nth-child(1) {
     }
 
     .white-back-heading {
@@ -579,21 +448,11 @@
         margin: 15px 0;
     }
 
-    .landing-div h1 {
-        font-size: 45px;
-    }
+
 
     .landing-div img {
         width: 35%;
         margin: 20px 0;
-    }
-
-    .landing-div h3 {
-        font-size: 28px;
-    }
-
-    .landing-div h2 {
-        font-size: 32px;
     }
 
     /* Footer */
@@ -618,7 +477,6 @@
 
     .white-back-heading h1,
     .black-back-heading h1 {
-        font-size: 28px;
         font-weight: 500;
         margin-top: 10px;
     }
@@ -722,7 +580,6 @@
         grid-column: 1/ span 1;
         background-color: #333333;
         padding: 8px 0 8px 10px;
-        font-size: 18px;
         font-family: "Montserrat";
         color: #ffffff;
         font-weight: 500;
@@ -731,7 +588,6 @@
     .ladder-product-specs-mobile p {
         grid-column: 2/ span 2;
         padding: 15px 0 15px 15px;
-        font-size: 18px;
         font-family: "Montserrat";
         color: #333333;
         font-weight: 500;
@@ -760,7 +616,6 @@
 
     .landing-div h2 {
         width: 75%;
-        font-size: 28px;
     }
 
     .landing-more-section {
@@ -768,11 +623,7 @@
     }
 
 
-    /* About Page */
 
-    .page-header img {
-        width: 60%;
-    }
 
     /* Contact Page */
 
@@ -809,4 +660,3 @@
 
 
 }
-

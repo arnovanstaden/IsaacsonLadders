@@ -32,7 +32,7 @@ function closeNav() {
 // Navbar Overlay Dropdown
 
 $(".overlay-dropdown-btn").click(function () {
-    $(this).next().toggle("500");
+  $(this).next().toggle("500");
 });
 
 
@@ -98,7 +98,7 @@ function openQuoteModal() {
   $(".quote-product-name").val(productName);
 }
 
-$(".quote-modal .submit-button").click(function() {
+$(".quote-modal .submit-button").click(function () {
   $(".quote-modal form").fadeOut();
   $(".quote-modal h2").fadeIn();
 });
@@ -112,11 +112,14 @@ function closeQuoteModal() {
 
 
 
-$(".contact-modal > i").click(function() {
+$(".contact-modal > i").click(function () {
   $(".contact-modal").fadeOut(500);
 });
 
 
-
-
-
+// FOOTER TEMPLATE
+$(document).ready(() => {
+  $.get("./footer.html", function (data) {
+    $("#footer").replaceWith(data)
+  });
+});
