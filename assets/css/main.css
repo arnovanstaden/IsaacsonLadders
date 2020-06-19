@@ -611,6 +611,10 @@ input:focus {
     background-position: center;
     background-attachment: fixed;
     padding-top: 5%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .landing-product-grid {
@@ -660,7 +664,7 @@ input:focus {
 
 .landing-product-category-name h1 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.1rem
 }
 
 .landing-product-category-inner {
@@ -1209,9 +1213,8 @@ input:focus {
     background-image: url("../images/section-headers/safety-page-header.jpg");
 }
 
-
 .safety-info {
-    padding: 2% 10%;
+    padding: 2rem 1rem;
 }
 
 .safety-info h2 {
@@ -1227,17 +1230,16 @@ input:focus {
 
 .safety-info h3 {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.4rem;
     color: var(--grey);
-    margin-bottom: 10px;
+    margin: 2rem 0 1rem 0;
     text-decoration: underline;
 }
 
 .safety-info ul li,
 .safety-info p {
     font-weight: 400;
-    font-size: 18px;
-    color: var(--grey);
+    font-size: 1rem color: var(--grey);
     margin-bottom: 5px;
 }
 
@@ -1300,7 +1302,7 @@ input:focus {
 .filter-heading h1 {
     margin-top: 50px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.2rem;
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 3px;
     color: var(--grey);
@@ -1309,12 +1311,43 @@ input:focus {
 }
 
 .filter-options {
-    padding: 20px 0 20px 10px;
+    padding: 1rem;
 }
 
+.filter-options>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
 
+.filter-options p {
+    font-weight: 500;
+}
 
+.filter-check-icon {
+    border: 1px solid var(--grey);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
 
+.filter-check-icon i {
+    font-size: 0.8rem;
+    color: var(--grey);
+    opacity: 0;
+}
+
+.filter-check-icon.active i {
+    opacity: 1;
+}
 
 
 /* Products Grid */
@@ -1351,12 +1384,12 @@ input:focus {
 
 .product-description h4 {
     color: var(--grey);
-    font-size: 24px;
+    font-size: 1.1rem;
     margin-left: 10px;
     font-weight: 600;
     display: inline-block;
-    padding: 5px 0 1px 0;
     transition: 0.5s;
+    padding: 0.5rem;
 }
 
 

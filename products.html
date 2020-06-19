@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Meta -->
-    <link rel="icon" type="image/png" href="./images/icons/Isaacson-Favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/icons/Isaacson-Favicon.png">
     <meta name="author" content="Webdacity">
     <meta name="publisher" content="Webdacity" />
     <meta name="copyright" content="2019 by Isaacson Ladders" />
@@ -19,9 +19,9 @@
 
 
     <!-- Styling -->
-    <link href="vendors/font-awesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css" />
+    <link href="./assets/vendors/font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/responsive.css" />
 
 </head>
 
@@ -31,7 +31,7 @@
 
     <div class="navbar" id="navbar">
         <div class="navbar-logo">
-            <img src="./images/icons/navbar-logo.png" alt="Logo for Navbar">
+            <img src="./assets/images/icons/navbar-logo.png" alt="Logo for Navbar">
         </div>
         <div class="nav-contact">
             <a href="tel:(0) 11 794 4456">
@@ -101,36 +101,39 @@
 
     <section class="landing-products-section">
 
-        <div class="landing-section-header">
-            <img src="./images/section-headers/products.png" alt="Products Section Header">
+        <div class="container">
+            <div class="landing-section-header">
+                <img src="./assets/images/section-headers/products.png" alt="Products Section Header">
+            </div>
+
+            <div class="landing-product-grid">
+                <a class="landing-product-category" href="./products/ladders.html">
+                    <div class="landing-product-category-image">
+                        <div class="landing-product-category-inner"></div>
+                    </div>
+                    <div class="landing-product-category-name">
+                        <h1>Ladders</h1>
+                    </div>
+                </a>
+                <a class="landing-product-category" href="./products/castors.html">
+                    <div class="landing-product-category-image">
+                        <div class="landing-product-category-inner"></div>
+                    </div>
+                    <div class="landing-product-category-name">
+                        <h1>Castors & Wheels</h1>
+                    </div>
+                </a>
+                <a class="landing-product-category" href="./products/trolleys.html">
+                    <div class="landing-product-category-image">
+                        <div class="landing-product-category-inner"></div>
+                    </div>
+                    <div class="landing-product-category-name">
+                        <h1>Trolleys</h1>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <div class="landing-product-grid">
-            <a class="landing-product-category" href="./products/ladders.html">
-                <div class="landing-product-category-image">
-                    <div class="landing-product-category-inner"></div>
-                </div>
-                <div class="landing-product-category-name">
-                    <h1>Ladders</h1>
-                </div>
-            </a>
-            <a class="landing-product-category" href="./products/castors.html">
-                <div class="landing-product-category-image">
-                    <div class="landing-product-category-inner"></div>
-                </div>
-                <div class="landing-product-category-name">
-                    <h1>Castors & Wheels</h1>
-                </div>
-            </a>
-            <a class="landing-product-category" href="./products/trolleys.html">
-                <div class="landing-product-category-image">
-                    <div class="landing-product-category-inner"></div>
-                </div>
-                <div class="landing-product-category-name">
-                    <h1>Trolleys</h1>
-                </div>
-            </a>
-        </div>
     </section>
 
 
@@ -144,6 +147,7 @@
     <!-- Scripts -->
     <script src="./assets/vendors/jquery/jquery.js"></script>
     <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
