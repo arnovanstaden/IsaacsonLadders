@@ -1,7 +1,7 @@
 /* GENERAL */
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap');
 
 /* Variables */
 :root {
@@ -94,7 +94,6 @@ input:focus {
 }
 
 .white-back-heading h1 {
-    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 1.8rem;
     border-bottom: 3px solid var(--yellow);
@@ -102,21 +101,22 @@ input:focus {
     color: var(--grey);
     text-transform: uppercase;
     display: inline-block;
+    font-family: var(--serif);
 }
 
 .black-back-heading {
-    display: inline-block;
-    margin-left: 40px;
+    padding: 1rem 0;
 }
 
 .black-back-heading h1 {
-    font-family: var(--sans-serif);
     font-weight: 400;
-    font-size: 35px;
-    border-bottom: 2px solid #535353;
+    font-size: 1.8rem;
+    border-bottom: 3px solid white;
     padding-bottom: 3px;
     color: var(--yellow);
     text-transform: uppercase;
+    display: inline-block;
+    font-family: var(--serif);
 }
 
 /* Page Headers */
@@ -155,7 +155,6 @@ input:focus {
     color: var(--grey);
     font-weight: 600;
     font-size: 1.1rem;
-    font-family: var(--sans-serif);
     text-decoration: none !important;
 }
 
@@ -206,7 +205,6 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--sans-serif);
     transition: top 0.3s;
     box-shadow: 0px 1px 10px rgba(26, 26, 26, 0.356);
 }
@@ -484,7 +482,6 @@ input:focus {
     height: 100%;
     width: 45%;
     text-align: center;
-    font-family: var(--sans-serif);
     color: white;
     position: absolute;
     transition: left 0.7s;
@@ -662,7 +659,6 @@ input:focus {
 }
 
 .landing-product-category-name h1 {
-    font-family: var(--sans-serif);
     font-weight: 600;
     font-size: 20px;
 }
@@ -779,6 +775,8 @@ input:focus {
     padding-top: 2%;
 }
 
+/* Contact Details */
+
 .contact-details-grid {
     display: grid;
     grid-template-columns: 55% 45%;
@@ -826,7 +824,6 @@ input:focus {
     color: var(--grey);
     font-weight: 500;
     font-size: 1.1rem;
-    font-family: var(--sans-serif);
     transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -886,22 +883,19 @@ input:focus {
 }
 
 
+/* Contact Form */
+
 .contact-form-section {
     background-color: var(--grey);
-    font-family: var(--sans-serif)
 }
 
-.contact-form-section>div:nth-child(2) {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    padding: 2% 5%;
-
+.contact-form-section .container>div:nth-child(2) {
+    padding: 2rem 0;
 }
 
 .contact-form-text {
     display: flex;
     align-items: center;
-    margin-top: -10%;
 }
 
 .contact-form-text div {
@@ -930,51 +924,64 @@ input:focus {
 }
 
 .contact-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form>div {
+    width: 50%;
+}
+
+.contact-form>div:nth-child(3) {
+    width: 100%;
+    padding-top: 1rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-    grid-column: 1 / span 1;
+    margin-bottom: 1rem;
+    width: 80%;
     background-color: transparent;
     border: 2px solid #535353;
     border-radius: 20px;
     padding: 8px 10px;
-    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
 
 .contact-form textarea {
-    grid-area: 1/2/4/3;
+    height: 80%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--yellow);
 }
 
 
 .submit-button {
-    grid-area: 4/1/5/3 !important;
-    border: 2px solid var(--yellow) !important;
-    color: var(--yellow) !important;
-    display: block;
-    margin: auto;
-    width: 150px;
+    border: 2px solid var(--yellow);
+    background-color: transparent;
+    color: var(--yellow);
     cursor: pointer;
     transition: 0.4s;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
 }
 
 .submit-button:hover {
-    border: 2px solid var(--yellow) !important;
-    color: var(--grey) !important;
-    background-color: var(--yellow) !important;
-    display: block;
-    margin: auto;
-    width: 150px;
-    cursor: pointer;
-    font-weight: 600 !important;
+    border: 2px solid var(--yellow);
+    color: var(--grey);
+    background-color: var(--yellow);
 }
 
 
@@ -1063,7 +1070,6 @@ input:focus {
 }
 
 .about-text-section p {
-    font-family: var(--sans-serif);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3;
@@ -1083,7 +1089,6 @@ input:focus {
     width: 300px;
     background-color: var(--grey);
     transition: 0.6s;
-    font-family: var(--sans-serif);
     text-align: center;
     position: relative;
     border: var(--yellow) 2px solid;
@@ -1210,7 +1215,6 @@ input:focus {
 }
 
 .safety-info h2 {
-    font-family: var(--sans-serif);
     font-weight: 600;
     font-size: 26px;
     color: var(--grey);
@@ -1222,7 +1226,6 @@ input:focus {
 }
 
 .safety-info h3 {
-    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 22px;
     color: var(--grey);
@@ -1232,7 +1235,6 @@ input:focus {
 
 .safety-info ul li,
 .safety-info p {
-    font-family: var(--sans-serif);
     font-weight: 400;
     font-size: 18px;
     color: var(--grey);
@@ -1297,7 +1299,6 @@ input:focus {
 
 .filter-heading h1 {
     margin-top: 50px;
-    font-family: var(--sans-serif);
     font-weight: 600;
     font-size: 24px;
     border-bottom: 2px solid var(--yellow);
@@ -1312,50 +1313,6 @@ input:focus {
 }
 
 
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #5353533f;
-    border-radius: 50%;
-}
-
-.container:hover input~.checkmark {
-    background-color: var(--grey);
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked~.checkmark {
-    background-color: var(--yellow);
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.container input:checked~.checkmark:after {
-    display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-    top: 8px;
-    left: 8px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--grey);
-}
 
 
 
@@ -1394,7 +1351,6 @@ input:focus {
 
 .product-description h4 {
     color: var(--grey);
-    font-family: var(--sans-serif);
     font-size: 24px;
     margin-left: 10px;
     font-weight: 600;
@@ -1426,7 +1382,6 @@ input:focus {
 .clear-filter-button p {
     cursor: pointer;
     color: var(--grey);
-    font-family: var(--sans-serif);
     cursor: pointer;
     font-weight: 600;
     font-size: 22px;
@@ -1445,7 +1400,6 @@ input:focus {
 
 .products-back-button a {
     margin-left: 5%;
-    font-family: var(--sans-serif);
     text-decoration: none;
     font-size: 20px;
     border: var(--grey) 2px solid;
@@ -1480,7 +1434,6 @@ input:focus {
 }
 
 .quote-button {
-    font-family: var(--sans-serif);
     text-decoration: none;
     font-size: 20px;
     background-color: var(--yellow);
@@ -1511,7 +1464,6 @@ input:focus {
 }
 
 .ladder-product-name {
-    font-family: var(--sans-serif);
     text-transform: uppercase;
     padding-bottom: 20px;
 }
@@ -1621,7 +1573,6 @@ input:focus {
 }
 
 .ladder-product-details h3 {
-    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 26px;
     border-bottom: 2px solid var(--yellow);
@@ -1638,7 +1589,6 @@ input:focus {
 
 .ladder-product-details li {
     color: var(--grey);
-    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 20px;
     padding: 5px 0;
@@ -1705,7 +1655,6 @@ input:focus {
     background-color: var(--grey);
     padding: 8px 0 8px 5px;
     font-size: 22px;
-    font-family: var(--sans-serif);
     color: #ffffff;
     font-weight: 500;
     width: 22%;
@@ -1730,9 +1679,7 @@ input:focus {
 .ladder-product-specs p {
     padding: 1rem 0 1rem 5px;
     font-size: 20px;
-    font-family: var(--sans-serif);
     color: var(--grey);
-    ;
     font-weight: 500;
     width: 22%;
 }
@@ -1765,7 +1712,6 @@ input:focus {
 }
 
 .trolley-product-specs h2 {
-    font-family: var(--sans-serif);
     text-transform: uppercase;
     margin: 10px 0;
 
@@ -1922,7 +1868,6 @@ input:focus {
     padding: 20px 2%;
     border-radius: 20px;
     color: white;
-    font-family: var(--sans-serif);
     font-size: 22px;
 }
 
@@ -1982,7 +1927,6 @@ input:focus {
     border: 2px solid var(--yellow);
     border-radius: 20px;
     padding: 8px 10px;
-    font-family: var(--sans-serif);
     font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
@@ -2009,14 +1953,12 @@ input:focus {
 }
 
 .quote-modal h1 {
-    font-family: var(--sans-serif);
     color: white;
     text-align: center;
     font-weight: 600;
 }
 
 .quote-modal h3 {
-    font-family: var(--sans-serif);
     color: var(--yellow);
     text-align: center;
     font-weight: 400;
@@ -2025,7 +1967,6 @@ input:focus {
 }
 
 .quote-modal h2 {
-    font-family: var(--sans-serif);
     color: white;
     text-align: center;
     font-weight: 400;
@@ -2070,7 +2011,6 @@ input:focus {
 
 .section-404>div>h2 {
     color: white;
-    font-family: var(--sans-serif);
     font-size: 50px;
     font-weight: 400;
 }
@@ -2092,7 +2032,6 @@ input:focus {
 }
 
 .contact-modal h2 {
-    font-family: var(--sans-serif);
     padding: 30px 0;
 }
 
@@ -2100,7 +2039,6 @@ input:focus {
     text-decoration: none;
     color: var(--grey);
     font-weight: 500;
-    font-family: var(--sans-serif);
     font-size: 30px;
     transition: 0.5s;
 }
