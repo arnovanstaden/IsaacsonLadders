@@ -18,13 +18,10 @@
 
 /* General Styles*/
 
-html,
-body,
-section {
+body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     font-family: var(--sans-serif);
 }
 
@@ -59,6 +56,7 @@ input:focus {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    box-sizing: border-box;
 }
 
 @media (min-width: 576px) {
@@ -101,7 +99,6 @@ input:focus {
     color: var(--grey);
     text-transform: uppercase;
     display: inline-block;
-    font-family: var(--serif);
 }
 
 .black-back-heading {
@@ -116,7 +113,6 @@ input:focus {
     color: var(--yellow);
     text-transform: uppercase;
     display: inline-block;
-    font-family: var(--serif);
 }
 
 /* Page Headers */
@@ -140,35 +136,30 @@ input:focus {
 
 /* Yellow Buttons */
 
-.yellow-button {
-    transition: 0.5s;
-    border: rgba(255, 208, 0, 0) 1px solid;
-    background-color: var(--yellow);
-    border-radius: 20px;
-    width: 220px;
-    padding: 7px 0;
-    text-align: center;
-    cursor: pointer;
-}
 
 .yellow-button a {
     color: var(--grey);
     font-weight: 600;
+    padding: 0.5rem 1rem;
     font-size: 1.1rem;
     text-decoration: none !important;
+    border: rgba(255, 208, 0, 0) 1px solid;
+    background-color: var(--yellow);
+    border-radius: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    display: inline-block;
 }
 
-.yellow-button:hover {
+.yellow-button a:hover {
     background-color: var(--grey);
     color: var(--yellow);
     border: var(--yellow) 1px solid;
-    font-weight: 500;
 }
 
-.yellow-button:hover a {
-    color: var(--yellow);
-    font-weight: 500;
-}
 
 
 /* ScrollBar */
@@ -348,8 +339,6 @@ input:focus {
     display: block;
 }
 
-
-
 .overlay-dropdown {
     display: none;
 }
@@ -381,9 +370,9 @@ input:focus {
 }
 
 .overlay a {
-    padding: 20px 8px;
+    padding: 1rem;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 1.5rem;
     color: var(--yellow);
     display: block;
     transition: 0.3s;
@@ -391,9 +380,9 @@ input:focus {
 }
 
 .overlay .overlay-dropdown a {
-    padding: 20px 8px;
+    padding: 1rem;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 1.25rem;
     color: white;
     display: block;
     transition: 0.3s;
@@ -403,13 +392,20 @@ input:focus {
 .overlay a:hover,
 .overlay a:focus {
     color: #ffffff;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .overlay .overlay-dropdown a:hover {
     color: var(--yellow);
-    transform: scale(1.1);
-
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .overlay .closebtn {
@@ -610,19 +606,30 @@ input:focus {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-top: 5%;
+    padding-top: 6rem;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.landing-products-section .heading {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-products-section .heading h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: 3px solid var(--yellow);
+}
+
 .landing-product-grid {
     display: flex;
-    /* height: 50vh; */
-    width: 80%;
-    padding: 3% 10%;
     justify-content: space-between;
+    margin-top: 3rem;
 }
 
 .landing-product-category {
@@ -707,7 +714,6 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
 }
 
 .landing-more-section .container>div:nth-child(1) {
@@ -1239,12 +1245,10 @@ input:focus {
 .safety-info ul li,
 .safety-info p {
     font-weight: 400;
-    font-size: 1rem color: var(--grey);
+    font-size: 1rem;
+    color: var(--grey);
     margin-bottom: 5px;
 }
-
-
-
 
 
 /* ------------------------------------------------------------------------- */
@@ -1257,9 +1261,7 @@ input:focus {
     background-position: center;
     background-size: cover;
     height: 20vh;
-    position: relative;
-    margin-top: 6%;
-    left: 5%;
+    margin: 7rem auto 0 auto;
     border-radius: 25px;
     width: 90%;
     transition: 0.5s;
@@ -1287,7 +1289,6 @@ input:focus {
 .products-outer-grid {
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 0 5% 3% 5%;
 }
 
 .products-outer-grid .white-back-heading {
@@ -1312,12 +1313,14 @@ input:focus {
 
 .filter-options {
     padding: 1rem;
+    padding-top: 2rem;
 }
 
 .filter-options>div {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .filter-options p {
@@ -1345,8 +1348,12 @@ input:focus {
     opacity: 0;
 }
 
-.filter-check-icon.active i {
+.filter-options>div.active i {
     opacity: 1;
+}
+
+.filter-options>div.active .filter-check-icon {
+    border-color: var(--yellow);
 }
 
 
@@ -1356,12 +1363,11 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-left: 50px;
-    padding-top: 40px;
+    padding: 1rem;
 }
 
 .product {
-    width: 26%;
+    width: 30%;
     cursor: pointer;
     transition: 0.5s;
     text-decoration: none;
@@ -1369,13 +1375,16 @@ input:focus {
 }
 
 .product-img {
-    height: 40vh;
-    background-size: contain;
-    background-position: center;
+    width: 100%;
     border: var(--grey) 2px solid;
     border-radius: 20px;
-    position: relative;
-    background-repeat: no-repeat;
+    padding: 0.5rem 0;
+}
+
+.product-img img {
+    display: block;
+    margin: auto;
+    width: 70%;
 }
 
 .product-description {
@@ -1432,18 +1441,15 @@ input:focus {
 }
 
 .products-back-button a {
-    margin-left: 5%;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
     border: var(--grey) 2px solid;
     padding: 5px 30px;
     border-radius: 20px;
     color: var(--grey);
     font-weight: 500;
     transition: 0.4s;
-    display: flex;
     align-items: center;
-    width: 200px;
 }
 
 .products-back-button i {
@@ -1467,27 +1473,31 @@ input:focus {
 }
 
 .quote-button {
-    text-decoration: none;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-button button {
+    cursor: pointer;
+    font-size: 1.1rem;
     background-color: var(--yellow);
-    padding: 5px 30px;
+    padding: 0.5rem 2rem;
     border-radius: 20px;
     color: var(--grey);
     font-weight: 500;
     transition: 0.4s;
-    cursor: pointer;
-    text-align: center;
-    width: 160px;
-    position: relative;
-    margin-top: 20px;
     border: 2px solid var(--yellow);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
 
-.quote-button:hover {
-    transform: scale(1.05);
+.quote-button button:hover {
     color: var(--yellow);
     background-color: var(--grey);
-    font-weight: 600;
+    font-weight: 500;
+    border-color: var(--grey);
 }
 
 
@@ -1502,112 +1512,45 @@ input:focus {
 }
 
 .ladder-product-name h1 {
-    font-size: 34px;
+    font-size: 1.75rem;
     color: var(--grey);
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
+    margin: 0;
 }
 
 
 .ladder-product-grid {
     display: flex;
-    padding: 30px 2% 1% 5%;
-    ;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
-.ladder-product-img {
-    width: 25%;
-    height: 60vh;
-    border: 2px solid var(--grey);
-    border-radius: 20px;
-    margin-right: 5%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.filter-hide-ladder {
+    display: none;
 }
-
-#Single-Light {
-    background-image: url("../images/products/ladders/Single-Light.jpg");
-}
-
-#Single-Medium {
-    background-image: url("../images/products/ladders/Single-Medium.jpg");
-}
-
-#Single-Heavy {
-    background-image: url("../images/products/ladders/Single-Heavy.jpg");
-}
-
-#Double-Heavy {
-    background-image: url("../images/products/ladders/Double-Sided-Heavy.jpg");
-}
-
-#Double-Light {
-    background-image: url("../images/products/ladders/Double-Sided-Light.jpg");
-}
-
-#Push-Up {
-    background-image: url("../images/products/ladders/Push-Up.jpg");
-}
-
-#Lean-To {
-    background-image: url("../images/products/ladders/Lean-To.jpg");
-}
-
-#Function-3 {
-    background-image: url("../images/products/ladders/3-Function.jpg");
-}
-
-#Function-5 {
-    background-image: url("../images/products/ladders/5-Function.jpg");
-}
-
-
-#ladder-single-light {
-    background-image: url("../images/products/ladders/Single-Light.jpg");
-}
-
-#ladder-single-medium {
-    background-image: url("../images/products/ladders/Single-Medium.jpg");
-}
-
-#ladder-single-heavy {
-    background-image: url("../images/products/ladders/Single-Heavy.jpg");
-}
-
-#ladder-double-light {
-    background-image: url("../images/products/ladders/Double-Sided-Light.jpg");
-}
-
-#ladder-double-heavy {
-    background-image: url("../images/products/ladders/Double-Sided-Heavy.jpg");
-}
-
-#ladder-lean-to-img {
-    background-image: url("../images/products/ladders/Lean-To.jpg");
-}
-
-#ladder-push-up-img {
-    background-image: url("../images/products/ladders/Push-Up.jpg");
-}
-
-#ladder-3-function-img {
-    background-image: url("../images/products/ladders/3-Function.jpg");
-}
-
-#ladder-5-function-img {
-    background-image: url("../images/products/ladders/5-Function.jpg");
-}
-
 
 .ladder-product-details {
     width: 65%;
 }
 
-.ladder-product-details h3 {
+.ladder-product-image {
+    width: 25%;
+
+}
+
+.ladder-product-image img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 1rem 2rem;
+    border: 2px solid var(--grey);
+    border-radius: 20px;
+}
+
+.ladder-products h3 {
     font-weight: 500;
-    font-size: 26px;
+    font-size: 1.5rem;
     border-bottom: 2px solid var(--yellow);
     padding-bottom: 3px;
     color: var(--grey);
@@ -1615,56 +1558,29 @@ input:focus {
     display: inline-block;
 }
 
-.ladder-product-details ul {
+.ladder-product-specs {
     list-style: none;
     padding-left: 0;
 }
 
-.ladder-product-details li {
+.ladder-product-specs li {
     color: var(--grey);
-    font-weight: 500;
-    font-size: 20px;
-    padding: 5px 0;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.4rem 0;
     display: flex;
     align-items: center;
 }
-
 
 .ladder-product-details li span {
     text-decoration: underline;
     text-decoration-color: var(--yellow);
 }
 
-
-
 .ladder-product-details li i {
     color: var(--grey);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-right: 10px;
-}
-
-.ladder-product-uses {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.ladder-product-uses div:nth-child(1) {
-    width: 20%;
-}
-
-.ladder-product-uses div:nth-child(1) img {
-    width: 60%;
-    margin: auto;
-    display: block;
-}
-
-.ladder-product-uses div:nth-child(3) {
-    padding-left: 30px;
-}
-
-.ladder-product-uses:nth-child(3) img {
-    width: 50%;
 }
 
 .ladder-uses-divider {
@@ -1674,51 +1590,70 @@ input:focus {
     display: block;
 }
 
-.ladder-product-specs-mobile>div {
+.ladder-product-range,
+.ladder-product-range-mobile {
+    margin: 3rem 0;
+}
+
+.ladder-product-range>div {
+    display: flex;
+    width: 100%;
+    border-bottom: 0.75px solid var(--grey);
+
+}
+
+.product-range-headings {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    padding: 0.25rem 0;
+    background-color: var(--grey);
+    color: white;
+}
+
+.product-range-item p {
+    font-weight: 500;
+    padding: 0.75rem;
+}
+
+.column-3>p {
+    width: 33.33%;
+}
+
+.column-4>p {
+    width: 25%;
+}
+
+.column-5>p {
+    width: 20%;
+}
+
+/* Mobile */
+
+.ladder-product-range-mobile {
     display: none;
 }
 
-.ladder-product-specs {
+.ladder-product-range-mobile .product-range-item {
     display: flex;
-    margin-top: 20px;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 1.5rem 0;
 }
 
-.ladder-product-specs h4 {
-    background-color: var(--grey);
-    padding: 8px 0 8px 5px;
-    font-size: 22px;
-    color: #ffffff;
+.ladder-product-range-mobile .product-range-item h6 {
     font-weight: 500;
-    width: 22%;
-}
-
-.ladder-5-specs h4 {
-    width: 18%;
-}
-
-.ladder-product-specs .white-divider {
-    width: 2px;
-    height: 100%;
-    background-color: #FFFFFF;
-}
-
-.ladder-product-specs .white-divider {
-    width: 2px;
-    height: 100%;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.25rem;
     background-color: var(--grey);
+    color: white;
+    width: 37.5%;
+    border-bottom: 0.5px solid white;
 }
 
-.ladder-product-specs p {
-    padding: 1rem 0 1rem 5px;
-    font-size: 20px;
-    color: var(--grey);
-    font-weight: 500;
-    width: 22%;
-}
-
-.ladder-5-specs p {
-    width: 18%;
+.ladder-product-range-mobile .product-range-item p {
+    width: 55%;
+    padding: 0.5rem
 }
 
 
@@ -1734,10 +1669,6 @@ input:focus {
 
 .trolley-page-body .product {
     width: 22%;
-}
-
-.trolley-page-body .products-grid {
-    padding: 2% 10%;
 }
 
 .trolley-product-specs {
@@ -1895,23 +1826,23 @@ input:focus {
 
 .castor-info {
     background-color: var(--grey);
-    width: 80%;
-    margin: 30px 10%;
     text-align: center;
-    padding: 20px 2%;
+    padding: 1rem 2rem;
     border-radius: 20px;
     color: white;
-    font-size: 22px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .castor-info a {
     border: var(--yellow) 1px solid;
     border-radius: 20px;
-    padding: 5px 20px;
-    font-size: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     transition: 0.5s;
+    display: inline-block;
 }
 
 .castor-info a:hover {
@@ -2123,10 +2054,13 @@ footer {
     padding: 2rem 0;
 }
 
-.footer-logo img {
-    width: 5%;
-    margin: auto;
-    display: block;
+footer h1 {
+    text-align: center;
+    font-family: serif;
+    font-weight: 400;
+    color: var(--light-grey);
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .footer-contact {

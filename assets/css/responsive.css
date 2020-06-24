@@ -39,10 +39,6 @@
 
     /* General */
 
-    .yellow-button {
-        padding: 5px 0;
-    }
-
     .landing-section-header img {
         width: 25%;
     }
@@ -61,11 +57,6 @@
 
     .nav-social {
         display: none;
-    }
-
-    .landing-product-grid {
-        padding: 3% 5%;
-        width: 90%;
     }
 
     .landing-div {
@@ -252,21 +243,16 @@
         width: 35%;
     }
 
-    .landing-more-section {
-        flex-wrap: wrap;
+    .landing-more-section .container {
+        flex-direction: column;
     }
 
-    .landing-more-section>div:nth-child(1) {
-        width: 90%;
-        padding: 0 5%;
-        text-align: center;
+    .landing-more-section .container>div {
+        width: unset !important;
     }
 
-    .landing-more-section>div:nth-child(2) {
-        width: 90%;
-        padding: 0 5%;
-        padding-top: 25px;
-        display: flex;
+    .landing-more-section .container>div:nth-child(2) {
+        margin-top: 2rem;
     }
 
     .landing-about-section p {
@@ -317,12 +303,6 @@
         ;
     }
 
-
-
-    .about-history-section p {
-        padding: 5% 8%;
-    }
-
     .about-overview-grid {
         padding: 5%;
     }
@@ -331,11 +311,6 @@
         width: 80%;
         padding: 2% 10%;
     }
-
-    .white-back-heading {
-        margin-left: 5%;
-    }
-
 
     /* Products Page */
     .products-outer-grid {
@@ -355,12 +330,7 @@
         width: 200px !important;
     }
 
-    .filter-options {
-        display: flex;
-        flex-wrap: wrap;
-        /* justify-content: space-around; */
-        padding-left: 0;
-    }
+
 
     .filter-options label {
         width: 100%;
@@ -374,19 +344,29 @@
     /* Product Specific Page */
 
     .ladder-product-grid {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
-    .ladder-product-img {
-        width: 50%;
-        margin-bottom: 30px;
-        margin: 0 auto 30px auto;
-    }
-
+    .ladder-product-image,
     .ladder-product-details {
         width: 100%;
     }
 
+    .ladder-product-image {
+        margin-bottom: 3rem;
+    }
+
+    .ladder-product-image img {
+        width: 40%;
+    }
+
+    .ladder-product-range {
+        display: none;
+    }
+
+    .ladder-product-range-mobile {
+        display: block;
+    }
 
     /* Quote Form */
 
@@ -394,11 +374,21 @@
         width: 80vw;
     }
 
+    /* General */
 
-
+    .page-header img {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width:576px) {
+
+    /* General */
+
+    .page-header img {
+        width: 60%;
+    }
+
 
     /* Landing Page */
 
@@ -420,10 +410,6 @@
 
     .landing-social {
         display: none;
-    }
-
-    .landing-section-header img {
-        width: 45%;
     }
 
     .landing-product-category {
@@ -543,7 +529,7 @@
     }
 
     .product {
-        width: 80%;
+        width: 60%;
     }
 
     .products-page-header {
@@ -555,19 +541,6 @@
     }
 
     /* Product Specific Page */
-
-
-    .ladder-product-img {
-        width: 80%;
-    }
-
-    .ladder-product-specs {
-        display: none;
-    }
-
-    .ladder-product-specs-mobile {
-        margin: 20px 0;
-    }
 
 
     .ladder-product-specs-mobile>div {
@@ -604,59 +577,59 @@
 
 
 
-}
 
-@media screen and (max-width:450px) {
 
-    /* Landing Page */
+    @media screen and (max-width:450px) {
 
-    .landing-section-header img {
-        width: 60%;
+        /* Landing Page */
+
+        .landing-section-header img {
+            width: 60%;
+        }
+
+        .landing-div h2 {
+            width: 75%;
+        }
+
+        .landing-more-section {
+            padding: 30px 4% !important;
+        }
+
+
+
+
+        /* Contact Page */
+
+        .contact-details {
+            padding-left: 0;
+        }
+
+        /* Products */
+
+        .products-nav {
+            grid-template-columns: 1fr;
+        }
+
+        .products-nav a {
+            width: 250px !important
+        }
+
+
+        /* Footer */
+
+        .footer-row-3 img {
+            width: 65%;
+        }
+
+        .trolley-page-body .product {
+            width: 85%;
+        }
+
+        .quote-modal {
+            width: 90vw;
+            padding: 5% 3%;
+        }
+
+
+
     }
-
-    .landing-div h2 {
-        width: 75%;
-    }
-
-    .landing-more-section {
-        padding: 30px 4% !important;
-    }
-
-
-
-
-    /* Contact Page */
-
-    .contact-details {
-        padding-left: 0;
-    }
-
-    /* Products */
-
-    .products-nav {
-        grid-template-columns: 1fr;
-    }
-
-    .products-nav a {
-        width: 250px !important
-    }
-
-
-    /* Footer */
-
-    .footer-row-3 img {
-        width: 65%;
-    }
-
-    .trolley-page-body .product {
-        width: 85%;
-    }
-
-    .quote-modal {
-        width: 90vw;
-        padding: 5% 3%;
-    }
-
-
-
-}

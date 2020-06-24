@@ -43,30 +43,38 @@ $(".overlay-dropdown-btn").click(function () {
 
 
 // Ladder Filters
-$("#single").click(function () {
-  $(".product").fadeOut(1);
-  $(".single").fadeIn(500);
+$(".filter-options > div").click(function () {
+  $(this).toggleClass("active");
+  filterLadders();
 });
 
-$("#double").click(function () {
-  $(".product").fadeOut(1);
-  $(".double").fadeIn(500);
-});
+const filterLadders = () => {
+  $("#ladder-products-grid .product").removeClass("filter-hide-ladder");
 
-$("#multi").click(function () {
-  $(".product").fadeOut(1);
-  $(".multi").fadeIn(500);
-});
+  // Get Active Filters
+  let activeFilters = [];
+  let filtersLength = $(".filter-options div").length;
+  for (let j = 1; j <= filtersLength; j++) {
+    if ($(`.filter-options div:nth-child(${j})`).hasClass("active")) {
+      let filter = $(`.filter-options div:nth-child(${j})`).attr("data-product-filter");
+      activeFilters.push(filter)
+    }
+  }
 
-$("#push-up").click(function () {
-  $(".product").fadeOut(1);
-  $(".push-up").fadeIn(500);
-});
+  // Filter Ladders
+  if (activeFilters.length > 0) {
+    let shopLength = $("#ladder-products-grid .product").length;
+    for (let i = 1; i <= shopLength; i++) {
+      let productType = $(`#ladder-products-grid .product:nth-child(${i})`).attr("data-product-type");
+      if (!activeFilters.includes(productType)) {
+        $(`#ladder-products-grid .product:nth-child(${i})`).addClass("filter-hide-ladder")
+      }
+    }
+  }
+}
 
-$("#lean").click(function () {
-  $(".product").fadeOut(1);
-  $(".lean").fadeIn(500);
-});
+
+
 
 $(".clear-filter-button").click(function () {
   location.reload();
@@ -110,16 +118,25 @@ function closeQuoteModal() {
 
 // LADDER CAROUSEL
 
-
-
 $(".contact-modal > i").click(function () {
   $(".contact-modal").fadeOut(500);
 });
 
-
 // FOOTER TEMPLATE
 $(document).ready(() => {
-  $.get("./footer.html", function (data) {
-    $("#footer").replaceWith(data)
-  });
+
+  if (window.location.pathname.includes("/products/ladders/") || window.location.pathname.includes("/products/trolleys/")) {
+    $.get("../../footer.html", function (data) {
+      $("#footer").replaceWith(data);
+    });
+  } else if (window.location.pathname.includes("/products/")) {
+    $.get("../footer.html", function (data) {
+      $("#footer").replaceWith(data);
+    });
+  } else {
+    $.get("./footer.html", function (data) {
+      $("#footer").replaceWith(data)
+    });
+  }
+
 });

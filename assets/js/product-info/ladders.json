@@ -1,0 +1,474 @@
+{
+    "single-sided-light": {
+        "name": "single sided / light duty ladder",
+        "product_grid_name": "Single Sided A-Frame / Light Duty",
+        "product_image": "Single-Light.jpg",
+        "specifications": [
+            "Identifiable by a White Cap and Feet",
+            "Light, strong, safely designed step ladder suitable for household and internal office use (light duty)",
+            "Safe working load 95 kg",
+            "Maximum static load rating (MSVL) 115 kg",
+            "A-Frame Design",
+            "Non-slip, exclusively profiled steps (7.5 cm deep)",
+            "30 cm step raise",
+            "Moulded top with parts tray and tool holder",
+            "Non-slip, non-scuff PVC feet for additional safety and stability",
+            "Strong 6-rivet step connection onto aluminium frame",
+            "Rust proof",
+            "6-months manufacturer’s guarantee"
+        ],
+        "product_range": [{
+                "product_code": "ILS003",
+                "description": "Single sided 3-step",
+                "weight": 2.50,
+                "height": 0.9
+            },
+            {
+                "product_code": "ILS004",
+                "description": "Single sided 4 - step",
+                "weight": 2.95,
+                "height": 1.2
+            },
+            {
+                "product_code": "ILS006",
+                "description": "Single sided 6 - step",
+                "weight": 4.25,
+                "height": 1.8
+            },
+            {
+                "product_code": "ILS008",
+                "description": "Single sided 8 - step",
+                "weight": 6.10,
+                "height": 2.4
+            }
+        ],
+        "remove_columns": ["steps"]
+    },
+    "single-sided-medium": {
+        "name": "single sided / medium duty ladder",
+        "product_grid_name": "Single Sided A-Frame / Medium Duty",
+        "product_image": "Single-Medium.jpg",
+        "specifications": [
+            "Identifiable by an Orange Cap and Feet",
+            "Strong, safely designed step ladder suitable for commercial use (medium duty)",
+            "Safe working load 115 kg",
+            "Maximum static load rating (MSVL) 135 kg",
+            "A-Frame Design",
+            "Non-slip, exclusively profiled steps (7.5 cm deep)",
+            "30 cm step raise",
+            "Moulded top with parts tray and tool holder",
+            "Non-slip, non-scuff PVC feet for additional safety and stability",
+            "Strong 6-rivet step connection onto aluminium frame",
+            "Rust proof",
+            "6-months manufacture’s guarantee"
+        ],
+        "product_range": [{
+                "product_code": "ILMD003",
+                "description": "Single sided 3-step",
+                "weight": 2.65,
+                "height": 0.9,
+                "steps": ""
+            },
+            {
+                "product_code": "ILMD004",
+                "description": "Single sided 4-step",
+                "weight": 3.35,
+                "height": 1.2,
+                "steps": ""
+            },
+            {
+                "product_code": "ILMD006",
+                "description": "Single sided 6-step",
+                "weight": 5.05,
+                "height": 1.8,
+                "steps": ""
+            },
+            {
+                "product_code": "ILMD008",
+                "description": "Single sided 8-step",
+                "weight": 7.10,
+                "height": 2.4,
+                "steps": ""
+            },
+            {
+                "product_code": "ILMD010",
+                "description": "Single sided 10-step",
+                "weight": 9.20,
+                "height": 3.0,
+                "steps": ""
+            }
+
+        ],
+        "remove_columns": ["steps"]
+    },
+    "single-sided-heavy": {
+        "name": "single sided / heavy duty ladder",
+        "product_grid_name": "Single Sided A-Frame / Heavy Duty",
+        "product_image": "Single-Heavy.jpg",
+        "specifications": [
+            "Identifiable by a Green Cap and Feet",
+            "Strong, safely designed step ladder suitable for industrial use (heavy duty)",
+            "Safe working load 135 kg",
+            "Maximum static load rating (MSVL) 170 kg",
+            "A-Frame Design",
+            "Non-slip, exclusively profiled steps (7.5 cm deep)",
+            "30 cm step raise",
+            "Moulded top with parts tray and tool holder",
+            "Non-slip, non-scuff PVC feet for additional safety and stability",
+            "Strong 6-rivet step connection onto aluminium frame",
+            "Rust proof",
+            "6-months manufacture’s guarantee"
+        ],
+        "product_range": [{
+                "product_code": "ILSH003",
+                "description": "Single sided 3-step",
+                "weight": 3.05,
+                "height": 0.9,
+                "steps": ""
+            },
+            {
+                "product_code": "ILSH004",
+                "description": "Single sided 4-step",
+                "weight": 4.10,
+                "height": 1.2,
+                "steps": ""
+            },
+            {
+                "product_code": "ILSH006",
+                "description": "Single sided 6-step",
+                "weight": 5.85,
+                "height": 1.8,
+                "steps": ""
+            },
+            {
+                "product_code": "ILSH008",
+                "description": "Single sided 8-step",
+                "weight": 8.40,
+                "height": 2.4,
+                "steps": ""
+            },
+            {
+                "product_code": "ILSH010",
+                "description": "Single sided 10-step",
+                "weight": 11.55,
+                "height": 3.0,
+                "steps": ""
+            },
+            {
+                "product_code": "ILSH012",
+                "description": "Single sided 12-step",
+                "weight": 14.65,
+                "height": 3.6,
+                "steps": ""
+            },
+            {
+                "product_code": "ILSH014",
+                "description": "Single sided 14-step",
+                "weight": 17.25,
+                "height": 4.2,
+                "steps": ""
+            }
+        ],
+        "remove_columns": ["steps"]
+    },
+    "double-sided-light": {
+        "name": "Double Sided A-Frame / Light Duty",
+        "product_grid_name": "Double Sided A-Frame / Light Duty",
+        "product_image": "Double-Sided-Light.jpg",
+        "specifications": [
+            "Strong, safely designed step ladder suitable for household and internal office use (light duty)",
+            "Safe working load 95 kg",
+            "Maximum static load rating (MSVL) – 115 kg",
+            "Double sided A-Frame Design",
+            "Non-slip, exclusively profiled steps (7. 5 cm deep)",
+            "Dual profile 30 cm step raise",
+            "Non-slip, non-scuff PVC feet for additional safety and stability",
+            "Strong 6-rivet step connection onto aluminium frame",
+            "Rust proof",
+            "6-months manufacture’s guarantee"
+
+        ],
+        "product_range": [{
+            "product_code": "ILDL002",
+            "description": "Double sided 2-step",
+            "weight": "",
+            "height": 0.6,
+            "steps": ""
+        }],
+        "remove_columns": ["steps", "weight"]
+    },
+    "double-sided-heavy": {
+        "name": "Double Sided Heavy Duty Ladder",
+        "product_grid_name": "Double Sided A-Frame / Heavy Duty",
+        "product_image": "Double-Sided-Heavy.jpg",
+        "specifications": [
+            "Strong, safely designed step ladder suitable for industrial use (light duty)",
+            "Safe working load 135kg",
+            "Maximum static load rating (MSVL) - 170 kg",
+            "Double sided A-Frame Design",
+            "Non-slip, exclusively profiled steps (75 mm deep)",
+            "30 cm step raise",
+            "Non-slip, non-scuff PVC feet for additional safety and stability",
+            "Strong 6-rivet step connection onto aluminium frame",
+            "Rust proof",
+            "6-months manufacturer’s guarantee"
+
+        ],
+        "product_range": [{
+                "name": "ILD002",
+                "description": "Double sided 2 - step",
+                "height": 0.6,
+                "weight": 2.2
+            },
+            {
+                "name": "ILD003",
+                "description": "Double sided 3 - step",
+                "height": 0.9,
+                "weight": ""
+            },
+            {
+                "name": "ILD004",
+                "description": "Double sided 4 - step",
+                "height": 1.2,
+                "weight": 5
+            },
+            {
+                "name": "ILD006",
+                "description": "Double sided 6 - step",
+                "height": 1.8,
+                "weight": 7.2
+            },
+            {
+                "name": "ILD008",
+                "description": "Double sided 8 - step",
+                "height": 2.4,
+                "weight": 10
+            },
+            {
+                "name": "ILD0010",
+                "description": "Double sided 10 - step",
+                "height": 3.0,
+                "weight": ""
+            },
+            {
+                "name": "ILD0012",
+                "description": "Double sided 12 - step",
+                "height": 3.6,
+                "weight": ""
+            },
+            {
+                "name": "ILD0014",
+                "description": "Double sided 14 - step",
+                "height": 4.2,
+                "weight": ""
+            },
+            {
+                "name": "ILD0016",
+                "description": "Double sided 16 - step",
+                "height": 4.8,
+                "weight": ""
+            }
+        ],
+        "remove_columns": ["steps"]
+    },
+    "lean-to": {
+        "name": "lean-to ladder",
+        "product_grid_name": "Lean-To",
+        "product_image": "Lean-To.jpg",
+        "specifications": [
+            "Anti-slip feet",
+            "Light-weight design",
+            "Safe working load 115 kg",
+            "Maximum static load rating (MSVL) - 135 kg",
+            "Step Raise: 25 cm",
+            "Non-slip profiled rungs (3.0 cm X 3.0 cm)",
+            "Rust proof",
+            "Strong designed to ensure prolonged safety",
+            "6-months manufacturer’s guarantee"
+
+        ],
+        "product_range": [{
+            "product_code": "ILEX107",
+            "description": "Ext Lean-to Ladder",
+            "steps": 7,
+            "weight": 2.60,
+            "height": 1.96
+        }, {
+            "product_code": "ILEX110",
+            "description": "Ext Lean-to Ladder",
+            "steps": 1,
+            "weight": 2.85,
+            "height": 2.80
+        }],
+        "remove_columns": []
+    },
+    "push-up": {
+        "name": "push-up ladder",
+        "product_grid_name": "Push-Up",
+        "product_image": "Push-Up.jpg",
+        "specifications": [
+            "Electroplated mild steel locking system",
+            "Anti-slip feet",
+            "Light-weight design",
+            "Safe working load 115 kg",
+            "Maximum static load rating (MSVL) - 135 kg",
+            "Step Raise: 25 cm",
+            "Non-slip profiled rungs (3.0 cm X 3.0 cm)",
+            "Rust proof",
+            "Strong designed to ensure prolonged safety",
+            "6-months manufacturer’s guarantee"
+
+        ],
+        "product_range": [{
+                "product_code": "ILEX480",
+                "description": "Extension Push Up",
+                "steps": 20,
+                "height": "2.3 m / 4.8 m",
+                "weight": ""
+            },
+            {
+                "product_code": "ILEX540",
+                "description": "Extension Push Up",
+                "steps": 22,
+                "height": "0 m / 5.4 m",
+                "weight": ""
+            },
+            {
+                "product_code": "ILEX600",
+                "description": "Extension Push Up",
+                "steps": 24,
+                "height": "3.0 m / 6.0 m",
+                "weight": 11.4
+            },
+            {
+                "product_code": "ILEX660",
+                "description": "Extension Push Up",
+                "steps": 26,
+                "height": "3.6 m / 6.6 m",
+                "weight": 14.0
+            },
+            {
+                "product_code": "ILEX720",
+                "description": "Extension Push Up",
+                "steps": 28,
+                "height": "3.9 m / 7.2 m",
+                "weight": 16.0
+            },
+            {
+                "product_code": "ILEX780",
+                "description": "Extension Push Up",
+                "steps": 30,
+                "height": "4.2 m / 7.8 m",
+                "weight": 17.5
+            },
+            {
+                "product_code": "ILEX900",
+                "description": "Extension Push Up",
+                "steps": 34,
+                "height": "4.8 m / 9.0 m",
+                "weight": 18.5
+            }
+
+        ],
+        "remove_columns": []
+    },
+    "multi-use-3-function": {
+        "name": "Multi-Function Extension / 3 Function",
+        "product_grid_name": "Multi-Function Extension / 3 Function",
+        "product_image": "3-Function.jpg",
+        "specifications": [
+            "Electroplated mild steel locking system",
+            "Anti-slip feet",
+            "Light-weight design",
+            "Stabilising bottom bar (added safety)",
+            "Safe working load 115 kg",
+            "Maximum static load rating (MSVL) - 135 kg",
+            "Step Raise: 25 cm",
+            "Non-slip profiled rungs (3.0 cm X 3.0 cm)",
+            "Rust proof",
+            "Strong designed to ensure prolonged safety",
+            "6-months manufacturer’s guarantee"
+
+        ],
+        "product_range": [{
+                "product_code": "ILEX206",
+                "description": "Extension Ladder (3-in-1-function)",
+                "steps": "2 x 6",
+                "height": "1.65 m / 2.60 ",
+                "weight": ""
+            },
+            {
+                "product_code": "ILEX207",
+                "description": "Extension Ladder (3-in-1-function)",
+                "steps": "2 x 7",
+                "height": "1.96 m / 3.32 ",
+                "weight": ""
+            },
+            {
+                "product_code": "ILEX208",
+                "description": "Extension Ladder (3-in-1-function)",
+                "steps": "2 X 8",
+                "height": "2.26 m / 3.92 ",
+                "weight": ""
+            },
+            {
+                "product_code": "ILEX210",
+                "description": "Extension Ladder (3-in-1-function)",
+                "steps": "2 x 10",
+                "height": "2.80 m / 5.00 ",
+                "weight": 9.3
+            }
+        ],
+        "remove_columns": []
+
+    },
+    "multi-use-5-function": {
+        "name": "Multi-Function Extension / 5 Function",
+        "product_grid_name": "Multi-Function Extension / 5 Function",
+        "product_image": "5-Function.jpg",
+        "specifications": [
+            "Electroplated mild steel locking system",
+            "Anti-slip feet",
+            "Light-weight design",
+            "Stabilising bottom bar (added safety)",
+            "Safe working load 115 kg",
+            "Maximum static load rating (MSVL) - 135 kg",
+            "Step Raise: 25 cm",
+            "Non-slip profiled rungs (3.0 cm X 3.0 cm)",
+            "Rust proof",
+            "Strong designed to ensure prolonged safety",
+            "6-months manufacturer’s guarantee"
+
+        ],
+        "product_range": [{
+                "product_code": "ILEX306",
+                "description": "Extension Ladder (5-in-1-function)",
+                "steps": "3 x 6",
+                "height": "1.65 m / 3.75 ",
+                "weight": ""
+            },
+            {
+                "product_code": "ILEX307",
+                "description": "Extension Ladder (5-in-1-function)",
+                "steps": "3 x 7",
+                "height": "1.96 m / 4.68 ",
+                "weight": ""
+            },
+            {
+                "product_code": "ILEX308",
+                "description": "Extension Ladder (5-in-1-function)",
+                "steps": "3 X 8",
+                "height": "2.26 m / 5.58 ",
+                "weight": 11.0
+            },
+            {
+                "product_code": "ILEX310",
+                "description": "Extension Ladder (5-in-1-function)",
+                "steps": "3 x 10",
+                "height": "2.80 m / 7.20 ",
+                "weight": 13.8
+            }
+        ],
+        "remove_columns": []
+    }
+}
