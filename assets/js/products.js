@@ -106,4 +106,79 @@ const loadLadderData = (ladders) => {
     }
 }
 
-// Get Ladder Name
+
+
+// ----------------------------------------
+
+// TROLLEYS
+
+if (window.location.pathname.includes("/products/trolleys")) {
+    axios({
+        method: "get",
+        url: "../../assets/js/product-info/trolleys.json"
+    }).then(result => {
+        const trolleys = result.data;
+
+        if (window.location.pathname === ("/products/trolleys/index.html")) {
+            loadTrolleyData(trolleys);
+        } else if (window.location.pathname === ("/products/trolleys.html")) {
+            loadTrolleyProductGrid(trolleys)
+        }
+    });
+}
+
+
+// load ladder product page grid data
+const loadTrolleyProductGrid = (trolleys) => {
+    const trolleyKeys = Object.keys(trolleys);
+    trolleyKeys.forEach(key => {
+        let trolley = trolleys[key]
+        $("#trolley-products-grid").append(
+            `
+            <a class="product" href="./trolleys/index.html#${key}">
+                <div class="product-img">
+                    <img src="../assets/images/products/trolleys/${key}.jpg"
+                        alt="${trolley.Name}">
+                </div>
+                <div class="product-description">
+                    <h4>${trolley.Name}</h4>
+                </div>
+            </a>
+        `
+        )
+    })
+
+}
+
+
+// load product specific page ladder data
+const loadTrolleyData = (trolleys) => {
+    if (window.location.hash === "") {
+        return window.location.replace("../trolleys.html")
+    }
+    let trolleyName = window.location.hash.replace("#", "");
+    let trolley = trolleys[trolleyName];
+    // 
+
+    // Insert HTML
+    document.title = trolley.Name;
+    $(".trolley-product-name h1").html(trolley.Name);
+    $(".trolley-product-image img").attr("src", `../../assets/images/products/trolleys/${trolleyName}.jpg`);
+
+    // Product Ranges
+    const trolleyKeys = Object.keys(trolley);
+    trolleyKeys.forEach(key => {
+        if (key === "Name") {
+            return
+        }
+        $(".trolley-product-specs").append(
+            `
+            <div>
+                <h5>${key}: </h5>
+                <p>${trolley[key]}</p>
+            </div>
+            <div class="yellow-divider"></div>
+          `
+        );
+    });
+}

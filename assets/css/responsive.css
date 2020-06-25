@@ -368,6 +368,29 @@
         display: block;
     }
 
+    /* Trolley Specific Page */
+
+    .trolley-product-grid {
+        flex-direction: column;
+    }
+
+    .trolley-product-image,
+    .trolley-product-details {
+        width: 100%;
+    }
+
+    .trolley-product-image {
+        margin-bottom: 3rem;
+    }
+
+    .trolley-product-image img {
+        width: 40%;
+    }
+
+    .trolley-product-details .quote-button {
+        justify-content: center;
+    }
+
     /* Quote Form */
 
     .quote-modal {

@@ -1,0 +1,67 @@
+{
+    "junior-folding-nose": {
+        "Name": "Junior Folding Nose Trolley",
+        "Capacity": "75 kg",
+        "Width": "300 mm",
+        "Height": "1000 mm",
+        "Wheel Size": "125 mm",
+        "Model": "FNJ"
+    },
+    "small-folding-nose": {
+        "Name": "Small Folding Nose Trolley",
+        "Capacity": "255 kg",
+        "Width": "470 mm",
+        "Height": "1150 mm",
+        "Wheel Size": "200 mm",
+        "Model": "FN3"
+    },
+    "medium-folding-nose": {
+        "Name": "Medium Folding Nose Trolley",
+        "Capacity": "225 kg",
+        "Width": "570 mm",
+        "Height": "1150 mm",
+        "Wheel Size": "200 mm",
+        "Model": "FN1"
+    },
+    "large-folding-nose": {
+        "Name": "Large Folding Nose Trolley",
+        "Capacity": "225 kg",
+        "Width": "620 mm",
+        "Height": "1150 mm",
+        "Wheel Size": "200 mm",
+        "Model": "FN2"
+    },
+    "brewery": {
+        "Name": "Brewery Trolley",
+        "Capacity": "250 kg",
+        "Width": "540 mm",
+        "Height": "1235 mm",
+        "Wheel Size": "200 mm",
+        "Model": "SAB10"
+    },
+    "coke": {
+        "Name": "Coke Trolley",
+        "Capacity": "225 kg",
+        "Width": "340 mm",
+        "Height": "1230 mm",
+        "Wheel Size": "200 mm",
+        "Model": "CC15"
+    },
+    "platform": {
+        "Name": "Large Platform Trolley",
+        "Capacity": "500 kg",
+        "Width": "685 mm",
+        "Height": "1225 mm",
+        "Wheel Size": "125 mm",
+        "Model": "LPL"
+    },
+    "pallet-jack": {
+        "Name": "Pallet Jack Trolley",
+        "Capacity": "3 Ton / Double Bogie",
+        "Width": 685,
+        "Height": 1220,
+        "Wheel Size": "180X50 / 80x70 PUB",
+        "Min/Max Fork": "85mm / 185mm",
+        "Model": "CBY30"
+    }
+}
