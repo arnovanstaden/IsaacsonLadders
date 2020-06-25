@@ -4,7 +4,7 @@ http://www.isaacsonladders.co.za/index.html
 http://www.isaacsonladders.co.za/about.html
 http://www.isaacsonladders.co.za/contact.html
 http://www.isaacsonladders.co.za/safety.html
-http://www.isaacsonladders.co.za/about/sustainability.html
+http://www.isaacsonladders.co.za/sustainability.html
 http://www.isaacsonladders.co.za/products/ladders.html
 http://www.isaacsonladders.co.za/products/castors.html
 http://www.isaacsonladders.co.za/products/trolleys.html
