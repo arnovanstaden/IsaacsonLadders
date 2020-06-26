@@ -522,10 +522,6 @@
         padding: 2% 5%;
     }
 
-    .contact-form textarea {
-        grid-area: 4/1/5/2;
-    }
-
     .contact-form {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -538,7 +534,17 @@
 
     .contact-map-section div:nth-child(2) {
         height: 40vh;
-        ;
+
+    }
+
+    .contact-form>div {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     /* Products Page */
