@@ -1069,10 +1069,6 @@ input:focus {
     background-attachment: fixed;
 }
 
-.about-text-section#sustainability {
-    background-image: url("../images/backgrounds/about-page/team-section.jpg");
-    background-attachment: fixed;
-}
 
 .about-team-section {
     background-image: url("../images/backgrounds/about-page/team-section.jpg");
