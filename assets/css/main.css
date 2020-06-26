@@ -942,7 +942,7 @@ input:focus {
     width: 50%;
 }
 
-.contact-form>div:nth-child(3) {
+.contact-form .submit-button {
     width: 100%;
     padding-top: 1rem;
 }
@@ -975,7 +975,7 @@ input:focus {
 }
 
 
-.submit-button {
+.submit-button button {
     border: 2px solid var(--yellow);
     background-color: transparent;
     color: var(--yellow);
@@ -988,7 +988,7 @@ input:focus {
     margin: auto;
 }
 
-.submit-button:hover {
+.submit-button button:hover {
     border: 2px solid var(--yellow);
     color: var(--grey);
     background-color: var(--yellow);
