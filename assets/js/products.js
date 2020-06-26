@@ -234,7 +234,11 @@ const loadTrolleyData = (trolleys) => {
 
 function openQuoteModal() {
     $(".quote-modal").fadeIn();
-    var productName = $(".ladder-product-name").text();
+    if (window.location.pathname.includes("/ladders")) {
+        var productName = $(".ladder-product-name h1").text();
+    } else {
+        var productName = $(".trolley-product-name h1").text();
+    }
     $(".quote-modal h3").html(productName);
     $(".quote-product-name").val(productName);
 }

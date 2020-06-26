@@ -1882,6 +1882,7 @@ input:focus {
     font-weight: 400;
     margin: 1rem;
     font-size: 22px;
+    text-transform: uppercase;
 }
 
 .quote-modal h2 {
