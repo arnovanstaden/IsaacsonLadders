@@ -1652,10 +1652,6 @@ input:focus {
 
 /* Trolley Product Page */
 
-.trolley-page-body .products-back-button a {
-    width: 150px;
-}
-
 .trolley-header {
     background-image: url("../images/section-headers/trolley-page-header.jpg") !important;
 }
