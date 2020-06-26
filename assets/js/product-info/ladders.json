@@ -42,7 +42,8 @@
                 "height": 2.4
             }
         ],
-        "remove_columns": ["steps"]
+        "remove_columns": ["steps"],
+        "product_type": "Single Sided"
     },
     "single-sided-medium": {
         "name": "single sided / medium duty ladder",
@@ -99,7 +100,8 @@
             }
 
         ],
-        "remove_columns": ["steps"]
+        "remove_columns": ["steps"],
+        "product_type": "Single Sided"
     },
     "single-sided-heavy": {
         "name": "single sided / heavy duty ladder",
@@ -169,7 +171,8 @@
                 "steps": ""
             }
         ],
-        "remove_columns": ["steps"]
+        "remove_columns": ["steps"],
+        "product_type": "Single Sided"
     },
     "double-sided-light": {
         "name": "Double Sided A-Frame / Light Duty",
@@ -195,7 +198,8 @@
             "height": 0.6,
             "steps": ""
         }],
-        "remove_columns": ["steps", "weight"]
+        "remove_columns": ["steps", "weight"],
+        "product_type": "Double Sided"
     },
     "double-sided-heavy": {
         "name": "Double Sided Heavy Duty Ladder",
@@ -269,7 +273,8 @@
                 "weight": ""
             }
         ],
-        "remove_columns": ["steps"]
+        "remove_columns": ["steps"],
+        "product_type": "Double Sided"
     },
     "lean-to": {
         "name": "lean-to ladder",
@@ -300,7 +305,8 @@
             "weight": 2.85,
             "height": 2.80
         }],
-        "remove_columns": []
+        "remove_columns": [],
+        "product_type": "Lean-To"
     },
     "push-up": {
         "name": "push-up ladder",
@@ -370,7 +376,8 @@
             }
 
         ],
-        "remove_columns": []
+        "remove_columns": [],
+        "product_type": "Push-Up"
     },
     "multi-use-3-function": {
         "name": "Multi-Function Extension / 3 Function",
@@ -419,7 +426,8 @@
                 "weight": 9.3
             }
         ],
-        "remove_columns": []
+        "remove_columns": [],
+        "product_type": "Multi-Function"
 
     },
     "multi-use-5-function": {
@@ -469,6 +477,7 @@
                 "weight": 13.8
             }
         ],
-        "remove_columns": []
+        "remove_columns": [],
+        "product_type": "Multi-Function"
     }
 }

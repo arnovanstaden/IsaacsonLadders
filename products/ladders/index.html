@@ -161,14 +161,11 @@
         </div>
     </section>
 
-
     <div class="quote-modal">
         <i class="fal fa-times" onclick="closeQuoteModal()"></i>
         <h1>Make an Enquiry</h1>
         <h3></h3>
-        <form class="gform"
-            action="https://script.google.com/macros/s/AKfycbywZPwg2jjrimLymlriNiv-EwHJomdVzp00lpa79O4oVyUXWG3j/exec"
-            method="POST">
+        <form data-netlify="true" method="POST">
             <input type="text" name="Product" class="quote-product-name" value="">
             <input type="text" placeholder="Name*" name="Name" required>
             <input type="text" placeholder="Email*" name="Email" required>

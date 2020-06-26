@@ -543,6 +543,11 @@
 
     /* Products Page */
 
+    .products-back-button {
+        justify-content: center;
+    }
+
+
     .products-nav a {
         width: 150px !important;
     }

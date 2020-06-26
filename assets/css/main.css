@@ -1280,11 +1280,6 @@ input:focus {
     background-image: url("../images/section-headers/ladder-page-header.jpg");
 }
 
-.products-page-body .products-back-button a {
-    width: 150px
-}
-
-
 
 .products-outer-grid {
     display: grid;
@@ -1301,7 +1296,6 @@ input:focus {
 }
 
 .filter-heading h1 {
-    margin-top: 50px;
     font-weight: 600;
     font-size: 1.2rem;
     border-bottom: 2px solid var(--yellow);
@@ -1438,6 +1432,8 @@ input:focus {
 
 .products-back-button {
     margin: 40px 0;
+    display: flex;
+    justify-content: left;
 }
 
 .products-back-button a {

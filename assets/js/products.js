@@ -24,7 +24,7 @@ const loadLadderProductGrid = (ladders) => {
         let ladder = ladders[key]
         $("#ladder-products-grid").append(
             `
-            <a class="product" href="./ladders/index.html#${key}" data-product-type="ladder-single-sided">
+            <a class="product" href="./ladders/index.html#${key}" data-product-type="${ladder.product_type}">
                 <div class="product-img">
                     <img src="../assets/images/products/ladders/${ladder.product_image}"
                         alt="${ladder.product_grid_name}">
@@ -107,6 +107,49 @@ const loadLadderData = (ladders) => {
 }
 
 
+// Filter Ladders
+
+
+
+// Ladder Filters
+$(".filter-options > div").click(function () {
+    $(this).toggleClass("active");
+    filterLadders();
+});
+
+const filterLadders = () => {
+    $("#ladder-products-grid .product").removeClass("filter-hide-ladder");
+
+    // Get Active Filters
+    let activeFilters = [];
+    let filtersLength = $(".filter-options div").length;
+    for (let j = 1; j <= filtersLength; j++) {
+        if ($(`.filter-options div:nth-child(${j})`).hasClass("active")) {
+            let filter = $(`.filter-options div:nth-child(${j})`).attr("data-product-filter");
+            activeFilters.push(filter)
+        }
+    }
+
+    console.log(activeFilters)
+    // Filter Ladders
+    if (activeFilters.length > 0) {
+        let shopLength = $("#ladder-products-grid .product").length;
+        for (let i = 1; i <= shopLength; i++) {
+            let productType = $(`#ladder-products-grid .product:nth-child(${i})`).attr("data-product-type");
+            if (!activeFilters.includes(productType)) {
+                $(`#ladder-products-grid .product:nth-child(${i})`).addClass("filter-hide-ladder")
+            }
+        }
+    }
+}
+
+
+
+
+$(".clear-filter-button").click(function () {
+    location.reload();
+});
+
 
 // ----------------------------------------
 
@@ -181,4 +224,26 @@ const loadTrolleyData = (trolleys) => {
           `
         );
     });
+}
+
+
+
+// ---------------------------------
+
+// REQUEST QUOTE
+
+function openQuoteModal() {
+    $(".quote-modal").fadeIn();
+    var productName = $(".ladder-product-name").text();
+    $(".quote-modal h3").html(productName);
+    $(".quote-product-name").val(productName);
+}
+
+$(".quote-modal .submit-button").click(function () {
+    $(".quote-modal form").fadeOut();
+    $(".quote-modal h2").fadeIn();
+});
+
+function closeQuoteModal() {
+    $(".quote-modal").fadeOut();
 }
